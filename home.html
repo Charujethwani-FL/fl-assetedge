@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AssetEdge</title>
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="fonts/flaticon.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" sizes="16x16" href="public/faviconAE-img.png">
+  </head>
+
+  <body>
+    <header class="main-header">
+      <div class="container">
+        <div class="logo">
+          <img src="public/logo-img.jpg" alt="Asset Edge Logo" />
+        </div>
+
+        <nav class="navbar">
+          <ul>
+            <li><a href="home.html" class="active">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="inventory.html">Inventory</a></li>
+
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    
+
+ <!-- hero-home section start -->
+
+    <section class="hero-home-sec" id="homehero">
+  
+        <div class="bg-img-shape">
+          <img src="public/bg-shape.png" alt="">
+        </div>
+
+  <div class="home-hero-slider">
+    <!-- SLIDE 1 – HOME (Your existing content) -->
+    <div class="home-hero slide active">
+      <div class="home-hero-content">
+        <h1>Smart Property Solutions<br>
+          <span class="highlight">Asset Excellence</span>
+        </h1>
+        <p>
+          AssetEdge delivers intelligent real estate solutions for buying,
+          selling, and leasing properties. We help you unlock value,
+          reduce risk, and move forward with confidence.
+        </p>
+        <div class="buttons">
+          <a href="inventory.html"><button class="btn-buy">Explore Properties</button></a>
+          <button class="btn-rent">Get Started</button>
+        </div>
+      </div>
+      <div class="home-hero-image">
+        <img src="public/home/home-hero.jpg" alt="Modern house">
+      </div>
+    </div>
+
+    <!-- SLIDE 2 – ABOUT US -->
+    <div class="home-hero slide">
+      <div class="home-hero-content">
+        <h1>Who We Are<br>
+          <span class="highlight">About AssetEdge</span>
+        </h1>
+        <p>
+          We are a trusted real estate advisory firm delivering
+          strategic insights, market intelligence, and property
+          solutions tailored to your goals.
+        </p>
+        <div class="buttons">
+          <a href="about.html"><button class="btn-buy">Learn More</button></a>
+          <button class="btn-rent btn-our-story">Our Story</button>
+        </div>
+      </div>
+      <div class="home-hero-image">
+        <img src="public/home/about-home.jpg" alt="About us">
+      </div>
+    </div>
+
+    <!-- SLIDE 3 – INVENTORY -->
+    <div class="home-hero slide">
+      <div class="home-hero-content">
+        <h1>Premium Listings<br>
+          <span class="highlight">Our Inventory</span>
+        </h1>
+        <p>
+          Explore a curated inventory of residential and commercial
+          properties designed to match every lifestyle and investment need.
+        </p>
+        <div class="buttons">
+          <a href="inventory.html"><button class="btn-buy">View Inventory</button></a>
+          <a href="contact.html"><button class="btn-rent">Schedule Visit</button></a>
+        </div>
+      </div>
+      <div class="home-hero-image">
+        <img src="public/home/home-hero3.jpg" alt="Inventory">
+      </div>
+    </div>
+
+    <!-- SLIDE 4 – CONTACT US -->
+    <div class="home-hero slide">
+      <div class="home-hero-content">
+        <h1>Let’s Connect<br>
+          <span class="highlight">Contact Us</span>
+        </h1>
+        <p>
+          Have questions or ready to take the next step?
+          Our experts are here to guide you with clarity and confidence.
+        </p>
+        <div class="buttons">
+          <a href="contact.html"><button class="btn-buy">Contact Now</button></a>
+          <button class="btn-rent">Book Consultation</button>
+        </div>
+      </div>
+      <div class="home-hero-image">
+        <img src="public/home/home-hero4.jpg" alt="Contact us">
+      </div>
+    </div>
+
+  </div>
+   <div class="pagination-container-home">
+  <div class="home-hero-pagination">
+  <span class="dot active" data-slide="0"></span>
+  <span class="dot" data-slide="1"></span>
+  <span class="dot" data-slide="2"></span>
+  <span class="dot" data-slide="3"></span>
+</div>
+</div>
+    </section>
+
+<!-- hero home end  -->
+
+
+
+
+
+<!-- why choose us section start -->
+
+     <section class="why-choose-us p-sec">
+
+    <div class="main-heading-container ">
+      <h1 class="whychoose-heading">Why Choose Us</h1>
+    </div>
+    <div class="why-choose-us-container">
+
+        <div class="why-choose-us-images-container">
+        <div class="why-choose-us-images">
+            <div class="why-choose-us-main-img">
+                <img src="public/about-us/whychoose-2.jpg " alt="Person holding a card">
+            </div>
+
+            <div class="why-choose-us-small-img">
+                <img src="public/about-us/whychoose-1.jpg" alt="Person using laptop">
+                <div class="why-choose-us-clients">
+                    <h3 id="clientCount"></h3></h3>
+                    <p>Trusted Clients</p>
+                </div>
+            </div>
+        </div>
+        </div>
+
+      
+         <div class="why-choose-us-content">
+            <p class="why-choose-us-subtitle">About Company</p>
+            <h2 class="why-choose-us-title">Your Mandatory Property Compliance Partner</h2>
+
+            <p class="why-choose-us-description">
+               AssetEdge provides reliable mandatory property compliance and asset management services. We help property owners and businesses meet regulatory requirements while protecting asset value.
+            </p>
+
+            <div class="why-choose-us-features">
+                <div class="why-choose-us-feature">
+                    <span class="why-choose-us-icon"><img src="public/why-choose-us/Give-Womens-Rights.png" alt=""></span>
+                    <div>
+                        <h4>Trusted Partner</h4>
+                        <p>Reliable compliance support ensuring your property meets all mandatory regulations without hassle.</p>
+                    </div>
+                </div>
+
+                <div class="why-choose-us-feature">
+                    <span class="why-choose-us-icon"><img src="public/why-choose-us/rating.png" alt=""></span>
+                    <div>
+                        <h4>Fastpace Platform</h4>
+                        <p>Efficient, streamlined processes for easy property compliance and asset management.</p>
+                    </div>
+                </div>
+
+                <div class="why-choose-us-feature">
+                    <span class="why-choose-us-icon"><img src="public/why-choose-us/live-chat (1).png" alt=""></span>
+                    <div>
+                        <h4>Tested Reliability</h4>
+                        <p>Experienced team delivering consistent, trustworthy results you can count on every time.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+     </section> 
+
+<!-- why choose us end  -->
+
+<!-- Key features section start -->
+
+    <section class="keyfeature-sec p-sec">
+
+      <div class="main-heading-container ">
+      <h1 class="whychoose-heading">Key Features</h1>
+    </div>
+
+      <div class="feature-container">
+        <div class="feature-box">
+          <div class="feature-img-icon">
+            <img src="public/key-feature/verified.svg" alt="Verified Listings">
+          </div>
+          <h3>Verified Listings</h3>
+          <p class="zfr3Q TMjjoe CDt4Ke">
+            All properties are verified by the AsstEdge team to ensure genuine ownership, accurate pricing, and complete transparency.
+          </p>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature-img-icon">
+            <img src="public/key-feature/regular.svg" alt="Regular Updates">
+          </div>
+          <h3>Regular Updates</h3>
+          <p class="zfr3Q TMjjoe CDt4Ke">
+            Property listings are frequently updated with the latest availability and market changes, so you always stay informed.
+          </p>
+        </div>
+
+        <div class="feature-box active">
+            <div class="feature-img-icon">
+            <img src="public/key-feature/easy.svg" alt="Easy Contact Process">
+          </div>
+          <h3>Easy Contact </h3>
+          <p>
+            Get in touch directly with property owners or agents through a simple, fast, and transparent contact system.
+          </p>
+        </div>
+
+        <div class="feature-box">
+           <div class="feature-img-icon">
+            <img src="public/key-feature/high.svg" alt="High-quality Property Details">
+          </div>
+          <h3>Listing Details</h3>
+          <p>
+           View detailed descriptions, clear images, and essential specifications to make confident property decisions.
+          </p>
+        </div>
+      </div>
+    </section>
+
+<!-- key features end  -->
+
+   
+<!-- feature property section start -->
+
+
+<!-- feature Property  end  -->
+
+
+<!-- Our Partners section start -->
+
+      <section class="our-partner-section p-sec">
+        <div class="our-partner-container">
+          <h2 class="our-partner-title">Our Partners</h2>
+
+          <p class="our-partner-subtitle">
+            Rerum morbi wisi purus illum, dolor consectetur nulla. Fuga rem
+            inventore scelerisque, wisi hac illo wisi platea natus ante anim
+            convallis.
+          </p>
+          <!-- <div class="partners-grid-container">
+            <ul class="our-partner-grid row our-partner-border reveal">
+              
+
+              <li class="col-4 col-md-2 our-partner-item">
+                <a href="#"
+                  ><img src="public/partners/blackngreen-img.png" alt="partner"
+                /></a>
+              </li>
+
+              <li class="col-4 col-md-2 our-partner-item">
+                <a href="#"
+                  ><img src="public/partners/cloudnine-img.png" alt="partner"
+                /></a>
+              </li>
+
+              <li class="col-4 col-md-2 our-partner-item">
+                <a href="#"
+                  ><img src="public/partners/awfis.jpg" alt="partner"
+                /></a>
+              </li>
+
+              <li class="col-4 col-md-2 our-partner-item">
+                <a href="#"
+                  ><img src="public/partners/A&t.jpg" alt="partner"
+                /></a>
+              </li>
+
+              <li class="col-4 col-md-2 our-partner-item">
+                <a href="#"
+                  ><img src="public/partners/samsung.jpg" alt="partner"
+                /></a>
+              </li>
+
+              <li class="col-4 col-md-2 our-partner-item">
+                <a href="#"
+                  ><img src="public/partners/orange.jpg" alt="partner"
+                /></a>
+              </li>
+              <li class="col-4 col-md-2 our-partner-item">
+                <a href="#"
+                  ><img src="public/partners/olx.jpg" alt="partner"
+                /></a>
+              </li>
+
+              <li class="col-4 col-md-2 our-partner-item">
+                <a href="#"
+                  ><img src="public/partners/cardekho.jpg" alt="partner"
+                /></a>
+              </li>
+
+              <li class="col-4 col-md-2 our-partner-item">
+                <a href="#"
+                  ><img src="public/partners/dsv.jpg" alt="partner"
+                /></a>
+              </li>
+              <li class="col-4 col-md-2 our-partner-item">
+                <a href="#"
+                  ><img src="public/partners/filipkart.jpg" alt="partner"
+                /></a>
+              </li>
+
+              <li class="col-4 col-md-2 our-partner-item">
+                <a href="#"
+                  ><img src="public/partners/hdfc.jpg" alt="partner"
+                /></a>
+              </li>
+              <li class="col-4 col-md-2 our-partner-item">
+                <a href="#"
+                  ><img src="public/partners/panasonic.jpg" alt="partner"
+                /></a>
+              </li>
+
+
+          </div>
+        </div> -->
+        
+              <div class="partners-grid-container">
+                <ul class="our-partner-grid row our-partner-border reveal">
+
+                  <!-- Always visible (first 6) -->
+                  <li class="col-4 col-md-2 our-partner-item">
+                    <a href="#"><img src="public/partners/blackngreen.jpg" /></a>
+                  </li>
+                  <li class="col-4 col-md-2 our-partner-item">
+                    <a href="#"><img src="public/partners/cloudnine.jpg" /></a>
+                  </li>
+                  <li class="col-4 col-md-2 our-partner-item">
+                    <a href="#"><img src="public/partners/awfis.jpg" /></a>
+                  </li>
+                  <li class="col-4 col-md-2 our-partner-item">
+                    <a href="#"><img src="public/partners/A&t.jpg" /></a>
+                  </li>
+                  <li class="col-4 col-md-2 our-partner-item">
+                    <a href="#"><img src="public/partners/samsung.jpg" /></a>
+                  </li>
+                  <li class="col-4 col-md-2 our-partner-item">
+                    <a href="#"><img src="public/partners/orange.jpg" /></a>
+                  </li>
+                  <li class="col-4 col-md-2 our-partner-item">
+                <a href="#"
+                  ><img src="public/partners/olx.jpg" alt="partner"
+                /></a>
+              </li>
+
+              <li class="col-4 col-md-2 our-partner-item">
+                <a href="#"
+                  ><img src="public/partners/cardekho.jpg" alt="partner"
+                /></a>
+              </li>
+
+              <li class="col-4 col-md-2 our-partner-item">
+                <a href="#"
+                  ><img src="public/partners/dsv.jpg" alt="partner"
+                /></a>
+              </li>
+              <li class="col-4 col-md-2 our-partner-item">
+                <a href="#"
+                  ><img src="public/partners/filipkart.jpg" alt="partner"
+                /></a>
+              </li>
+
+                  
+
+                  <!-- Hidden initially -->
+                  <li class="col-4 col-md-2 our-partner-item extra-partners">
+                    <a href="#"><img src="public/partners/cocordw.jpg" /></a>
+                  </li>
+                  <li class="col-4 col-md-2 our-partner-item extra-partners">
+                    <a href="#"><img src="public/partners/DE.jpg" /></a>
+                  </li>
+                  <li class="col-4 col-md-2 our-partner-item extra-partners">
+                    <a href="#"><img src="public/partners/dalmia.jpg" /></a>
+                  </li>
+                  <li class="col-4 col-md-2 our-partner-item extra-partners">
+                    <a href="#"><img src="public/partners/tcf.jpg" /></a>
+                  </li>
+                  <li class="col-4 col-md-2 our-partner-item extra-partners">
+                    <a href="#"><img src="public/partners/dew.jpg" /></a>
+                  </li>
+                  <li class="col-4 col-md-2 our-partner-item extra-partners">
+                    <a href="#"><img src="public/partners/coopersurgical.jpg" /></a>
+                  </li>
+                  <li class="col-4 col-md-2 our-partner-item extra-partners">
+                    <a href="#"><img src="public/partners/cars24.jpg" /></a>
+                  </li>
+                  <li class="col-4 col-md-2 our-partner-item extra-partners">
+                    <a href="#"><img src="public/partners/campus.jpg" /></a>
+                  </li>
+                  <li class="col-4 col-md-2 our-partner-item extra-partners">
+                    <a href="#"><img src="public/partners/club-factory.jpg" /></a>
+                  </li>
+                  <li class="col-4 col-md-2 our-partner-item extra-partners">
+                    <a href="#"><img src="public/partners/finner.jpg" /></a>
+                  </li>
+                  <li class="col-4 col-md-2 our-partner-item extra-partners">
+                    <a href="#"><img src="public/partners/micromax.jpg" /></a>
+                  </li>
+                  <li class="col-4 col-md-2 our-partner-item extra-partners">
+                    <a href="#"><img src="public/partners/raymond.jpg" /></a>
+                  </li>
+                  
+              <li class="col-4 col-md-2 our-partner-item">
+                <a href="#"
+                  ><img src="public/partners/hdfc.jpg" alt="partner"
+                /></a>
+              </li>
+              <li class="col-4 col-md-2 our-partner-item">
+                <a href="#"
+                  ><img src="public/partners/panasonic.jpg" alt="partner"
+                /></a>
+              </li>
+
+                </ul>
+              </div>
+
+                <!-- View More Button -->
+                      <div class="partner-view-con">
+    <button class="partner-view-btn" onclick="togglePartners()">
+      <span class="btn-text">View More</span>
+      
+    </button>
+  </div>
+
+
+      </section>
+          
+<!-- Our Partners  end  -->
+
+<!-- footer -->
+
+      <footer class="footer">
+      <div class="footer-top">
+      <div class="footer-container">
+      
+      <!-- Logo & Description -->
+      <div class="footer-col logo-col">
+        <img src="public/logo-img.jpg" alt="AssetEdge Logo" class="footer-logo">
+        <p>
+          Your trusted partner for premier office spaces in Delhi/NCR.<br />
+          Lease. Design. Build. Operate.<br />
+        </p>
+      </div>
+
+      <div class="footer-list">
+      <!-- About Us -->
+      <div class="footer-col">
+        <h4>About us</h4>
+        <ul>
+          <li><a href="#">Who we are</a></li>
+          <li><a href="#">Our Team</a></li>
+          <li><a href="#">Our Work Flow</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Us -->
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <p>info@assetedge.in</p>
+        <p>+91-9773880555</p>
+        <p>
+          6th floor, Sauch Tower, Plot No.72, Udyog Vihar Phase-IV,<br>
+          Gurgaon-122015 (HR) India
+        </p>
+      </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="footer-bottom">
+    <div class="footer-bottom-container">
+      <p>© 2025. AssetEdge, All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <span>|</span>
+        <a href="#">Terms & Condition</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+   
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const reveals = document.querySelectorAll(".reveal");
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("active");
+              }
+            });
+          },
+          {
+            threshold: 0.2, // element triggers when 20% visible
+          }
+        );
+
+        reveals.forEach((elem) => observer.observe(elem));
+        
+      });
+
+
+      function togglePartners() {
+      const extras = document.querySelectorAll('.extra-partners');
+      const btn = document.querySelector('.partner-view-btn');
+
+      const isOpen = extras[0].classList.contains('show');
+
+      extras.forEach(item => {
+        item.classList.toggle('show');
+      });
+
+      btn.textContent = isOpen ? 'View More' : 'View Less';
+    }
+
+    </script>
+    <!-- Global JS -->
+    <script src="script.js"></script>
+  </body>
+</html>

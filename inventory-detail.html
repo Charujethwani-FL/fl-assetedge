@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AssetEdge</title>
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="fonts/flaticon.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" sizes="16x16" href="public/faviconAE-img.png">
+  </head>
+<body>
+    
+
+<section class="interoy-detail-hero" >
+  <div class="interoy-detail-slider">
+    <img class="interoy-detail-slide active" />
+    <img class="interoy-detail-slide" />
+    <img class="interoy-detail-slide" />
+  </div>
+</section>
+
+<!-- HERO OVERLAY BOX (between sections) -->
+<div class="interoy-detail-hero-box"> 
+  <div class="left-container">
+  <!-- <span class="interoy-detail-tag"></span> -->
+  <h1 class="interoy-detail-title"></h1>
+  <p class="interoy-detail-address"></p>
+  <div class="space-property">
+  <!-- New field for Space Available -->
+  </div>
+  <span class="interoy-detail-price"></span>
+  <button class="inquiry-button">Make an inquiry for property</button>
+  </div>
+  <div class="right-container">
+  
+  </div>
+</div>
+
+<!-- CONTENT -->
+<section class="interoy-detail-content">
+
+
+  <!-- SIDEBAR -->
+  <aside class="interoy-detail-sidebar">
+    <ul>
+      <li><a href="#description">Description</a></li>
+      <li><a href="#space-details">Space details</a></li>
+      <li><a href="#highlights">Highlights</a></li>
+      <li><a href="#amenities">Amenities</a></li>
+      <li><a href="#location">Location</a></li>
+      <li><a href="#floor-plan">Floor plan</a></li>
+      <!-- <li><a href="#brochures">Brochures</a></li>
+      <li><a href="#brokers">Brokers</a></li>
+      <li><a href="#inquiry">Make an inquiry</a></li> -->
+    </ul>
+  </aside>
+
+  
+
+  <!-- DETAILS -->
+  <div class="interoy-detail-sections">
+    <div id="description">
+      <h2>Lease Description</h2>
+      <p class="js-description"></p>
+    </div>
+      <br>
+    <div id="space-details">
+      <h2>Space details</h2>
+      <table class="interoy-detail-table">
+        <thead>
+          <tr>
+            <th>Floor</th>
+            <th>Size</th>
+            <th>Type</th>
+            <th>Availability</th>
+          </tr>
+        </thead>
+        <tbody class="js-space-rows"></tbody>
+      </table>
+    </div>
+<br>
+        <div class="high-amentity">
+    <div id="highlights">
+      <h2>Highlights</h2>
+      <ul class="js-highlights"></ul>
+    </div>
+
+    <div class="amenities-style" id="amenities">
+      <h2>Amenities</h2>
+      <ul class="js-amenities"></ul>
+    </div>
+    </div>
+    <br>
+    
+  <!-- Location -->
+  <div id="location">
+    <h2>Location</h2>
+    <div class="map-container">
+      <iframe
+        src="https://www.google.com/maps?q=DLF%20Corporate%20Greens%20Gurugram&output=embed"
+        loading="lazy">
+      </iframe>
+    </div>
+  </div>
+ <br>
+  <!-- Floor Plan -->
+  <div id="floor-plan">
+    <h2>Floor Plan</h2>
+    <a 
+      href="floor-plan.svg" 
+      download="Office-Floor-Plan.svg"
+      class="floor-image"
+    >
+      <img src="public/inventory-detail/floor-plan.jpg" alt="Floor Plan Preview">
+      <span class="download-icon">⬇</span>
+    </a>
+  </div>
+
+
+  </div>
+</section>
+
+<!-- footer -->
+
+      <footer class="footer">
+      <div class="footer-top">
+      <div class="footer-container">
+      
+      <!-- Logo & Description -->
+      <div class="footer-col logo-col">
+        <img src="public/logo-img.jpg" alt="AssetEdge Logo" class="footer-logo">
+        <p>
+          Your trusted partner for premier office spaces in Delhi/NCR.<br />
+          Lease. Design. Build. Operate.<br />
+        </p>
+      </div>
+
+      <div class="footer-list">
+      <!-- About Us -->
+      <div class="footer-col">
+        <h4>About us</h4>
+        <ul>
+          <li><a href="#">Who we are</a></li>
+          <li><a href="#">Our Team</a></li>
+          <li><a href="#">Our Work Flow</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Us -->
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <p>info@assetedge.in</p>
+        <p>+91-9773880555</p>
+        <p>
+          6th floor, Sauch Tower, Plot No.72, Udyog Vihar Phase-IV,<br>
+          Gurgaon-122015 (HR) India
+        </p>
+      </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="footer-bottom">
+    <div class="footer-bottom-container">
+      <p>© 2025. AssetEdge, All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <span>|</span>
+        <a href="#">Terms & Condition</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+ <script src="script.js"></script>
+
+</body>
+</html>
