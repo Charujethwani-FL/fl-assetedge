@@ -74,9 +74,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 
-
-
-
 /* ===========================
    CONTACT FORM
 =========================== 
@@ -92,17 +89,107 @@ if (contactForm) {
   });
 }
 
-
 /* ===========================
-   properties card  
+  Feature Property 
 =========================== */
 
+const sliderContainer = document.querySelector('.feature-prop-slider-container');
+const cards = document.querySelectorAll('.feature-prop-card');
+const nextBtn = document.getElementById('next');
+const prevBtn = document.getElementById('prev');
 
+let activeIndex = 0;
+let autoSlideInterval;
+
+function updateSlider() {
+    // 1. Clear all special classes
+    cards.forEach(card => {
+        card.classList.remove('active', 'next', 'next-2', 'hidden');
+    });
+
+    // 2. Determine indices (Infinite Loop Logic)
+    const count = cards.length;
+    const i_active = activeIndex % count;
+    const i_next = (activeIndex + 1) % count;
+    const i_next2 = (activeIndex + 2) % count;
+
+    // 3. Apply classes
+    cards[i_active].classList.add('active');
+    cards[i_next].classList.add('next');
+    cards[i_next2].classList.add('next-2');
+
+    // Hide others
+    cards.forEach((card, index) => {
+        if (index !== i_active && index !== i_next && index !== i_next2) {
+            card.classList.add('hidden');
+        }
+    });
+}
+
+// Next slide
+function nextSlide() {
+    activeIndex++;
+    updateSlider();
+}
+
+// Previous slide
+function prevSlide() {
+    if (activeIndex === 0) {
+        activeIndex = cards.length - 1;
+    } else {
+        activeIndex--;
+    }
+    updateSlider();
+}
+
+// --- Event Listeners ---
+nextBtn.addEventListener('click', () => {
+    nextSlide();
+    resetTimer();
+});
+
+prevBtn.addEventListener('click', () => {
+    prevSlide();
+    resetTimer();
+});
+
+// --- Auto Slider Logic ---
+function startAutoSlide() {
+    autoSlideInterval = setInterval(nextSlide, 3000);
+}
+
+function stopAutoSlide() {
+    clearInterval(autoSlideInterval);
+}
+
+function resetTimer() {
+    stopAutoSlide();
+    startAutoSlide();
+}
+
+// Pause on hover
+sliderContainer.addEventListener('mouseenter', stopAutoSlide);
+sliderContainer.addEventListener('mouseleave', startAutoSlide);
+
+// Initialize
+updateSlider();
+startAutoSlide();
 
 
 /* ===========================
-   DRAG SCROLLING
+   hamburger button  
 =========================== */
+
+ const hamburger = document.querySelector('.hamburger');
+  const navMenu = document.querySelector('.navbar ul');
+
+  hamburger.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+  });
+
+ /* ===========================
+     DRAG SCROLLING
+   =========================== */
 
 const scroller = document.getElementById("cardScroller");
 
@@ -132,9 +219,7 @@ if (scroller) {
     const walk = (x - startX) * 1.2;
     scroller.scrollLeft = scrollLeft - walk;
   });
-}
-
-
+} 
 
 // why choose us count
 
@@ -180,12 +265,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-
-     
-
-
 /* ===========================
-   PROPERTY COUNT
+      PROPERTY COUNT
    =========================== */
 
   const totalProperties = document.querySelectorAll(".property-card").length;
@@ -275,7 +356,8 @@ const propertyData = {
     "Parking",
     "Security"
   ]
-};
+
+  };
 
 /* =========================
    HERO CONTENT
@@ -316,30 +398,30 @@ document.querySelector(".inquiry-button").addEventListener("click", function() {
 
   interoyHeroSlider.init(propertyData.images);
 
-/* =========================
-   DESCRIPTION
-========================= */
+   /* =========================
+     DESCRIPTION
+   ========================= */
 
-document.querySelector(".js-description").innerText =
-propertyData.description;
+    document.querySelector(".js-description").innerText =
+    propertyData.description;
 
-/* =========================
-   SPACE DETAILS
-========================= */
+    /* =========================
+      SPACE DETAILS
+    ========================= */
 
-const spaceTable = document.querySelector(".js-space-rows");
+    const spaceTable = document.querySelector(".js-space-rows");
 
-propertyData.spaces.forEach(space => {
-  spaceTable.innerHTML += `
-    <tr>
-      <td>${space.floor}</td>
-      <td>${space.size}</td>
-      <td>${space.type}</td>
-      <td>${space.availability}</td>
-    </tr>
-  `;
+    propertyData.spaces.forEach(space => {
+      spaceTable.innerHTML += `
+        <tr>
+          <td>${space.floor}</td>
+          <td>${space.size}</td>
+          <td>${space.type}</td>
+          <td>${space.availability}</td>
+        </tr>
+      `;
 
-});
+    });
 
 /* =========================
    HIGHLIGHTS
@@ -361,17 +443,16 @@ propertyData.amenities.forEach(item => {
 });
 
 
-
 /* =========================
-   LOCATION
-========================= */
+     LOCATION
+   ========================= */
 
 const locationInfo = document.querySelector(".js-location");
 locationInfo.innerHTML = propertyData.location;  // You can replace this with dynamic data if available
 
 /* =========================
-   MAP
-========================= */
+     MAP 
+   ========================= */
 
 const map = document.querySelector(".js-map");
 map.src = propertyData.mapUrl;  // Set the dynamic map URL (Google Maps or custom)

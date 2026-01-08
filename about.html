@@ -13,36 +13,68 @@
   <body>
    
     <header class="main-header ">
-    <div class="container">
+    <div class="main-header-container">
       <div class="logo">
         <img src="public/logo-img.jpg" alt="Asset Edge Logo">
       </div>
 
       <nav class="navbar">
         <ul>
-          <li><a href="home.html" >Home</a></li>
+          <li><a href="index.html" >Home</a></li>
           <li><a href="about.html" class="active">About Us</a></li>
           <li><a href="inventory.html">Inventory</a></li>
-
           <li><a href="contact.html">Contact Us</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-<section class="aboutus-hero">
-   <div class="home-hero-content abouthome-left">
-      <h1>Your Trusted Property Partner<br><span class="highlight">About AssetEdge</span></h1>
-      <p>At AssetEdge, we specialize in helping individuals and businesses make confident, informed real estate decisions. With market expertise, we turn property opportunities into long-term value.</p>
-      <div class="buttons">
-        <button class="btn-buy">Our Services</button>
-      </div>
+  <section class="abouthero">
+  <div class="abouthero-overlay">
+    <div class="abouthero-box">
+      <h1>About Our Company</h1>
+      <p>
+        We create modern interior spaces with thoughtful design,
+        functionality, and timeless aesthetics.
+      </p>
+      <a href="#" class="abouthero-btn">Read More</a>
     </div>
-
-  <div class="aboutus-hero-right">
-    <img src="public/about-us/about-heroimg -2.png" alt="House">
   </div>
 </section>
+
+<!-- 
+<section class="abouthero">
+  <div class="abouthero-inner">
+
+   
+    <div class="abouthero-card">
+      <h1>We Helps You<br>Make Modern Interior</h1>
+      <p>
+        Variations of passages of Lorem Ipsum available,
+        but the majority have suffered alteration in some form.
+      </p>
+      <a href="#" class="abouthero-btn">Read More</a>
+    </div>
+
+    
+    <div class="abouthero-bg"></div>
+
+  </div>
+</section> -->
+
+
+   <!-- <div class="home-hero-content abouthome-left">
+      <h1 >About <span>Asset</span>Edge<br></h1>
+      <p>At AssetEdge, we specialize in helping individuals and businesses make confident, informed real estate decisions. With market expertise, we turn property opportunities into long-term value.</p>
+      <div class="buttons">
+        <button class="btn-buy">Our Services</button> 
+      </div>
+    </div> -->
+
+  <!-- <div class="aboutus-hero-right">
+     <img src="public/about-us/about-heroimg -2.png" alt="House"> 
+  </div> -->
+
 
     <section class="about-company-section p-sec">
   <div class="about-company-container">
@@ -69,7 +101,6 @@
 
     <!-- Right Content -->
     <div class="about-company-right">
-       
       <div class="about-company-card about-company-mission">
         <div class="icon-container">
         <img src="public/about-us/mission-img.png" alt="">
@@ -90,12 +121,74 @@
         </p>
       </div>
 
+    </div>
+  </div>
+</section>
 
+<section class="services">
+   <div class="bg-container-style">
+     <h2>Services <span>We Provide</span></h2>
+  <div class="services-container">
+    <div class="services-left">
+      <p>
+        We deliver premium real estate solutions designed to help you buy,
+        sell, and invest with confidence.
+      </p>
+
+      <div class="services-image">
+        <img src="https://images.unsplash.com/photo-1560185127-6ed189bf02f4" alt="Real Estate Team">
+      </div>
+    </div>
+
+    <div class="services-right">
+
+      <div class="service-card ">
+        <div class="service-icon">
+          <svg class="service-property" viewBox="0 0 24 24">
+            <path d="M3 10L12 3l9 7v10a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/>
+          </svg>
+        </div>
+        <h4>Property Buying Selling</h4>
+        <p>Expert guidance for residential and commercial property transactions.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">
+          <svg class="service-investment" viewBox="0 0 24 24">
+            <path d="M4 22h16v-2H4zm2-6h3v4H6zm5-6h3v10h-3zm5-4h3v14h-3z"/>
+          </svg>
+        </div>
+        <h4>Real Estate Investment</h4>
+        <p>Smart investment strategies to maximize ROI and long-term value.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">
+          <svg class="service-management" viewBox="0 0 24 24">
+            <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 15h-2v-6h2zm0-8h-2V7h2z"/>
+          </svg>
+        </div>
+        <h4>Property Management</h4>
+        <p>Complete management services for rentals, maintenance, and tenants.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">
+          <svg class="service-legal" viewBox="0 0 24 24">
+            <path d="M12 2l8 4v6c0 5-3.5 9.7-8 10-4.5-.3-8-5-8-10V6z"/>
+          </svg>
+        </div>
+        <h4>Legal & Documentation</h4>
+        <p>Secure and transparent handling of legal paperwork and approvals.</p>
+      </div>
+
+    </div>
     </div>
   </div>
 </section>
 
 
+<!-- 
           <section class="ourservices-section p-sec">
           <div class="main-heading-container ">
             <h1 class="whychoose-heading">Our Services</h1>
@@ -144,7 +237,7 @@
 
   </div>
   
-</section>
+</section> -->
 
     <section class="workflow-aboutus p-sec">
       <div class="main-heading-container">
@@ -223,61 +316,63 @@
 </section>
 
 
-
-         <!-- footer -->
+<!-- footer -->
 
       <footer class="footer">
       <div class="footer-top">
       <div class="footer-container">
-      
+        <div class="bg-footer-img">
+          <img src="public/footer/top-footer-img.png" alt="skyview-building">
+        </div>
       <!-- Logo & Description -->
-      <div class="footer-col logo-col">
-        <img src="public/logo-img.jpg" alt="AssetEdge Logo" class="footer-logo">
-        <p>
-          Your trusted partner for premier office spaces in Delhi/NCR.<br />
-          Lease. Design. Build. Operate.<br />
-        </p>
-      </div>
+          <div class="footer-col logo-col">
+            <img src="public/logo-img.jpg" alt="AssetEdge Logo" class="footer-logo">
+            <p>
+              Your trusted partner for premier office spaces in Delhi/NCR.<br />
+              Lease. Design. Build. Operate.<br />
+            </p>
+          </div>
 
-      <div class="footer-list">
-      <!-- About Us -->
-      <div class="footer-col">
-        <h4>About us</h4>
-        <ul>
-          <li><a href="#">Who we are</a></li>
-          <li><a href="#">Our Team</a></li>
-          <li><a href="#">Our Work Flow</a></li>
-        </ul>
-      </div>
+          <div class="footer-list">
+          <!-- About Us -->
+              <div class="footer-col">
+                <h4>About us</h4>
+                <ul>
+                  <li><a href="#">Who we are</a></li>
+                  <li><a href="#">why AssetEdge</a></li>
+                  <li><a href="#">Our Work Flow</a></li>
+                </ul>
+              </div>
 
-      <!-- Contact Us -->
-      <div class="footer-col">
-        <h4>Contact Us</h4>
-        <p>info@assetedge.in</p>
-        <p>+91-9773880555</p>
-        <p>
-          6th floor, Sauch Tower, Plot No.72, Udyog Vihar Phase-IV,<br>
-          Gurgaon-122015 (HR) India
-        </p>
-      </div>
-      </div>
+              <!-- Contact Us -->
+              <div class="footer-col ">
+                <h4>Contact Us</h4>
+                <p>info@assetedge.in</p>
+                <p>+91-9773880555</p>
+                <p class="contact-footer">
+                  6th floor, Sauch Tower, Plot No.72, Udyog Vihar Phase-IV,
+                  Gurgaon Pin-122015 (HR) India
+                </p>
+              </div>
+          </div>
 
-    </div>
+        </div>
+        </div>
   </div>
 
   <!-- Bottom Bar -->
   <div class="footer-bottom">
     <div class="footer-bottom-container">
-      <p>© 2025. AssetEdge, All rights reserved.</p>
+      <p>© 2026. AssetEdge, All rights reserved.</p>
       <div class="footer-links">
-        <a href="#">Privacy Policy</a>
+        <a href="privacy-policy.html">Privacy Policy</a>
         <span>|</span>
-        <a href="#">Terms & Condition</a>
+        <a href="privacy-policy.html">Terms & Condition</a>
       </div>
     </div>
   </div>
 </footer>
-
+<!--footer End-->
    <script>
     document.addEventListener("DOMContentLoaded", () => {
   const cards = document.querySelectorAll(".about-company-card");
@@ -294,7 +389,7 @@
   });
 });
    </script>  
-
+ <script src="script.js"></script>
   </body>
 
  </html>

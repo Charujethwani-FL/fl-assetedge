@@ -3,10 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>AssetEdge</title>
+
     <!-- Global CSS -->
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="fonts/flaticon.css" />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
       rel="stylesheet"
@@ -16,24 +19,27 @@
 
   <body>
     <header class="main-header">
-      <div class="container">
+      <div class="main-header-container">
         <div class="logo">
           <img src="public/logo-img.jpg" alt="Asset Edge Logo" />
         </div>
 
         <nav class="navbar">
           <ul>
-            <li><a href="home.html" class="active">Home</a></li>
+            <li><a href="index.html" class="active">Home</a></li>
             <li><a href="about.html">About Us</a></li>
             <li><a href="inventory.html">Inventory</a></li>
-
             <li><a href="contact.html">Contact Us</a></li>
           </ul>
+            <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
         </nav>
       </div>
     </header>
-
-    
+   
 
  <!-- hero-home section start -->
 
@@ -43,101 +49,171 @@
           <img src="public/bg-shape.png" alt="">
         </div>
 
-  <div class="home-hero-slider">
-    <!-- SLIDE 1 – HOME (Your existing content) -->
-    <div class="home-hero slide active">
-      <div class="home-hero-content">
-        <h1>Smart Property Solutions<br>
-          <span class="highlight">Asset Excellence</span>
-        </h1>
-        <p>
-          AssetEdge delivers intelligent real estate solutions for buying,
-          selling, and leasing properties. We help you unlock value,
-          reduce risk, and move forward with confidence.
-        </p>
-        <div class="buttons">
-          <a href="inventory.html"><button class="btn-buy">Explore Properties</button></a>
-          <button class="btn-rent">Get Started</button>
+      <div class="home-hero-slider">
+        <!-- SLIDE 1 – HOME (Your existing content) -->
+        <div class="home-hero slide active">
+          <div class="home-hero-content">
+            <h1>Smart Property Solutions<br>
+              <span class="highlight">Asset Excellence</span>
+            </h1>
+            <p>
+              AssetEdge delivers intelligent real estate solutions for buying,
+              selling, and leasing properties. We help you unlock value,
+              reduce risk, and move forward with confidence.
+            </p>
+            <div class="buttons">
+              <a href="inventory.html"><button class="btn-buy">Explore Properties</button></a>
+              <button class="btn-rent">Get Started</button>
+            </div>
+          </div>
+          <div class="home-hero-image">
+            <img src="public/home/home-hero.jpg" alt="Modern house">
+          </div>
         </div>
-      </div>
-      <div class="home-hero-image">
-        <img src="public/home/home-hero.jpg" alt="Modern house">
-      </div>
-    </div>
 
-    <!-- SLIDE 2 – ABOUT US -->
-    <div class="home-hero slide">
-      <div class="home-hero-content">
-        <h1>Who We Are<br>
-          <span class="highlight">About AssetEdge</span>
-        </h1>
-        <p>
-          We are a trusted real estate advisory firm delivering
-          strategic insights, market intelligence, and property
-          solutions tailored to your goals.
-        </p>
-        <div class="buttons">
-          <a href="about.html"><button class="btn-buy">Learn More</button></a>
-          <button class="btn-rent btn-our-story">Our Story</button>
+        <!-- SLIDE 2 – ABOUT US -->
+        <div class="home-hero slide">
+          <div class="home-hero-content">
+            <h1>Who We Are<br>
+              <span class="highlight">About AssetEdge</span>
+            </h1>
+            <p>
+              We are a trusted real estate advisory firm delivering
+              strategic insights, market intelligence, and property
+              solutions tailored to your goals.
+            </p>
+            <div class="buttons">
+              <a href="about.html"><button class="btn-buy">Learn More</button></a>
+              <button class="btn-rent btn-our-story">Our Story</button>
+            </div>
+          </div>
+          <div class="home-hero-image">
+            <img src="public/home/about-home.jpg" alt="About us">
+          </div>
         </div>
-      </div>
-      <div class="home-hero-image">
-        <img src="public/home/about-home.jpg" alt="About us">
-      </div>
-    </div>
 
-    <!-- SLIDE 3 – INVENTORY -->
-    <div class="home-hero slide">
-      <div class="home-hero-content">
-        <h1>Premium Listings<br>
-          <span class="highlight">Our Inventory</span>
-        </h1>
-        <p>
-          Explore a curated inventory of residential and commercial
-          properties designed to match every lifestyle and investment need.
-        </p>
-        <div class="buttons">
-          <a href="inventory.html"><button class="btn-buy">View Inventory</button></a>
-          <a href="contact.html"><button class="btn-rent">Schedule Visit</button></a>
+        <!-- SLIDE 3 – INVENTORY -->
+        <div class="home-hero slide">
+          <div class="home-hero-content">
+            <h1>Premium Listings<br>
+              <span class="highlight">Our Inventory</span>
+            </h1>
+            <p>
+              Explore a curated inventory of residential and commercial
+              properties designed to match every lifestyle and investment need.
+            </p>
+            <div class="buttons">
+              <a href="inventory.html"><button class="btn-buy">View Inventory</button></a>
+              <a href="contact.html"><button class="btn-rent">Schedule Visit</button></a>
+            </div>
+          </div>
+          <div class="home-hero-image">
+            <img src="public/home/home-hero3.jpg" alt="Inventory">
+          </div>
         </div>
-      </div>
-      <div class="home-hero-image">
-        <img src="public/home/home-hero3.jpg" alt="Inventory">
-      </div>
-    </div>
 
-    <!-- SLIDE 4 – CONTACT US -->
-    <div class="home-hero slide">
-      <div class="home-hero-content">
-        <h1>Let’s Connect<br>
-          <span class="highlight">Contact Us</span>
-        </h1>
-        <p>
-          Have questions or ready to take the next step?
-          Our experts are here to guide you with clarity and confidence.
-        </p>
-        <div class="buttons">
-          <a href="contact.html"><button class="btn-buy">Contact Now</button></a>
-          <button class="btn-rent">Book Consultation</button>
+        <!-- SLIDE 4 – CONTACT US -->
+        <div class="home-hero slide">
+          <div class="home-hero-content">
+            <h1>Let’s Connect<br>
+              <span class="highlight">Contact Us</span>
+            </h1>
+            <p>
+              Have questions or ready to take the next step?
+              Our experts are here to guide you with clarity and confidence.
+            </p>
+            <div class="buttons">
+              <a href="contact.html"><button class="btn-buy">Contact Now</button></a>
+              <button class="btn-rent">Book Consultation</button>
+            </div>
+          </div>
+          <div class="home-hero-image">
+            <img src="public/home/home-hero4.jpg" alt="Contact us">
+          </div>
         </div>
-      </div>
-      <div class="home-hero-image">
-        <img src="public/home/home-hero4.jpg" alt="Contact us">
-      </div>
-    </div>
 
-  </div>
-   <div class="pagination-container-home">
-  <div class="home-hero-pagination">
-  <span class="dot active" data-slide="0"></span>
-  <span class="dot" data-slide="1"></span>
-  <span class="dot" data-slide="2"></span>
-  <span class="dot" data-slide="3"></span>
-</div>
-</div>
-    </section>
+      </div>
+      <div class="pagination-container-home">
+      <div class="home-hero-pagination">
+      <span class="dot active" data-slide="0"></span>
+      <span class="dot" data-slide="1"></span>
+      <span class="dot" data-slide="2"></span>
+      <span class="dot" data-slide="3"></span>
+    </div>
+    </div>
+        </section>
 
 <!-- hero home end  -->
+
+
+  <section class="feature-property-sec">
+
+    <div class="main-heading-container ">
+      <h1 class="whychoose-heading">Feature Properties</h1>
+    </div>
+
+    <div class="feature-prop-slider-container">
+        
+        <div class="feature-prop-slider" id="slider">
+            
+            <div class="feature-prop-card" style="background-image: url('https://i.pinimg.com/1200x/9c/fc/63/9cfc632d2a19ee2d442b73bced0cf7f9.jpg');">
+                <div class="feature-prop-content">
+                    <h2 class="feature-prop-title">Penthouse View</h2>
+                    <p class="feature-prop-description">Premium penthouse with skyline view.</p>
+                    <button class="feature-prop-btn">View More &rarr;</button>
+                </div>
+            </div>
+
+            <div class="feature-prop-card" style="background-image: url('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80');">
+                <div class="feature-prop-content">
+                    <h2 class="feature-prop-title">Luxury Residence</h2>
+                    <p class="feature-prop-description">Elegant living with premium finishes.</p>
+                    <button class="feature-prop-btn">View More &rarr;</button>
+                </div>
+            </div>
+
+            <div class="feature-prop-card" style="background-image: url('https://sobharealty.com/sites/default/files/styles/webp/public/2025-11/n0%20116.jpg.webp?itok=wIkUYUjo');">
+                <div class="feature-prop-content">
+                    <h2 class="feature-prop-title">Beachside Villa</h2>
+                    <p class="feature-prop-description">Luxury villa with ocean views.</p>
+                    <button class="feature-prop-btn">View More &rarr;</button>
+                </div>
+            </div>
+
+            <div class="feature-prop-card" style="background-image: url('https://sobharealty.com/sites/default/files/styles/webp/public/2025-11/1006x608%20%E2%80%93%2091.jpg.webp?itok=-rmZYNCp');">
+                <div class="feature-prop-content">
+                    <h2 class="feature-prop-title">Urban Loft</h2>
+                    <p class="feature-prop-description">Modern loft in the city center.</p>
+                    <button class="feature-prop-btn">View More &rarr;</button>
+                </div>
+            </div>
+
+            <div class="feature-prop-card" style="background-image: url('https://sobharealty.com/sites/default/files/styles/webp/public/2025-10/1006x608%20%E2%80%93%2095.jpg.webp?itok=LfjJt-ws');">
+                <div class="feature-prop-content">
+                    <h2 class="feature-prop-title">Modern Tower</h2>
+                    <p class="feature-prop-description">Spacious interiors and garden.</p>
+                    <button class="feature-prop-btn">View More &rarr;</button>
+                </div>
+            </div>
+
+            <div class="feature-prop-card" style="background-image: url('https://i.pinimg.com/1200x/07/f5/54/07f55430b864c6a091a7091214724543.jpg');">
+                <div class="feature-prop-content">
+                    <h2 class="feature-prop-title">Cozy Cottage</h2>
+                    <p class="feature-prop-description">Perfect getaway in the woods.</p>
+                    <button class="feature-prop-btn">View More &rarr;</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="feature-prop-buttons">
+            <button id="prev"><i class="fa-solid fa-arrow-left"></i></button>
+            <button id="next"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+
+    </div>
+
+</section>
 
 
 
@@ -146,12 +222,10 @@
 <!-- why choose us section start -->
 
      <section class="why-choose-us p-sec">
-
     <div class="main-heading-container ">
       <h1 class="whychoose-heading">Why Choose Us</h1>
     </div>
     <div class="why-choose-us-container">
-
         <div class="why-choose-us-images-container">
         <div class="why-choose-us-images">
             <div class="why-choose-us-main-img">
@@ -165,9 +239,9 @@
                     <p>Trusted Clients</p>
                 </div>
             </div>
-        </div>
-        </div>
 
+        </div>
+        </div>
       
          <div class="why-choose-us-content">
             <p class="why-choose-us-subtitle">About Company</p>
@@ -205,7 +279,7 @@
             </div>
         </div>
 
-    </div>
+     </div>
      </section> 
 
 <!-- why choose us end  -->
@@ -227,6 +301,7 @@
           <p class="zfr3Q TMjjoe CDt4Ke">
             All properties are verified by the AsstEdge team to ensure genuine ownership, accurate pricing, and complete transparency.
           </p>
+
         </div>
 
         <div class="feature-box">
@@ -261,9 +336,8 @@
       </div>
     </section>
 
-<!-- key features end  -->
+<!-- key features end  --> 
 
-   
 <!-- feature property section start -->
 
 
@@ -475,55 +549,58 @@
       <footer class="footer">
       <div class="footer-top">
       <div class="footer-container">
-      
+        <div class="bg-footer-img">
+          <img src="public/footer/top-footer-img.png" alt="skyview-building">
+        </div>
       <!-- Logo & Description -->
-      <div class="footer-col logo-col">
-        <img src="public/logo-img.jpg" alt="AssetEdge Logo" class="footer-logo">
-        <p>
-          Your trusted partner for premier office spaces in Delhi/NCR.<br />
-          Lease. Design. Build. Operate.<br />
-        </p>
-      </div>
+          <div class="footer-col logo-col">
+            <img src="public/logo-img.jpg" alt="AssetEdge Logo" class="footer-logo">
+            <p>
+              Your trusted partner for premier office spaces in Delhi/NCR.<br />
+              Lease. Design. Build. Operate.<br />
+            </p>
+          </div>
 
-      <div class="footer-list">
-      <!-- About Us -->
-      <div class="footer-col">
-        <h4>About us</h4>
-        <ul>
-          <li><a href="#">Who we are</a></li>
-          <li><a href="#">Our Team</a></li>
-          <li><a href="#">Our Work Flow</a></li>
-        </ul>
-      </div>
+          <div class="footer-list">
+          <!-- About Us -->
+              <div class="footer-col">
+                <h4>About us</h4>
+                <ul>
+                  <li><a href="#">Who we are</a></li>
+                  <li><a href="#">why AssetEdge</a></li>
+                  <li><a href="#">Our Work Flow</a></li>
+                </ul>
+              </div>
 
-      <!-- Contact Us -->
-      <div class="footer-col">
-        <h4>Contact Us</h4>
-        <p>info@assetedge.in</p>
-        <p>+91-9773880555</p>
-        <p>
-          6th floor, Sauch Tower, Plot No.72, Udyog Vihar Phase-IV,<br>
-          Gurgaon-122015 (HR) India
-        </p>
-      </div>
-      </div>
+              <!-- Contact Us -->
+              <div class="footer-col ">
+                <h4>Contact Us</h4>
+                <p>info@assetedge.in</p>
+                <p>+91-9773880555</p>
+                <p class="contact-footer">
+                  6th floor, Sauch Tower, Plot No.72, Udyog Vihar Phase-IV,
+                  Gurgaon Pin-122015 (HR) India
+                </p>
+              </div>
+          </div>
 
-    </div>
+        </div>
+        </div>
   </div>
 
   <!-- Bottom Bar -->
   <div class="footer-bottom">
     <div class="footer-bottom-container">
-      <p>© 2025. AssetEdge, All rights reserved.</p>
+      <p>© 2026. AssetEdge, All rights reserved.</p>
       <div class="footer-links">
-        <a href="#">Privacy Policy</a>
+        <a href="privacy-policy.html">Privacy Policy</a>
         <span>|</span>
-        <a href="#">Terms & Condition</a>
+        <a href="privacy-policy.html">Terms & Condition</a>
       </div>
     </div>
   </div>
 </footer>
-
+<!--footer End-->
    
     <script>
       document.addEventListener("DOMContentLoaded", function () {
@@ -563,4 +640,5 @@
     <!-- Global JS -->
     <script src="script.js"></script>
   </body>
+
 </html>
