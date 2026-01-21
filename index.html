@@ -14,17 +14,17 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
       rel="stylesheet"
     />
-    <link rel="icon" type="image/png" sizes="16x16" href="public/faviconAE-img.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="public/faviconAE-img.jpg">
   </head>
 
   <body>
-    <header class="main-header">
+    <header class="main-header home-header">
       <div class="main-header-container">
         <div class="logo">
           <img src="public/logo-img.jpg" alt="Asset Edge Logo" />
         </div>
 
-        <nav class="navbar">
+        <nav class="navbar ">
           <ul>
             <li><a href="index.html" class="active">Home</a></li>
             <li><a href="about.html">About Us</a></li>
@@ -43,7 +43,35 @@
 
  <!-- hero-home section start -->
 
-    <section class="hero-home-sec" id="homehero">
+       <section class="hero-home-sec" id="homehero">
+       <div class="home-form">
+        <form class="home-form-container" id="homeForm">
+        <h2 class="home-form-title">Get in Touch</h2>
+
+    <div class="home-form-group">
+        <input type="text" class="home-form-input" id="name" name="name" placeholder="Your Name" required>
+    </div>
+
+    <div class="home-form-group">
+        <input type="email" class="home-form-input" id="email" name="email" placeholder="Your Email" required>
+    </div>
+
+    <div class="home-form-group">
+        <input type="tel" class="home-form-input" id="phone" name="phone" placeholder="Phone Number" required>
+        
+    </div>
+
+    <div class="home-form-group">
+        <textarea class="home-form-textarea" id="message" name="message" placeholder="Your Message" required></textarea>
+    </div>
+
+    <button type="submit" class="home-form-button">Submit</button>
+
+    <p class="home-form-error" id="formError">Please fill in all fields.</p>
+    <p class="home-form-success" id="formSuccess">Form submitted successfully!</p>
+    <button type="button" class="home-form-close" onclick="closeForm()">×</button>
+        </form>
+        </div>
   
         <div class="bg-img-shape">
           <img src="public/bg-shape.png" alt="">
@@ -141,15 +169,15 @@
       <span class="dot" data-slide="3"></span>
     </div>
     </div>
-        </section>
+       </section>
 
-<!-- hero home end  -->
+    <!-- hero home end  -->
 
 
-  <section class="feature-property-sec">
+     <section class="feature-property-sec">
 
     <div class="main-heading-container ">
-      <h1 class="whychoose-heading">Feature Properties</h1>
+      <h1 class="whychoose-heading">Mandatory Properties</h1>
     </div>
 
     <div class="feature-prop-slider-container">
@@ -172,7 +200,7 @@
                 </div>
             </div>
 
-            <div class="feature-prop-card" style="background-image: url('https://sobharealty.com/sites/default/files/styles/webp/public/2025-11/n0%20116.jpg.webp?itok=wIkUYUjo');">
+            <div class="feature-prop-card" style="background-image: url('https://sobharealty.com/sites/default/files/styles/webp/public/2025-10/1006x608%20%E2%80%93%2095.jpg.webp?itok=LfjJt-ws');">
                 <div class="feature-prop-content">
                     <h2 class="feature-prop-title">Beachside Villa</h2>
                     <p class="feature-prop-description">Luxury villa with ocean views.</p>
@@ -180,7 +208,7 @@
                 </div>
             </div>
 
-            <div class="feature-prop-card" style="background-image: url('https://sobharealty.com/sites/default/files/styles/webp/public/2025-11/1006x608%20%E2%80%93%2091.jpg.webp?itok=-rmZYNCp');">
+            <div class="feature-prop-card" style="background-image: url('https://i.pinimg.com/1200x/07/f5/54/07f55430b864c6a091a7091214724543.jpg');">
                 <div class="feature-prop-content">
                     <h2 class="feature-prop-title">Urban Loft</h2>
                     <p class="feature-prop-description">Modern loft in the city center.</p>
@@ -205,21 +233,21 @@
             </div>
 
         </div>
+        
+      
+      <div class="feature-prop-buttons">
+          <button id="prev"><i class="fa-solid fa-arrow-left"></i></button>
+          <button id="next"><i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+      </div>
 
-        <div class="feature-prop-buttons">
-            <button id="prev"><i class="fa-solid fa-arrow-left"></i></button>
-            <button id="next"><i class="fa-solid fa-arrow-right"></i></button>
-        </div>
-
-    </div>
-
-</section>
-
-
+  </section>
 
 
 
-<!-- why choose us section start -->
+
+
+     <!-- why choose us section start -->
 
      <section class="why-choose-us p-sec">
     <div class="main-heading-container ">
@@ -282,9 +310,9 @@
      </div>
      </section> 
 
-<!-- why choose us end  -->
+   <!-- why choose us end  -->
 
-<!-- Key features section start -->
+   <!-- Key features section start -->
 
     <section class="keyfeature-sec p-sec">
 
@@ -301,7 +329,6 @@
           <p class="zfr3Q TMjjoe CDt4Ke">
             All properties are verified by the AsstEdge team to ensure genuine ownership, accurate pricing, and complete transparency.
           </p>
-
         </div>
 
         <div class="feature-box">
@@ -337,12 +364,6 @@
     </section>
 
 <!-- key features end  --> 
-
-<!-- feature property section start -->
-
-
-<!-- feature Property  end  -->
-
 
 <!-- Our Partners section start -->
 
@@ -567,7 +588,7 @@
                 <h4>About us</h4>
                 <ul>
                   <li><a href="#">Who we are</a></li>
-                  <li><a href="#">why AssetEdge</a></li>
+                  <li><a href="#">Why AssetEdge</a></li>
                   <li><a href="#">Our Work Flow</a></li>
                 </ul>
               </div>
@@ -589,7 +610,7 @@
   </div>
 
   <!-- Bottom Bar -->
-  <div class="footer-bottom">
+  <div class = "footer-bottom">
     <div class="footer-bottom-container">
       <p>© 2026. AssetEdge, All rights reserved.</p>
       <div class="footer-links">
