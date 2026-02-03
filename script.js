@@ -204,12 +204,36 @@ startAutoSlide();
    hamburger button  
 =========================== */
 
- const hamburger = document.querySelector('.hamburger');
-  const navMenu = document.querySelector('.navbar ul');
+ // Grab elements
+const hamburger = document.getElementById("hamburger");
+const menuOverlay = document.getElementById("menuOverlay");
+const closeMenu = document.getElementById("closeMenu");
+const menuLinks = document.querySelectorAll(".menu-overlay a");
 
-  hamburger.addEventListener('click', () => {
-    navMenu.classList.toggle('active');
+// Function to toggle menu
+function toggleMenu() {
+  hamburger.classList.toggle("active");     // toggle cross
+  menuOverlay.classList.toggle("active");   // toggle overlay
+}
+
+// Click hamburger
+hamburger.addEventListener("click", toggleMenu);
+
+// Close overlay
+closeMenu.addEventListener("click", () => {
+  menuOverlay.classList.remove("active");
+});
+
+// Close overlay when clicking any menu link
+menuLinks.forEach(link => {
+  link.addEventListener("click", () => {
+    hamburger.classList.remove("active");   // reset cross
+    menuOverlay.classList.remove("active"); // hide overlay
   });
+
+  
+
+});
 
  /* ===========================
      DRAG SCROLLING
@@ -273,7 +297,6 @@ document.addEventListener("DOMContentLoaded", function () {
         updateCount();
     }
 
-    // Intersection Observer
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting && !started) {
@@ -281,13 +304,48 @@ document.addEventListener("DOMContentLoaded", function () {
                 startCounting();
             }
         });
-    }, { threshold: 0.5 }); // Trigger when half of the section is visible
+    }, { threshold: 0.5 }); 
 
     observer.observe(countElement);
 });
 
 
+/* ===========================
+      pop up form 
+   =========================== */
 
+        (function () {
+  document.addEventListener('DOMContentLoaded', function () {
+    const openBtn = document.getElementById('openPropertyDetailPopup');
+    const popupOverlay = document.getElementById('propertyPopupOverlay');
+    const closeBtn = document.getElementById('closePropertyPopup');
+
+    if (!openBtn || !popupOverlay || !closeBtn) return;
+
+ 
+    openBtn.addEventListener('click', function (e) {
+      e.preventDefault();
+      popupOverlay.style.display = 'flex';
+      
+      setTimeout(() => popupOverlay.classList.add('show'), 10);
+    });
+
+   
+    closeBtn.addEventListener('click', function (e) {
+      e.stopPropagation();
+      popupOverlay.classList.remove('show');
+      setTimeout(() => popupOverlay.style.display = 'none', 250); 
+    });
+
+   
+    popupOverlay.addEventListener('click', function (e) {
+      if (e.target === popupOverlay) {
+        popupOverlay.classList.remove('show');
+        setTimeout(() => popupOverlay.style.display = 'none', 250);
+      }
+    });
+  });
+})();
 
 
 
@@ -301,35 +359,38 @@ document.addEventListener("DOMContentLoaded", function () {
     countEl.textContent = `${totalProperties} Properties Found`;
   } 
 
-  // /* ===========================
-  //     DISCOVER PROPERTIES (AUTO LOAD)
-  //     ===========================      */
+  
 
-  // document.addEventListener("DOMContentLoaded", () => {
-  //   const categories = [
-  //     { name: "Office", icon: "public/discover-properties/apartment.png" },
-  //     { name: "Preleased", icon: "public/discover-properties/villa.png" },
-  //     { name: "Retail", icon: "public/discover-properties/office.png" },
-  //     { name: "Co-working", icon: "public/discover-properties/shop.png" },
-  //     { name: "Sale", icon: "public/discover-properties/house.png" },
-  //     { name: "Warehouse", icon: "public/discover-properties/warehouse.png" }
-  //   ];
+    /* ===========================
+     Privacy policy
+     ===========================      */
 
-  //   const wrapper = document.getElementById("discoverCategories");
 
-  //   if (wrapper) {
-  //     wrapper.innerHTML = categories
-  //       .map((c, i) => `
-  //         <div class="discover-item" data-aos="fade-up" data-aos-delay="${i * 100}">
-  //           <a href="/inventory/" class="discover-link">
-  //             <img src="${c.icon}" alt="${c.name}" class="discover-icon">
-  //             <p class="discover-name">${c.name}</p>
-  //             <p class="discover-count">3 Properties</p>
-  //           </a>
-  //         </div>
-  //       `)
-  //       .join("");
-  //   }
-  // });
+  document.addEventListener("DOMContentLoaded", () => {
+  console.log("SCRIPT LOADED");
 
- 
+  const tabs = document.querySelectorAll(".tp-tab");
+  const contents = document.querySelectorAll(".tp-content");
+  const indicator = document.querySelector(".tp-indicator");
+
+  if (!tabs.length || !contents.length || !indicator) {
+    console.error("Missing elements", { tabs, contents, indicator });
+    return;
+  }
+
+  tabs.forEach((tab, index) => {
+    tab.addEventListener("click", () => {
+      tabs.forEach(t => t.classList.remove("active"));
+      contents.forEach(c => c.classList.remove("active"));
+
+      tab.classList.add("active");
+      document.getElementById(tab.dataset.tab).classList.add("active");
+
+      indicator.style.transform = `translateX(${index * 180}px)`;
+
+    });
+
+  });
+
+});
+

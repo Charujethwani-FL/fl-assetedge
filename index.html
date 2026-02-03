@@ -15,6 +15,8 @@
       rel="stylesheet"
     />
     <link rel="icon" type="image/png" sizes="16x16" href="public/faviconAE-img.jpg">
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css">
+
   </head>
 
   <body>
@@ -25,20 +27,33 @@
         </div>
 
         <nav class="navbar ">
-          <ul>
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="inventory.html">Inventory</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
+        <ul>
+            <li><a href="index.html" class=" menu-link active">Home</a></li>
+            <li><a href="about.html" class="menu-link">About Us</a></li>
+            <li><a href="inventory.html" class="menu-link">Inventory</a></li>
+            <li><a href="contact.html" class="menu-link">Contact Us</a></li>
           </ul>
-            <div class="hamburger">
+           
+        <div class="hamburger" id="hamburger">
         <span></span>
         <span></span>
         <span></span>
-      </div>
+        </div>
         </nav>
-      </div>
-    </header>
+        </div>
+        </header>
+
+    <!-- Mobile / Tablet Overlay Menu -->
+  <div class="menu-overlay" id="menuOverlay">
+    <button id="closeMenu" class="close-btn-menu">&times;</button>
+    <ul>
+      <li><a href="index.html" class="menu-link">Home</a></li>
+      <li><a href="about.html" class="menu-link">About us</a></li>
+      <li><a href="inventory.html" class="menu-link">Property</a></li>
+      <li><a href="contact.html" class="menu-link">Contact Us</a></li>
+      <li><a href="privacy-policy.html" class="menu-link">Privacy Policy</a></li>  
+    </ul>
+  </div>
    
 
  <!-- hero-home section start -->
@@ -78,106 +93,104 @@
         </div>
 
       <div class="home-hero-slider">
-        <!-- SLIDE 1 – HOME (Your existing content) -->
-        <div class="home-hero slide active">
-          <div class="home-hero-content">
-            <h1>Smart Property Solutions<br>
-              <span class="highlight">Asset Excellence</span>
-            </h1>
-            <p>
-              AssetEdge delivers intelligent real estate solutions for buying,
-              selling, and leasing properties. We help you unlock value,
-              reduce risk, and move forward with confidence.
-            </p>
-            <div class="buttons">
-              <a href="inventory.html"><button class="btn-buy">Explore Properties</button></a>
-              <button class="btn-rent">Get Started</button>
+          <!-- SLIDE 1 – HOME (Your existing content) -->
+          <div class="home-hero slide active">
+            <div class="home-hero-content">
+              <h1>Smart Property Solutions<br>
+                <span class="highlight">Asset Excellence</span>
+              </h1>
+              <p>
+                AssetEdge is a trusted real estate advisory focused on office assets nationwide. We help organizations secure high-quality, legally sound workspaces through expert acquisition, leasing, and development services - simplifying complex real estate decisions with clarity and precision.
+              </p>
+
+              <div class="home-hero-buttons">
+                <a href="inventory.html"><button class="btn-buy">Explore Properties</button></a>
+                <button class="btn-rent">Get Started</button>
+              </div>
+            </div>
+            <div class="home-hero-image">
+              <img src="public/home/home-hero.jpg" alt="Modern house">
             </div>
           </div>
-          <div class="home-hero-image">
-            <img src="public/home/home-hero.jpg" alt="Modern house">
-          </div>
-        </div>
 
-        <!-- SLIDE 2 – ABOUT US -->
-        <div class="home-hero slide">
-          <div class="home-hero-content">
-            <h1>Who We Are<br>
-              <span class="highlight">About AssetEdge</span>
-            </h1>
-            <p>
-              We are a trusted real estate advisory firm delivering
-              strategic insights, market intelligence, and property
-              solutions tailored to your goals.
-            </p>
-            <div class="buttons">
-              <a href="about.html"><button class="btn-buy">Learn More</button></a>
-              <button class="btn-rent btn-our-story">Our Story</button>
+          <!-- SLIDE 2 – ABOUT US -->
+          <div class="home-hero slide">
+            <div class="home-hero-content">
+              <h1>Who We Are<br>
+                <span class="highlight">About AssetEdge</span>
+              </h1>
+              <p>
+                We are a trusted real estate advisory firm offering strategic expertise, deep market intelligence, and tailored property solutions aligned with your business goals.
+              </p>
+              <div class="home-hero-buttons">
+                <a href="about.html"><button class="btn-buy">Learn More</button></a>
+                <button class="btn-rent btn-our-story">Our Story</button>
+              </div>
+            </div>
+            <div class="home-hero-image">
+              <img src="public/home/about-home.jpg" alt="About us">
             </div>
           </div>
-          <div class="home-hero-image">
-            <img src="public/home/about-home.jpg" alt="About us">
-          </div>
-        </div>
 
-        <!-- SLIDE 3 – INVENTORY -->
-        <div class="home-hero slide">
-          <div class="home-hero-content">
-            <h1>Premium Listings<br>
-              <span class="highlight">Our Inventory</span>
-            </h1>
-            <p>
-              Explore a curated inventory of residential and commercial
-              properties designed to match every lifestyle and investment need.
-            </p>
-            <div class="buttons">
-              <a href="inventory.html"><button class="btn-buy">View Inventory</button></a>
-              <a href="contact.html"><button class="btn-rent">Schedule Visit</button></a>
+          <!-- SLIDE 3 – INVENTORY -->
+          <div class="home-hero slide">
+            <div class="home-hero-content">
+              <h1>Premium Listings<br>
+                <span class="highlight">Our Inventory</span>
+              </h1>
+
+              <p>
+                Explore our exclusive portfolio of thoughtfully chosen commercial properties built for modern enterprises and smart investors. 
+              </p>
+              <div class="home-hero-buttons">
+                <a href="inventory.html"><button class="btn-buy">View Inventory</button></a>
+                <a href="contact.html"><button class="btn-rent">Schedule Visit</button></a>
+              </div>
+            </div>
+            <div class="home-hero-image">
+              <img src="public/home/home-hero3.jpg" alt="Inventory">
             </div>
           </div>
-          <div class="home-hero-image">
-            <img src="public/home/home-hero3.jpg" alt="Inventory">
-          </div>
-        </div>
 
-        <!-- SLIDE 4 – CONTACT US -->
-        <div class="home-hero slide">
-          <div class="home-hero-content">
-            <h1>Let’s Connect<br>
-              <span class="highlight">Contact Us</span>
-            </h1>
-            <p>
-              Have questions or ready to take the next step?
-              Our experts are here to guide you with clarity and confidence.
-            </p>
-            <div class="buttons">
-              <a href="contact.html"><button class="btn-buy">Contact Now</button></a>
-              <button class="btn-rent">Book Consultation</button>
+          <!-- SLIDE 4 – CONTACT US -->
+          <div class="home-hero slide">
+            <div class="home-hero-content">
+              <h1>Let’s Connect<br>
+                <span class="highlight">Contact Us</span>
+              </h1>
+              <p>
+                Have questions or ready to take the next step?
+                Our experts are here to guide you with clarity and confidence.
+              </p>
+              <div class="home-hero-buttons">
+                <a href="contact.html"><button class="btn-buy">Contact Now</button></a>
+                <button class="btn-rent">Book Consultation</button>
+              </div>
+            </div>
+            <div class="home-hero-image">
+              <img src="public/home/home-hero4.jpg" alt="Contact us">
             </div>
           </div>
-          <div class="home-hero-image">
-            <img src="public/home/home-hero4.jpg" alt="Contact us">
-          </div>
-        </div>
-
       </div>
+
       <div class="pagination-container-home">
       <div class="home-hero-pagination">
       <span class="dot active" data-slide="0"></span>
       <span class="dot" data-slide="1"></span>
       <span class="dot" data-slide="2"></span>
       <span class="dot" data-slide="3"></span>
-    </div>
-    </div>
-       </section>
+      </div>
+      </div>
+      </section>
 
     <!-- hero home end  -->
-
+     
+    <!-- Mandatory property start  -->
 
      <section class="feature-property-sec">
 
     <div class="main-heading-container ">
-      <h1 class="whychoose-heading">Mandatory Properties</h1>
+      <h1 class="whychoose-heading">Exclusive Mandated Properties</h1>
     </div>
 
     <div class="feature-prop-slider-container">
@@ -232,7 +245,7 @@
                 </div>
             </div>
 
-        </div>
+            </div>
         
       
       <div class="feature-prop-buttons">
@@ -240,11 +253,9 @@
           <button id="next"><i class="fa-solid fa-arrow-right"></i></button>
       </div>
       </div>
+     </section>
 
-  </section>
-
-
-
+     <!-- Mandatory property end  -->
 
 
      <!-- why choose us section start -->
@@ -273,10 +284,10 @@
       
          <div class="why-choose-us-content">
             <p class="why-choose-us-subtitle">About Company</p>
-            <h2 class="why-choose-us-title">Your Mandatory Property Compliance Partner</h2>
+            <h2 class="why-choose-us-title">Your Mandated Property Compliance Partner</h2>
 
             <p class="why-choose-us-description">
-               AssetEdge provides reliable mandatory property compliance and asset management services. We help property owners and businesses meet regulatory requirements while protecting asset value.
+               AssetEdge provides reliable, mandated property compliance and asset management services. We help property owners and businesses meet regulatory requirements while protecting asset value. 
             </p>
 
             <div class="why-choose-us-features">
@@ -284,7 +295,7 @@
                     <span class="why-choose-us-icon"><img src="public/why-choose-us/Give-Womens-Rights.png" alt=""></span>
                     <div>
                         <h4>Trusted Partner</h4>
-                        <p>Reliable compliance support ensuring your property meets all mandatory regulations without hassle.</p>
+                        <p>End-to-end compliance support that ensures your property meets every regulatory requirement-smoothly and stress-free.</p>
                     </div>
                 </div>
 
@@ -292,15 +303,15 @@
                     <span class="why-choose-us-icon"><img src="public/why-choose-us/rating.png" alt=""></span>
                     <div>
                         <h4>Fastpace Platform</h4>
-                        <p>Efficient, streamlined processes for easy property compliance and asset management.</p>
+                        <p> A streamlined, efficient approach to property compliance and asset management, designed for speed and simplicity</p>
                     </div>
                 </div>
 
                 <div class="why-choose-us-feature">
                     <span class="why-choose-us-icon"><img src="public/why-choose-us/live-chat (1).png" alt=""></span>
                     <div>
-                        <h4>Tested Reliability</h4>
-                        <p>Experienced team delivering consistent, trustworthy results you can count on every time.</p>
+                        <h4>Proven Reliability</h4>
+                        <p>A seasoned team delivering dependable results and consistent service you can rely on, every step of the way.</p>
                     </div>
                 </div>
 
@@ -327,7 +338,7 @@
           </div>
           <h3>Verified Listings</h3>
           <p class="zfr3Q TMjjoe CDt4Ke">
-            All properties are verified by the AsstEdge team to ensure genuine ownership, accurate pricing, and complete transparency.
+            All properties are verified by the AsstEdge experts to ensure genuine ownership, accurate pricing, and complete transparency. 
           </p>
         </div>
 
@@ -337,7 +348,7 @@
           </div>
           <h3>Regular Updates</h3>
           <p class="zfr3Q TMjjoe CDt4Ke">
-            Property listings are frequently updated with the latest availability and market changes, so you always stay informed.
+            Property listings are frequently updated with the latest availability and market changes, so you always stay informed. 
           </p>
         </div>
 
@@ -345,16 +356,17 @@
             <div class="feature-img-icon">
             <img src="public/key-feature/easy.svg" alt="Easy Contact Process">
           </div>
-          <h3>Easy Contact </h3>
+          <h3>Easy Access </h3>
           <p>
             Get in touch directly with property owners or agents through a simple, fast, and transparent contact system.
           </p>
+
         </div>
 
         <div class="feature-box">
            <div class="feature-img-icon">
             <img src="public/key-feature/high.svg" alt="High-quality Property Details">
-          </div>
+           </div>
           <h3>Listing Details</h3>
           <p>
            View detailed descriptions, clear images, and essential specifications to make confident property decisions.
@@ -372,9 +384,7 @@
           <h2 class="our-partner-title">Our Partners</h2>
 
           <p class="our-partner-subtitle">
-            Rerum morbi wisi purus illum, dolor consectetur nulla. Fuga rem
-            inventore scelerisque, wisi hac illo wisi platea natus ante anim
-            convallis.
+          We are grateful to our partners who have collaborated with us in delivering seamless leasing solutions and long-term value.
           </p>
           <!-- <div class="partners-grid-container">
             <ul class="our-partner-grid row our-partner-border reveal">
@@ -621,7 +631,14 @@
     </div>
   </div>
 </footer>
+
 <!--footer End-->
+
+<a href="tel:+919773880555" class="floating-call-btn" aria-label="Call Us">
+    <i class="fi fi-sr-phone-call"></i>
+     
+  <span class="pulse"></span>
+</a>
    
     <script>
       document.addEventListener("DOMContentLoaded", function () {
@@ -635,14 +652,13 @@
             });
           },
           {
-            threshold: 0.2, // element triggers when 20% visible
+            threshold: 0.2, 
           }
         );
 
         reveals.forEach((elem) => observer.observe(elem));
         
       });
-
 
       function togglePartners() {
       const extras = document.querySelectorAll('.extra-partners');
@@ -655,7 +671,18 @@
       });
 
       btn.textContent = isOpen ? 'View More' : 'View Less';
+
     }
+
+  // const hamburger = document.getElementById("hamburger");
+  // const menuOverlay = document.getElementById("menuOverlay");
+
+  // hamburger.addEventListener("click", () => {
+  //   hamburger.classList.toggle("active");
+  //   menuOverlay.classList.toggle("active");
+  // });
+
+
 
     </script>
     <!-- Global JS -->

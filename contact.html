@@ -6,9 +6,13 @@
   <title>Contact - AssetEdge</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" sizes="16x16" href="public/faviconAE-img.jpg">
-</head> 
-<body>
+  <link rel="icon" type="image/png" sizes="16x16" href="public/faviconAE-img.jpg">
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css">
+    <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/css/intlTelInput.css"
+/>
+  </head> 
+  <body>
 
    <header class="main-header">
     <div class="main-header-container">
@@ -21,93 +25,13 @@
           <li><a href="index.html" >Home</a></li>
           <li><a href="about.html">About Us</a></li>
           <li><a href="inventory.html">Inventory</a></li>
-
           <li><a href="contact.html" class="active">Contact Us</a></li>
         </ul>
-      </nav>
-    </div>
-  </header>
-   <!-- <section class="hero-aboutus-sec p-sec">
-
-    <div class="overlay"></div>
-    <div class="hero-content about">
-         
-        <div class="hero-breadcrum-container">
-
-            <div class="main-heading-container ">
-                <h1 class="whychoose-heading">CONTACT US</h1>
-            </div>
-
-            <nav class="breadcrumb">
-                <a href="#" class="breadcrumb-item">Home</a>
-                <span class="separator">›</span>
-                <span class="breadcrumb-item current-page">Contact us</span>
-            </nav>
-        </div>
-    
-    </div>
- 
-    </section> -->
-
-  <!-- <section class="hero-contact-sec">
- 
-      <div class="hero-content">
-          <span class="tag">Empowering Your Business Growth</span>
-
-          <h1>Secure the Perfect Space <br> for Your Success</h1>
-
-          <p class="subtitle">
-              Discover premium commercial properties tailored for your business—with flexible leasing options and strategic locations.
-          </p>
-
-          <div class="hero-buttons">
-              <button class="btn-primary">Find Your Ideal Property</button>
-              <button class="btn-outline">Contact Us</button>
-          </div>
-
-          <div class="info-box">
-              <h3>Featured Opportunity</h3>
-              <p><strong>Prime Commercial Leasing – Available Now</strong></p>
-
-              <p class="desc">
-                  Explore high-value office, retail, and industrial spaces designed to elevate your operations.
-              </p>
-          </div>
-      </div> 
-
-      
-            <div class="card-container-herosec">
-      <div class="cards-wrapper"> 
-          <div class="card-scroller" id="cardScroller">
-
-              <div class="card">
-                  <img src="public/contact/card1-img.jpg" alt="Office Tower">
-                  <h4>Downtown Office Tower</h4>
-                  <p>Modern corporate suites with premium amenities.</p>
-              </div>
-
-              <div class="card">
-                  <img src="public/contact/card2-img.png" alt="Retail Space">
-                  <h4>Central Plaza Retail</h4>
-                  <p>High-foot-traffic commercial storefronts.</p>
-              </div>
-
-              <div class="card">
-                  <img src="public/contact/card3-img.png" alt="Warehouse">
-                  <h4>Industrial Warehouse Zone</h4>
-                  <p>Spacious & secure storage-ready facilities.</p>
-              </div>
-
-              <div class="card">
-                  <img src="public/contact/card4-img.jpg" alt="Business Park">
-                  <h4>Corporate Business Park</h4>
-                  <p>Flexible office plans for growing businesses.</p>
-              </div>
-          </div>
+        </nav>
       </div>
-      </div>
-  </section> -->
-<section class="breadcrumbs-section">
+      </header>
+
+ <section class="breadcrumbs-section">
   <div class="breadcrumb">
     <h1 class="breadcrumb-heading">Contact Us</h1>
   <a href="index.html">Home</a>
@@ -121,7 +45,6 @@
   ><img src="public/contact/arrow-img.png" alt="">
 </div>
    <!-- <div class="bg-image-right">
-        
         <img src="public/inventory/Deco-contact-2.png" alt="">
       </div> -->
  
@@ -156,15 +79,14 @@
         </div>
 
         <div class="input-group">
+            <label>Phone Number</label>
+          <input type="tel" id="phone" placeholder="Enter your number" required>
+        </div>
+
+        <div class="input-group">
           <label>Message</label>
           <textarea rows="5" id="message" placeholder="Leave us Message" required></textarea>
         </div>
-
-        
-        <!-- <div class="privacy">
-          <input type="checkbox" id="agree" required>
-          <label for="agree">I agree to the friendly <a href="#">privacy policy</a></label>
-        </div> -->
 
         <button type="submit" class="btn">Send Message</button>
       </form>
@@ -192,7 +114,9 @@
             <p>91233 24921</p>
           </div>
         </div>
-      </div>
+        
+        </div>
+     
 
     </div>
 
@@ -267,7 +191,26 @@
     </div>
   </div>
 </footer>
+
 <!--footer End-->
+
+<a href="tel:+919773880555" class="call-btn" aria-label="Call Us">
+    <i class="fi fi-sr-phone-call"></i>  
+  <span class="pulse"></span>
+</a>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
+
+<script>
+  const phoneInput = document.querySelector("#phone");
+
+  window.intlTelInput(phoneInput, {
+    initialCountry: "in",  
+    separateDialCode: true,
+    utilsScript:
+      "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/utils.js"
+  });
+</script>
 
 <script src="script.js"></script>
 </body>
