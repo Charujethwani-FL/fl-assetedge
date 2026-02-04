@@ -3593,7 +3593,7 @@ display: grid;
 
 .interoy-detail-hero-box {
   background: #ffffff;
-  padding: 36px 48px;
+  padding: 35px 48px 30px !important;
   width: 72%;
   margin: -130px auto -150px;
   position: relative;
@@ -3631,7 +3631,7 @@ display: grid;
 .interoy-detail-hero-box .right-container img {
   width: 800px;
   padding-top: 20px; 
-  height: 220px;     
+  height: 200px !important;     
   opacity: 0.27;
   pointer-events: none;     
 }
@@ -3656,7 +3656,7 @@ display: grid;
   font-size: 38px;
   font-weight: 700;
   color:#006599;
-  margin: 10px 0;
+  margin-bottom: 10px;
 }
 
 .interoy-detail-address {

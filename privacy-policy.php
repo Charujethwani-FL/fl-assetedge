@@ -8,6 +8,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="public/faviconAE-img.jpg">
      <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css">
 
+
 </head>
 <body>
 
@@ -19,10 +20,10 @@
 
         <nav class="navbar">
           <ul>
-            <li><a href="index.html" class="">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="inventory.html">Inventory</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="index.php" class="">Home</a></li>
+            <li><a href="about.php">About Us</a></li>
+            <li><a href="inventory.php">Inventory</a></li>
+            <li><a href="contact.php">Contact Us</a></li>
           </ul>
         </nav>
       </div>
@@ -230,70 +231,20 @@
     </div>
     </section>
 
-     <!-- footer -->
+     
+<!-- footer -->
+  <?php
+    include('include/footer.php');
+  ?>
 
-      <footer class="footer">
-      <div class="footer-top">
-      <div class="footer-container">
-      <div class="bg-footer-img">
-      <img src="public/footer/top-footer-img.png" alt="skyview-building">
-      </div>
-        
-       <!-- Logo & Description -->
-          <div class="footer-col logo-col">
-            <img src="public/logo-img.jpg" alt="AssetEdge Logo" class="footer-logo">
-            <p>
-              Your trusted partner for premier office spaces in Delhi/NCR.<br />
-              Lease. Design. Build. Operate.<br />
-            </p>
-          </div>
-
-          <div class="footer-list">
-          <!-- About Us -->
-              <div class="footer-col">
-                <h4>About us</h4>
-                <ul>
-                  <li><a href="#">Who we are</a></li>
-                  <li><a href="#">Why AssetEdge</a></li>
-                  <li><a href="#">Our Work Flow</a></li>
-                </ul>
-              </div>
-
-              <!-- Contact Us -->
-              <div class="footer-col ">
-                <h4>Contact Us</h4>
-                <p>info@assetedge.in</p>
-                <p>+91-9773880555</p>
-                <p class="contact-footer">
-                  6th floor, Sauch Tower, Plot No.72, Udyog Vihar Phase-IV,
-                  Gurgaon Pin-122015 (HR) India
-                </p>
-              </div>
-          </div>
-
-        </div>
-        </div>
-     </div>
-
-  <!-- Bottom Bar -->
-  <div class="footer-bottom">
-    <div class="footer-bottom-container">
-      <p>© 2026. AssetEdge, All rights reserved.</p>
-      <div class="footer-links">
-        <a href="privacy-policy.html">Privacy Policy</a>
-        <span>|</span>
-        <a href="privacy-policy.html">Terms & Condition</a>
-      </div>
-    </div>
-  </div>
-</footer>
 <!--footer End-->
 
-  <a href="tel:+919773880555" class="call-btn" aria-label="Call Us">
-    <i class="fi fi-sr-phone-call"></i>
-     
+<a href="tel:+919773880555" class="floating-call-btn" aria-label="Call Us">
+    <i class="fi fi-sr-phone-call"></i>  
   <span class="pulse"></span>
 </a>
+
+
  <script>
   document.addEventListener("DOMContentLoaded", () => {
   // Tabs functionality
@@ -333,49 +284,6 @@
     }); 
   });
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
  </script>

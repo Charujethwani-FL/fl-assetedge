@@ -1,0 +1,914 @@
+{
+  "ae-prop-001": {
+    "slug": "unitech-cyber-park-16000",
+    "title": "Unitech Cyber Park",
+    "address": "405 N Wabash Ave  Chicago, IL, 60611",
+    "availableArea": "16,000",
+    "description": "Unitech Cyber Park is one of Gurugram’s most prominent commercial office destinations, strategically located in Sector 39 along the busy NH-48 corridor. Designed to meet the needs of modern enterprises, this premium business park offers a dynamic workspace environment with excellent connectivity to key parts of Delhi NCR. The property is known for its contemporary architecture, spacious office layouts, and professional ecosystem that supports businesses of all sizes-from fast-growing startups to established corporate brands. With high-grade infrastructure, well-maintained common areas, and essential business amenities, Unitech Cyber Park continues to remain a preferred choice for companies seeking a prestigious address. Its proximity to HUDA City Centre Metro Station, major residential hubs, and leading hospitality options adds further convenience for employees and visitors alike. For organizations looking for a well-managed commercial space in Gurugram, Unitech Cyber Park delivers both visibility and value.",
+
+     "space-rows": [
+        {
+          "floor": "1st Floor, Suite 2",
+          "size": "2,482 SF",
+          "type": "Lease",
+          "availability": "Immediate"
+        },
+
+        {
+          "floor": "1st Floor, Suite 1",
+          "size": "2,000 – 5,301 SF",
+          "type": "Lease",
+          "availability": "Immediate"
+        }
+
+      ],
+
+    "highlights": [
+      "Landmark Business Hub",
+      "Modern Architecture",
+      "Corporate Ecosystem",
+      "High Leasing Demand"
+    ],
+
+    "amenities": [
+      "Cafeteria",
+      "Parking",
+      "Security",
+      "Elevators"
+      
+    ],
+    
+    "image": ["public/inventory/property/ucp.jpg"],
+
+     "images-hero": [
+        "public/inventory-detail/img1.jpg",
+        "public/inventory-detail/img2.jpg",
+        "public/inventory-detail/img3.jpg"
+      ]
+
+  },
+  "ae-prop-002": {
+    "slug": "unitech-cyber-park-8200",
+    "title": "Unitech Cyber Park",
+    "availableArea": "8,200",
+    "description": "Unitech Cyber Park stands as a landmark commercial development that blends business efficiency with an elevated workplace experience. Located in the heart of Gurugram’s thriving corporate belt, this office complex offers a sophisticated setting for companies looking to operate in a high-growth environment. With thoughtfully designed office spaces, seamless access to major highways, and a vibrant surrounding business community, Cyber Park provides the perfect foundation for productivity and expansion. The development is supported by modern facilities, professional maintenance standards, and a strong corporate presence, making it ideal for businesses seeking long-term stability. Whether you are establishing a new headquarters or expanding your operations, Unitech Cyber Park offers an address that reflects credibility, ambition, and success in India’s commercial real estate landscape.",
+    
+     "space-rows": [
+        {
+          "floor": "1st Floor, Suite 2",
+          "size": "2,482 SF",
+          "type": "Lease",
+          "availability": "Immediate"
+        },
+
+        {
+          "floor": "1st Floor, Suite 1",
+          "size": "2,000 – 5,301 SF",
+          "type": "Lease",
+          "availability": "Immediate"
+        }
+
+      ],
+    "highlights": [
+      "Landmark Business Hub",
+      "Modern Architecture",
+      "Corporate Ecosystem",
+      "High Leasing Demand"
+    ],
+    "amenities": [
+      "Cafeteria",
+      "Parking",
+      "Security",
+      "Elevators"
+    ],
+    "image": ["public/inventory/property/ucp.jpg"] ,
+
+     "images-hero": [
+        "public/inventory-detail/img1.jpg",
+        "public/inventory-detail/img2.jpg",
+        "public/inventory-detail/img3.jpg"
+      ]
+  },
+
+  "ae-prop-003": {
+    "slug": "unitech-cyber-park-7800",
+    "title": "Unitech Cyber Park",
+    "availableArea": "7,800",
+    "description": "Unitech Cyber Park is a prime commercial asset positioned in one of Gurugram’s most active office markets. Known for its strong leasing demand and strategic location, this development represents an excellent opportunity for both occupiers and investors in the corporate real estate space. The project features efficient floor plates, high-quality building specifications, and a professional environment that attracts leading businesses across industries. Its connectivity to Delhi, IGI Airport, and key business districts enhances its appeal as a long-term commercial destination. With a steady corporate tenant ecosystem and excellent surrounding infrastructure, Unitech Cyber Park continues to be a valuable choice for companies seeking premium office space and for investors targeting stable returns in a high-performing micro-market.",
+    
+     "space-rows": [
+        {
+          "floor": "1st Floor, Suite 2",
+          "size": "2,482 SF",
+          "type": "Lease",
+          "availability": "Immediate"
+        },
+
+        {
+          "floor": "1st Floor, Suite 1",
+          "size": "2,000 – 5,301 SF",
+          "type": "Lease",
+          "availability": "Immediate"
+        }
+
+      ],
+
+    "highlights": [
+      "Landmark Business Hub",
+      "Modern Architecture",
+      "Corporate Ecosystem",
+      "High Leasing Demand"
+    ],
+    "amenities": [
+      "Cafeteria",
+      "Parking",
+      "Security",
+      "Elevators",
+      "Power Backup"
+    ],
+
+    "image": ["public/inventory/property/ucp.jpg"],
+
+    "images-hero": [
+       "public/inventory-detail/img1.jpg",
+       "public/inventory-detail/img2.jpg",
+       "public/inventory-detail/img3.jpg"
+     ]
+  },
+
+
+  "ae-prop-004": {
+    "slug": "magnum-global-park",
+    "title": "Magnum Global Park",
+    "availableArea": "2,800 to 4,900",
+    "description": "Magnum Global Park is a distinguished commercial office destination that reflects the evolving landscape of premium corporate real estate in Gurugram. Strategically located along the Golf Course Extension Road, this modern business park offers an ideal blend of accessibility, infrastructure, and professional environment, making it a preferred choice for enterprises seeking a prestigious workplace address in Delhi NCR. Designed to meet the demands of today’s dynamic business ecosystem, Magnum Global Park features contemporary architecture, efficient office layouts, and a well-planned corporate setting. The development is known for its spacious floor plates, high-quality construction standards, and seamless integration of modern workplace amenities. Whether for established multinational companies or fast-growing organizations, the property provides an adaptable workspace solution that supports productivity, collaboration, and long-term growth. For investors, Magnum Global Park represents a strong commercial opportunity backed by sustained demand for quality office spaces in Gurugram. The combination of location advantage, modern infrastructure, and tenant-friendly design contributes to its long-term value potential and consistent leasing interest.",
+    
+     "space-rows": [
+        {
+          "floor": "1st Floor, Suite 2",
+          "size": "2,482 SF",
+          "type": "Lease",
+          "availability": "Immediate"
+        },
+
+        {
+          "floor": "1st Floor, Suite 1",
+          "size": "2,000 – 5,301 SF",
+          "type": "Lease",
+          "availability": "Immediate"
+        }
+
+      ],
+    "highlights": [
+      "Prime Business Location",
+      "Modern Office Infrastructure",
+      "Efficient Floor Plates",
+      "Strong Corporate Presence",
+      "Excellent Connectivity"
+    ],
+    "amenities": [
+      "Prime Business Location",
+      "Modern Office Infrastructure",
+      "Efficient Floor Plates",
+      "Strong Corporate Presence",
+      "Excellent Connectivity"
+    ],
+    "image": ["public/inventory/property/mgp.jpg"],
+
+    "images-hero": [
+       "public/inventory-detail/img1.jpg",
+       "public/inventory-detail/img2.jpg",
+       "public/inventory-detail/img3.jpg"
+     ]
+  },
+
+  "ae-prop-005": {
+    "slug": "magnum-city-centre-6927",
+    "title": "Magnum City Centre",
+    "availableArea": "6,927",
+    "description": "Magnum City Centre is a premium commercial development designed to offer businesses a modern and well-connected workspace environment in Gurugram. Strategically located in a rapidly growing corporate corridor, this property serves as an ideal destination for companies seeking a professional address with excellent accessibility and contemporary infrastructure. With thoughtfully planned office spaces and a vibrant surrounding ecosystem, Magnum City Centre supports enterprises of all sizes-from emerging startups to established corporate firms. The building features efficient layouts, high-quality construction, and essential facilities that ensure smooth day-to-day operations. Its proximity to key business hubs, residential catchments, and major road networks makes commuting convenient for employees and visitors alike. The development is supported by strong commercial activity in the area, with retail, dining, and service options close by, enhancing the overall workplace experience. Magnum City Centre stands out as a reliable choice for organizations looking for a balanced combination of location advantage, functionality, and long-term value in one of India’s most prominent commercial real estate markets.",
+    
+     "space-rows": [
+        {
+          "floor": "1st Floor, Suite 2",
+          "size": "2,482 SF",
+          "type": "Lease",
+          "availability": "Immediate"
+        },
+
+        {
+          "floor": "1st Floor, Suite 1",
+          "size": "2,000 – 5,301 SF",
+          "type": "Lease",
+          "availability": "Immediate"
+        }
+
+      ],
+    "highlights": [
+      "Prime Commercial Location",
+      "Modern Business Environment",
+      "Efficient Office Layouts",
+      "Strong Market Demand",
+      "Excellent Accessibility"
+    ],
+    "amenities": [
+      "Power Backup",
+      "24/7 Security",
+      "Parking Space",
+      "High-Speed Elevators",
+      "Retail Access"
+    ],
+    "image": ["public/inventory/property/mcc.jpg"],
+
+    "images-hero": [
+       "public/inventory-detail/img1.jpg",
+       "public/inventory-detail/img2.jpg",
+       "public/inventory-detail/img3.jpg"
+     ]
+  },
+
+  "ae-prop-006": {
+
+    "slug": "magnum-city-centre-2694",
+    "title": "Magnum City Centre",
+    "availableArea": "2,694",
+
+    "description": "Magnum City Centre is a well-established commercial destination that offers businesses a refined and future-ready workspace in the heart of Gurugram’s growing corporate landscape. Built to support modern enterprises, this development delivers a balanced combination of location advantage, professional design, and operational convenience. The property is thoughtfully planned with efficient office layouts, making it suitable for organizations seeking functional yet premium work environments. Its contemporary structure, well-maintained premises, and business-friendly infrastructure create an ideal setting for companies aiming to enhance productivity and brand presence. Magnum City Centre benefits greatly from its strategic positioning, with easy connectivity to key commercial zones, major highways, and surrounding residential sectors. This ensures smooth accessibility for employees, clients, and partners. The area also features a lively mix of retail outlets, dining options, and essential services, adding comfort and convenience to the everyday work experience. Whether you are looking to lease office space or establish operations in a thriving business hub, Magnum City Centre provides a reliable and value-driven commercial solution in one of India’s most prominent office markets.",
+
+    
+     "space-rows": [
+        {
+          "floor": "1st Floor, Suite 2",
+          "size": "2,482 SF",
+          "type": "Lease",
+          "availability": "Immediate"
+        },
+
+        {
+          "floor": "1st Floor, Suite 1",
+          "size": "2,000 – 5,301 SF",
+          "type": "Lease",
+          "availability": "Immediate"
+        }
+
+      ],
+
+    "highlights": [
+      "Strategic Gurugram Location",
+      "Business-Ready Infrastructure",
+      "Premium Office Environment",
+      "Seamless Accessibility",
+      "Strong Corporate Ecosystem"
+    ],
+
+    "amenities": [
+      "Power Backup",
+      "24/7 Security",
+      "Dedicated Parking",
+      "High-Speed Elevators",
+      "Nearby Retail & Dining"
+    ],
+    "image": ["public/inventory/property/mcc.jpg"],
+    "images-hero": [
+       "public/inventory-detail/img1.jpg",
+       "public/inventory-detail/img2.jpg",
+       "public/inventory-detail/img3.jpg"
+     ]
+  },
+  
+  "ae-prop-007": {
+    "slug": "magnum-tower-3860",
+    "title": "Magnum Tower",
+    "address": "405 N Wabash Ave \n Chicago, IL, 60611",
+    "availableArea": "3,860",
+    "description": "Magnum Tower is a prominent commercial landmark offering premium office spaces in one of Gurugram’s fast-emerging corporate districts. Designed to cater to the evolving needs of modern businesses, this development combines strategic location, professional infrastructure, and a contemporary workspace environment that supports productivity and growth. The tower stands out for its sleek design, efficient floor planning, and corporate-ready facilities, making it an ideal choice for companies seeking a prestigious address. Whether for headquarters, regional offices, or expanding operations, Magnum Tower provides flexible office solutions suited for a wide range of industries. With seamless connectivity to major roads, business hubs, and key transit points, the property ensures ease of access for employees, clients, and visitors. The surrounding area further adds value with nearby retail, dining, and service conveniences, creating a vibrant ecosystem for businesses to thrive. Magnum Tower represents a perfect blend of functionality and sophistication, offering organizations an office destination that aligns with ambition, professionalism, and long-term success in India’s commercial real estate landscape.",
+    "space-rows": [
+      {
+        "floor": "1st Floor, Suite 2",
+        "size": "2,482",
+        "type": "Lease",
+        "availability": "Immediate"
+      },
+      {
+        "floor": "1st Floor, Suite 1",
+        "size": "2,000 – 5,301 SF",
+        "type": "Lease",
+        "availability": "Immediate"
+      }
+    ],
+    "highlights": [
+      "Landmark Corporate Address",
+      "Modern Architectural Design",
+      "Flexible Office Spaces",
+      "Strong Business Connectivity",
+      "Thriving Commercial Surroundings"
+    ],
+    "amenities": [
+      "24/7 Security",
+      "Power Backup",
+      "Parking Facility",
+      "High-Speed Elevators",
+      "Maintenance Services"
+    ],
+    "image": ["public/inventory/property/mt.webp"],
+    "images-hero": [
+       "public/inventory-detail/img1.jpg",
+       "public/inventory-detail/img2.jpg",
+       "public/inventory-detail/img3.jpg"
+     ]
+  },
+
+  "ae-prop-008": {
+    "slug": "magnum-tower-11000",
+    "title": "Magnum Tower",
+    "address": "405 N Wabash Ave \n Chicago, IL, 60611",
+    "availableArea": "11,000",
+    "description": "Magnum Tower is a premium commercial office destination that offers businesses a modern and efficient workspace in Gurugram’s rapidly developing corporate landscape. Designed to support the needs of contemporary enterprises, this tower provides a professional environment backed by strong infrastructure, accessibility, and a growing business ecosystem. The property features well-planned office spaces with flexible layouts, making it suitable for a wide range of occupiers-from emerging companies to established corporate firms. With its sleek architectural presence and business-ready facilities, Magnum Tower delivers both functionality and a prestigious address for organizations looking to enhance their brand image. Its strategic location ensures smooth connectivity to key commercial hubs, major road networks, and nearby residential sectors, enabling convenient commuting for employees and easy access for clients and visitors. The surrounding neighborhood further adds value with retail outlets, dining options, and essential services close at hand. Magnum Tower stands out as a reliable choice for businesses seeking long-term workspace solutions in one of India’s most prominent commercial real estate markets. It offers the right balance of location advantage, operational comfort, and professional appeal.",
+    "space-rows": [
+      {
+        "floor": "1st Floor, Suite 2",
+        "size": "2,482",
+        "type": "Lease",
+        "availability": "Immediate"
+      },
+      {
+        "floor": "1st Floor, Suite 1",
+        "size": "2,000 – 5,301 SF",
+        "type": "Lease",
+        "availability": "Immediate"
+      }
+    ],
+    "highlights": [
+      "Premium Corporate Address",
+      "Modern Office Infrastructure",
+      "Flexible Workspace Layouts",
+      "Strong Connectivity Access",
+      "Thriving Business Ecosystem"
+    ],
+    "amenities": [
+      "24/7 Security",
+      "Power Backup",
+      "Dedicated Parking",
+      "High-Speed Elevators",
+      "Maintenance Services"
+    ],
+    "image": ["public/inventory/property/mt.webp"],
+    "images-hero": [
+       "public/inventory-detail/img1.jpg",
+       "public/inventory-detail/img2.jpg",
+       "public/inventory-detail/img3.jpg"
+     ]
+  },
+  "ae-prop-009": {
+    "slug": "m3m-urbana-business-park-9897",
+    "title": "M3M Urbana Business Park",
+    "address": "405 N Wabash Ave \n Chicago, IL, 60611",
+    "availableArea": "9,897 Sq. Ft.",
+    "description": "M3M IFC (International Financial Center) is one of Gurugram’s most prestigious and globally inspired commercial developments, offering world-class office and retail spaces in a landmark setting. Strategically located on Golf Course Extension Road, this premium destination is designed for businesses that seek an elite corporate address combined with modern infrastructure and luxury-grade amenities. The development stands out for its iconic architecture, high-end design standards, and a vibrant ecosystem that attracts leading multinational companies, financial institutions, and premium brands. M3M IFC provides efficient office layouts, advanced building services, and an environment that supports productivity, collaboration, and long-term business growth. Connectivity is a key advantage, with seamless access to major commercial hubs, upscale residential areas, and key transit routes across Delhi NCR. The integrated retail and lifestyle offerings within the complex further enhance the workplace experience, making it a complete business destination rather than just an office space. M3M IFC is not only a symbol of corporate prestige but also a high-value commercial asset for investors and occupiers alike.",
+    "space-rows": [
+      {
+        "floor": "1st Floor, Suite 2",
+        "size": "2,482",
+        "type": "Lease",
+        "availability": "Immediate"
+      },
+      {
+        "floor": "1st Floor, Suite 1",
+        "size": "2,000 – 5,301",
+        "type": "Lease",
+        "availability": "Immediate"
+      }
+    ],
+    "highlights": [
+      "Iconic Business Landmark",
+      "Global-Standard Design",
+      "Premium Corporate Ecosystem",
+      "High-End Retail Integration",
+      "Strong Investment Potential"
+    ],
+    "amenities": [
+      "Concierge Services",
+      "High-Speed Elevators",
+      "Power Backup",
+      "24/7 Security",
+      "Premium Parking"
+    ],
+    "image": ["public/inventory/property/m3m.jpg"],
+    "images-hero": [
+       "public/inventory-detail/img1.jpg",
+       "public/inventory-detail/img2.jpg",
+       "public/inventory-detail/img3.jpg"
+     ]
+  },
+
+  "ae-prop-010": {
+    "slug": "aipl-business-club-4000",
+    "title": "AIPL Business Club",
+    "address": "405 N Wabash Ave \n Chicago, IL, 60611",
+    "availableArea": "4,000",
+    "description": "AIPL Business Club is a premium commercial development located in the heart of Gurugram’s rapidly expanding business corridor along Golf Course Extension Road. Designed for modern enterprises, this property offers an ideal blend of professional infrastructure, strategic accessibility, and a vibrant corporate environment. The building features contemporary office spaces that cater to a wide range of occupiers, from established companies to fast-growing organizations seeking a prestigious address. With efficient layouts, well-maintained common areas, and a business-ready ecosystem, AIPL Business Club provides an elevated workplace experience. Its location ensures seamless connectivity to key commercial hubs, residential catchments, and major arterial roads, making daily commuting convenient for employees and visitors. The surrounding area is supported by retail outlets, dining options, and essential services, further enhancing the value of this destination. AIPL Business Club is recognized not only for its design and functionality but also for the professional atmosphere it offers to tenants.",
+    "space-rows": [
+      {
+        "floor": "1st Floor, Suite 2",
+        "size": "2,482 SF",
+        "type": "Lease",
+        "availability": "Immediate"
+      },
+      {
+        "floor": "1st Floor, Suite 1",
+        "size": "2,000 – 5,301 SF",
+        "type": "Lease",
+        "availability": "Immediate"
+      }
+    ],
+    "highlights": [
+      "Prime Business Address",
+      "Contemporary Office Design",
+      "Strong Corporate Catchment",
+      "Excellent Road Connectivity",
+      "High Growth Corridor"
+    ],
+    "amenities": [
+      "Power Backup",
+      "24/7 Security",
+      "Parking Space",
+      "Cafeteria",
+      "High-Speed Elevators"
+    ],
+    "image": ["public/inventory/property/aiplSign.avif"],
+    "images-hero": [
+       "public/inventory-detail/img1.jpg",
+       "public/inventory-detail/img2.jpg",
+       "public/inventory-detail/img3.jpg"
+     ]
+  },
+
+  "ae-prop-011": {
+    "slug": "aipl-signature-11000-25000",
+    "title": "AIPL Signature",
+    "address": "405 N Wabash Ave \n Chicago, IL, 60611",
+    "availableArea": "11,000 to 25,000",
+    "description": "AIPL Signature is a landmark office development offering premium commercial spaces in one of Gurugram’s most sought-after corporate locations. Known for its modern architecture and strong business presence, this property provides an ideal setting for companies looking to establish a credible and high-visibility workspace. The building is thoughtfully designed with efficient office layouts, quality infrastructure, and a professionally managed environment that supports smooth business operations. AIPL Signature appeals to a diverse range of occupiers, including multinational firms, consulting companies, and growing enterprises seeking long-term stability. Strategically positioned with excellent connectivity to major roads and nearby commercial districts, the property ensures ease of access for employees, clients, and business partners. The surrounding ecosystem includes retail conveniences, hospitality options, and lifestyle facilities, adding comfort and accessibility to the workday experience. AIPL Signature stands out as a reliable choice for organizations seeking premium office space with a balance of functionality, prestige, and location advantage.",
+    "space-rows": [
+      {
+        "floor": "1st Floor, Suite 2",
+        "size": "2,482",
+        "type": "Lease",
+        "availability": "Immediate"
+      },
+      {
+        "floor": "1st Floor, Suite 1",
+        "size": "2,000 – 5,301 ",
+        "type": "Lease",
+        "availability": "Immediate"
+      }
+    ],
+    "highlights": [
+      "Landmark Commercial Tower",
+      "Premium Workspace Layouts",
+      "Strong Leasing Demand",
+      "Modern Infrastructure",
+      "Strategic Location"
+    ],
+    "amenities": [
+      "Security Services",
+      "Parking Facility",
+      "Power Backup",
+      "Elevators",
+      "Maintenance Support"
+    ],
+    "image": ["public/inventory/property/aiplSign.avif"],
+    "images-hero": [
+       "public/inventory-detail/img1.jpg",
+       "public/inventory-detail/img2.jpg",
+       "public/inventory-detail/img3.jpg"
+     ]
+  },
+  
+  "ae-prop-012": {
+    "slug": "splendor-spectrum-tower-1-9896",
+    "title": "Splendor Spectrum Tower 1",
+    "address": "405 N Wabash Ave \n Chicago, IL, 60611",
+    "availableArea": "9,896",
+    "description": "Splendor Spectrum Tower 1 is a well-established commercial office destination located within Gurugram’s active corporate belt. Designed to meet the evolving demands of modern businesses, the tower offers efficient office spaces supported by essential infrastructure and a professional working environment. The property is known for its functional layouts, corporate-ready facilities, and strong accessibility to key business zones across the city. It serves as an ideal workspace option for companies seeking operational convenience along with a recognized commercial address. With seamless road connectivity and proximity to major transit routes, Splendor Spectrum Tower 1 ensures smooth commuting for employees and easy access for clients. The surrounding area is home to a growing mix of business establishments, retail outlets, and service amenities, creating a dynamic ecosystem for occupiers. The tower’s professionally managed premises, security provisions, and supportive infrastructure make it a dependable choice for long-term office requirements.",
+    "space-rows": [
+      {
+        "floor": "1st Floor, Suite 2",
+        "size": "2,482 SF",
+        "type": "Lease",
+        "availability": "Immediate"
+      },
+      {
+        "floor": "1st Floor, Suite 1",
+        "size": "2,000 – 5,301 SF",
+        "type": "Lease",
+        "availability": "Immediate"
+      }
+    ],
+    "highlights": [
+      "Landmark Commercial Tower",
+      "Premium Workspace Layouts",
+      "Strong Leasing Demand",
+      "Modern Infrastructure",
+      "Strategic Location"
+    ],
+    "amenities": [
+      "Security Services",
+      "Parking Facility",
+      "Power Backup",
+      "Elevators",
+      "Maintenance Support"
+    ],
+    "image": ["public/inventory/property/spectower.webp"],
+    "images-hero": [
+       "public/inventory-detail/img1.jpg",
+       "public/inventory-detail/img2.jpg",
+       "public/inventory-detail/img3.jpg"
+     ]
+
+  },
+
+  "ae-prop-013": {
+    "slug": "splendor-spectrum-tower-2-20000",
+    "title": "Splendor Spectrum Tower 2",
+    "address": "405 N Wabash Ave \n Chicago, IL, 60611",
+    "availableArea": "20,000",
+    "description": "Splendor Spectrum Tower 2 is a well-established commercial office destination located within Gurugram’s active corporate belt. Designed to meet the evolving demands of modern businesses, the tower offers efficient office spaces supported by essential infrastructure and a professional working environment. The property is known for its functional layouts, corporate-ready facilities, and strong accessibility to key business zones across the city. It serves as an ideal workspace option for companies seeking operational convenience along with a recognized commercial address. With seamless road connectivity and proximity to major transit routes, Splendor Spectrum Tower 2 ensures smooth commuting for employees and easy access for clients. The surrounding area is home to a growing mix of business establishments, retail outlets, and service amenities, creating a dynamic ecosystem for occupiers. The tower’s professionally managed premises, security provisions, and supportive infrastructure make it a dependable choice for long-term office requirements.",
+    "space-rows": [
+      {
+        "floor": "1st Floor, Suite 2",
+        "size": "2,482 SF",
+        "type": "Lease",
+        "availability": "Immediate"
+      },
+      {
+        "floor": "1st Floor, Suite 1",
+        "size": "2,000 – 5,301 SF",
+        "type": "Lease",
+        "availability": "Immediate"
+      }
+    ],
+    "highlights": [
+      "Landmark Commercial Tower",
+      "Premium Workspace Layouts",
+      "Strong Leasing Demand",
+      "Modern Infrastructure",
+      "Strategic Location"
+    ],
+    "amenities": [
+      "Security Services",
+      "Parking Facility",
+      "Power Backup",
+      "Elevators",
+      "Maintenance Support"
+    ],
+    "image": ["public/inventory/property/spectower.webp"],
+    "images-hero": [
+       "public/inventory-detail/img1.jpg",
+       "public/inventory-detail/img2.jpg",
+       "public/inventory-detail/img3.jpg"
+     ]
+  },
+  
+  "ae-prop-014": {
+    "slug": "casa-picasso-11000",
+    "title": "Casa Picasso",
+    "address": "405 N Wabash Ave \n Chicago, IL, 60611",
+    "availableArea": "11,000",
+    "description": "Casa Picasso is a distinctive commercial development offering a blend of premium office and retail spaces within a lively and well-connected urban setting. Known for its unique architectural identity and modern design appeal, the property provides an energetic destination for businesses seeking visibility and a contemporary work environment. Ideal for boutique offices, showrooms, professional establishments, and customer-facing brands, Casa Picasso benefits from strong surrounding activity and a vibrant mixed-use atmosphere. Its strategic location ensures convenient access to key residential sectors, commercial hubs, and major road networks in Gurugram. With lifestyle conveniences, dining options, and essential services nearby, Casa Picasso represents a modern commercial ecosystem where business and design come together.",
+    "space-rows": [
+      {
+        "floor": "1st Floor, Suite 2",
+        "size": "2,482 SF",
+        "type": "Lease",
+        "availability": "Immediate"
+      },
+      {
+        "floor": "1st Floor, Suite 1",
+        "size": "2,000 – 5,301 SF",
+        "type": "Lease",
+        "availability": "Immediate"
+      }
+    ],
+    "highlights": [
+      "Unique Architectural Identity",
+      "Mixed-Use Destination",
+      "High Visibility Location",
+      "Modern Business Environment",
+      "Lifestyle Connectivity"
+    ],
+    "amenities": [
+      "Retail Access",
+      "Parking Facility",
+      "Security Services",
+      "Power Backup",
+      "Elevators"
+    ],
+    "image": ["public/inventory/property/casa.jpg"],
+    "images-hero": [
+       "public/inventory-detail/img1.jpg",
+       "public/inventory-detail/img2.jpg",
+       "public/inventory-detail/img3.jpg"
+     ]
+  },
+
+  "ae-prop-015": {
+    "slug": "m3m-ifc-5000-33000",
+    "title": "M3M IFC",
+    "address": "405 N Wabash Ave \n Chicago, IL, 60611",
+    "availableArea": "5,000 – 33,000",
+    "description": "M3M IFC is one of Gurugram’s most iconic commercial landmarks, offering world-class office and retail spaces in a premium corporate environment. Located on Golf Course Extension Road, the development is built to global standards, combining luxury infrastructure with strong business functionality. Recognized for its striking architecture and high-end amenities, M3M IFC attracts leading brands, corporate occupiers, and investors. With excellent connectivity to major business districts, residential catchments, and transit routes, along with integrated retail and lifestyle offerings, M3M IFC stands as a future-ready corporate destination and a strong investment-grade asset.",
+    "space-rows": [
+      {
+        "floor": "1st Floor, Suite 2",
+        "size": "2,482 SF",
+        "type": "Lease",
+        "availability": "Immediate"
+      },
+      {
+        "floor": "1st Floor, Suite 1",
+        "size": "2,000 – 5,301 SF",
+        "type": "Lease",
+        "availability": "Immediate"
+      }
+    ],
+    "highlights": [
+      "Iconic Business Landmark",
+      "Global-Standard Design",
+      "Premium Corporate Ecosystem",
+      "High-End Retail Integration",
+      "Strong Investment Potential"
+    ],
+    "amenities": [
+      "Concierge Services",
+      "High-Speed Elevators",
+      "Power Backup",
+      "24/7 Security",
+      "Premium Parking"
+    ],
+    "image": ["public/inventory/property/M3M-IFC.jpg"],
+    "images-hero": [
+       "public/inventory-detail/img1.jpg",
+       "public/inventory-detail/img2.jpg",
+       "public/inventory-detail/img3.jpg"
+     ]
+  },
+
+  "ae-prop-016": {
+    "slug": "independent-building-udyog-vihar-50000",
+    "title": "Independent Building",
+    "address": "405 N Wabash Ave \n Chicago, IL, 60611",
+    "availableArea": "50,000",
+    "description": "This independent commercial building in Udyog Vihar Phase 4 offers an excellent opportunity for businesses seeking a dedicated corporate space in one of Gurugram’s most established industrial and office districts. The building provides flexible office layouts suitable for corporate headquarters, back-office operations, and growing enterprises. With strong connectivity to NH-48, Cyber City, and key transit routes, it ensures seamless commuting and accessibility. Supported by a mature commercial ecosystem with dining, services, and business utilities, this property is ideal for organizations seeking independence, visibility, and operational efficiency.",
+    "space-rows": [
+      {
+        "floor": "1st Floor, Suite 2",
+        "size": "2,482 SF",
+        "type": "Lease",
+        "availability": "Immediate"
+      },
+      {
+        "floor": "1st Floor, Suite 1",
+        "size": "2,000 – 5,301 SF",
+        "type": "Lease",
+        "availability": "Immediate"
+      }
+    ],
+    "highlights": [
+      "Prime Udyog Vihar Location",
+      "Independent Corporate Space",
+      "Excellent Connectivity",
+      "Flexible Office Layouts",
+      "Established Business Hub"
+    ],
+    "amenities": [
+      "Power Backup",
+      "24/7 Security",
+      "Parking Facility",
+      "Elevators",
+      "Maintenance Support"
+    ],
+    "image": ["public/inventory/property/ib.jpg"],
+    "images-hero": [
+       "public/inventory-detail/img1.jpg",
+       "public/inventory-detail/img2.jpg",
+       "public/inventory-detail/img3.jpg"
+     ]
+  },
+
+  "ae-prop-017": {
+    "slug": "emaar-colonnade-16000",
+    "title": "Emaar Colonnade",
+    "address": "405 N Wabash Ave \n Chicago, IL, 60611",
+    "availableArea": "16,000",
+    "description": "Emaar Colonnade is a prestigious commercial office development located on Gurugram’s prime Golf Course Road. Known for its premium infrastructure and professional business environment, the property offers well-designed office spaces with efficient layouts and quality construction standards. Recognized for its sophisticated corporate appeal, Emaar Colonnade is preferred by multinational firms and high-growth enterprises. With seamless connectivity to major business hubs, upscale residential areas, and arterial routes, along with nearby hospitality and retail conveniences, it remains a strong-value commercial destination for long-term stability and prestige.",
+    "space-rows": [
+      {
+        "floor": "1st Floor, Suite 2",
+        "size": "2,482 SF",
+        "type": "Lease",
+        "availability": "Immediate"
+      },
+      {
+        "floor": "1st Floor, Suite 1",
+        "size": "2,000 – 5,301 SF",
+        "type": "Lease",
+        "availability": "Immediate"
+      }
+    ],
+    "highlights": [
+      "Prime Golf Course Road Location",
+      "Prestigious Corporate Address",
+      "Premium Office Spaces",
+      "Established Business Ecosystem",
+      "Strong Brand Presence"
+    ],
+    "amenities": [
+      "24/7 Security",
+      "Power Backup",
+      "Parking Facility",
+      "Elevators",
+      "Maintenance Services"
+    ],
+    "image": ["public/inventory/property/emaar.jpg"],
+    "images-hero": [
+       "public/inventory-detail/img1.jpg",
+       "public/inventory-detail/img2.jpg",
+       "public/inventory-detail/img3.jpg"
+     ]
+  },
+  
+  "ae-prop-018": {
+    "slug": "imperia-mindspace-15500",
+    "title": "Imperia Mindspace",
+    "address": "405 N Wabash Ave \n Chicago, IL, 60611",
+    "availableArea": "15,500",
+    "description": "Imperia Mindspace is a premium commercial development designed to offer businesses a modern, professional, and growth-oriented workspace in Gurugram. Built with contemporary infrastructure and efficient office planning, the property provides a well-managed corporate environment. Recognized for its business-ready ecosystem, quality construction standards, and proximity to major commercial corridors, Imperia Mindspace supports long-term operational success. Its strategic location ensures smooth connectivity to key business hubs, residential catchments, and major road networks, delivering a balanced combination of prestige, functionality, and workplace comfort.",
+    "space-rows": [
+      {
+        "floor": "1st Floor, Suite 2",
+        "size": "2,482 SF",
+        "type": "Lease",
+        "availability": "Immediate"
+      },
+      {
+        "floor": "1st Floor, Suite 1",
+        "size": "2,000 – 5,301 SF",
+        "type": "Lease",
+        "availability": "Immediate"
+      }
+    ],
+    "highlights": [
+      "Modern Commercial Destination",
+      "Premium Office Infrastructure",
+      "Strong Corporate Ecosystem",
+      "Excellent Accessibility",
+      "High Business Potential"
+    ],
+    "amenities": [
+      "24/7 Security",
+      "Power Backup",
+      "Parking Space",
+      "High-Speed Elevators",
+      "Cafeteria Access"
+    ],
+    "image": ["public/inventory/property/spectower.webp"],
+    "images-hero": [
+       "public/inventory-detail/img1.jpg",
+       "public/inventory-detail/img2.jpg",
+       "public/inventory-detail/img3.jpg"
+     ]
+  },
+
+  "ae-prop-019": {
+    "slug": "spaze-corporate-park-16500-50000",
+    "title": "Spaze Corporate Park",
+    "address": "405 N Wabash Ave \n Chicago, IL, 60611",
+    "availableArea": "16,500 – 50,000",
+    "description": "Spaze Corporate Park is a well-recognized commercial office destination offering premium workspace solutions in Gurugram’s growing business landscape. Designed to meet the evolving needs of modern enterprises, the property provides efficient office layouts, professional facilities, and a vibrant corporate environment. With strong connectivity to key commercial hubs, major road networks, and nearby residential sectors, the development ensures convenience for employees and clients. Surrounded by retail, dining, and essential services, Spaze Corporate Park remains a reliable and prestigious option for long-term business occupancy.",
+    "space-rows": [
+      {
+        "floor": "1st Floor, Suite 2",
+        "size": "2,482 SF",
+        "type": "Lease",
+        "availability": "Immediate"
+      },
+      {
+        "floor": "1st Floor, Suite 1",
+        "size": "2,000 – 5,301 SF",
+        "type": "Lease",
+        "availability": "Immediate"
+      }
+    ],
+    "highlights": [
+      "Prime Corporate Location",
+      "Efficient Office Spaces",
+      "Strong Business Connectivity",
+      "Thriving Surrounding Ecosystem",
+      "Reliable Commercial Asset"
+    ],
+    "amenities": [
+      "Power Backup",
+      "Security Services",
+      "Parking Facility",
+      "Elevators",
+      "Retail Access"
+    ],
+    "image": ["public/inventory/property/spectower.webp"],
+    "images-hero": [
+       "public/inventory-detail/img1.jpg",
+       "public/inventory-detail/img2.jpg",
+       "public/inventory-detail/img3.jpg"
+     ]
+  },
+
+  "ae-prop-020": {
+    "slug": "independent-building-nh8-40000",
+    "title": "Independent Building",
+    "address": "405 N Wabash Ave \n Chicago, IL, 60611",
+    "availableArea": "40,000",
+    "description": "This highway-facing independent commercial building on NH-8, located next to the prominent 32nd Milestone, offers unmatched visibility and accessibility. Positioned along one of Gurugram’s busiest commercial corridors, the property is ideal for businesses seeking strong frontage and regional connectivity. The building provides flexible office space options suitable for corporate setups, showrooms, and high-profile business operations. With direct access to NH-48 and proximity to major business districts, it represents a valuable opportunity for organizations seeking prominence, independence, and long-term commercial advantage.",
+    "space-rows": [
+      {
+        "floor": "1st Floor, Suite 2",
+        "size": "2,482 SF",
+        "type": "Lease",
+        "availability": "Immediate"
+      },
+      {
+        "floor": "1st Floor, Suite 1",
+        "size": "2,000 – 5,301 SF",
+        "type": "Lease",
+        "availability": "Immediate"
+      }
+    ],
+    "highlights": [
+      "Prime NH-8 Frontage",
+      "Next to 32nd Milestone",
+      "High Visibility Location",
+      "Independent Commercial Asset",
+      "Excellent Road Connectivity"
+    ],
+    "amenities": [
+      "24/7 Security",
+      "Power Backup",
+      "Dedicated Parking",
+      "Elevators",
+      "Maintenance Services"
+    ],
+    "image": ["public/inventory/property/spectower.webp"],
+    "images-hero": [
+       "public/inventory-detail/img1.jpg",
+       "public/inventory-detail/img2.jpg",
+       "public/inventory-detail/img3.jpg"
+     ]
+  },
+
+  "ae-prop-021": {
+    "slug": "galaxy-hotel-sector-15-48000",
+    "title": "Galaxy Hotel (Sector-15)",
+    "address": "405 N Wabash Ave \n Chicago, IL, 60611",
+    "availableArea": "48,000",
+    "description": "Galaxy Hotel, located in Sector-15, Gurugram, is a well-established hospitality and commercial landmark offering comfort and convenience for business travelers and corporate visitors. Situated in a prime and easily accessible sector, the property enjoys excellent connectivity to major business districts, transport hubs, and commercial zones across Gurugram and Delhi NCR. Known for its professional services and welcoming environment, Galaxy Hotel is ideal for business stays, corporate meetings, and outstation guests. Its strategic location and reliable amenities make it a preferred hospitality address within the city’s business ecosystem.",
+    "space-rows": [
+      {
+        "floor": "1st Floor, Suite 2",
+        "size": "2,482 SF",
+        "type": "Lease",
+        "availability": "Immediate"
+      },
+      {
+        "floor": "1st Floor, Suite 1",
+        "size": "2,000 – 5,301 SF",
+        "type": "Lease",
+        "availability": "Immediate"
+      }
+    ],
+    "highlights": [
+      "Prime Sector-15 Location",
+      "Landmark Hospitality Destination",
+      "Excellent City Connectivity",
+      "Ideal for Business Stays",
+      "Close to Corporate Hubs"
+    ],
+    "amenities": [
+      "Restaurant",
+      "Banquet Hall",
+      "24/7 Security",
+      "Parking Facility",
+      "Power Backup"
+    ],
+    "image": ["public/inventory/property/spectower.webp"],
+    "images-hero": [
+       "public/inventory-detail/img1.jpg",
+       "public/inventory-detail/img2.jpg",
+       "public/inventory-detail/img3.jpg"
+     ]
+  
+}
+
+
+
+
+
+}

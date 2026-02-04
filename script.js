@@ -1,6 +1,19 @@
-/* ===========================
-   clcik functions EFFECT
-=========================== */
+document.querySelectorAll(".view-details").forEach(btn => {
+  btn.addEventListener("click", function () {
+    const propertyId = this.closest(".property-card").dataset.id;
+
+    // store selected property
+    localStorage.setItem("selectedPropertyId", propertyId);
+
+    // redirect
+    window.location.href = "property-detail.html";
+  });
+});
+
+
+ /* ===========================
+   click functions EFFECT
+   =========================== */
 
 document.addEventListener('DOMContentLoaded', function () {
   const btn = document.querySelector('.btn-our-story');
@@ -10,22 +23,22 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+
    
 // our vision
-document.addEventListener("DOMContentLoaded", () => {
-  const cards = document.querySelectorAll(".about-company-card");
 
-  cards.forEach((card, index) => {
+  document.addEventListener("DOMContentLoaded", () => {
+  const cards = document.querySelectorAll(".about-company-card");
+   cards.forEach((card, index) => {
     card.style.opacity = "0";
     card.style.transform = "translateY(30px)";
-
     setTimeout(() => {
       card.style.transition = "0.6s ease";
       card.style.opacity = "1";
       card.style.transform = "translateY(0)";
     }, index * 200);
-  });
-});
+    });
+    });
 
 function closeForm() {
     const form = document.querySelector('.home-form-container');
@@ -49,26 +62,19 @@ window.addEventListener("scroll", function () {
 
 
 
-
     /* ===========================
             INVENTORY CARD
        =========================== */
     
 
 
+  /* ===========================
+      HERO BACKGROUND SLIDER
+     =========================== */
 
- 
-
-
-/* ===========================
-   HERO BACKGROUND SLIDER
- =========================== */
-
-   
- 
-  const slides = document.querySelectorAll('.home-hero');
-  const dots = document.querySelectorAll('.home-hero-pagination .dot');
-  let currentSlide = 0;
+    const slides = document.querySelectorAll('.home-hero');
+    const dots = document.querySelectorAll('.home-hero-pagination .dot');
+    let currentSlide = 0;
 
     function showSlide(index) {
     slides.forEach(slide => slide.classList.remove('active'));
@@ -76,8 +82,8 @@ window.addEventListener("scroll", function () {
 
     slides[index].classList.add('active');
     dots[index].classList.add('active');
-
     currentSlide = index;
+
   }
 
   // Auto slide every 5 seconds

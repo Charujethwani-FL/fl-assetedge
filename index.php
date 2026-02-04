@@ -16,45 +16,13 @@
     />
     <link rel="icon" type="image/png" sizes="16x16" href="public/faviconAE-img.jpg">
     <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css">
-
   </head>
 
   <body>
-    <header class="main-header home-header">
-      <div class="main-header-container">
-        <div class="logo">
-          <img src="public/logo-img.jpg" alt="Asset Edge Logo" />
-        </div>
-
-        <nav class="navbar ">
-        <ul>
-            <li><a href="index.html" class=" menu-link active">Home</a></li>
-            <li><a href="about.html" class="menu-link">About Us</a></li>
-            <li><a href="inventory.html" class="menu-link">Inventory</a></li>
-            <li><a href="contact.html" class="menu-link">Contact Us</a></li>
-          </ul>
-           
-        <div class="hamburger" id="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-        </div>
-        </nav>
-        </div>
-        </header>
-
-    <!-- Mobile / Tablet Overlay Menu -->
-  <div class="menu-overlay" id="menuOverlay">
-    <button id="closeMenu" class="close-btn-menu">&times;</button>
-    <ul>
-      <li><a href="index.html" class="menu-link">Home</a></li>
-      <li><a href="about.html" class="menu-link">About us</a></li>
-      <li><a href="inventory.html" class="menu-link">Property</a></li>
-      <li><a href="contact.html" class="menu-link">Contact Us</a></li>
-      <li><a href="privacy-policy.html" class="menu-link">Privacy Policy</a></li>  
-    </ul>
-  </div>
    
+  <?php
+    include('include/header.php');
+  ?>
 
  <!-- hero-home section start -->
 
@@ -64,11 +32,11 @@
         <h2 class="home-form-title">Get in Touch</h2>
 
     <div class="home-form-group">
-        <input type="text" class="home-form-input" id="name" name="name" placeholder="Your Name" required>
+        <input type="text" class="home-form-input" id="name" name="name" placeholder="Name" required>
     </div>
 
     <div class="home-form-group">
-        <input type="email" class="home-form-input" id="email" name="email" placeholder="Your Email" required>
+        <input type="email" class="home-form-input" id="email" name="email" placeholder="Email" required>
     </div>
 
     <div class="home-form-group">
@@ -77,7 +45,7 @@
     </div>
 
     <div class="home-form-group">
-        <textarea class="home-form-textarea" id="message" name="message" placeholder="Your Message" required></textarea>
+        <textarea class="home-form-textarea" id="message" name="message" placeholder="Message" required></textarea>
     </div>
 
     <button type="submit" class="home-form-button">Submit</button>
@@ -386,82 +354,7 @@
           <p class="our-partner-subtitle">
           We are grateful to our partners who have collaborated with us in delivering seamless leasing solutions and long-term value.
           </p>
-          <!-- <div class="partners-grid-container">
-            <ul class="our-partner-grid row our-partner-border reveal">
-              
-
-              <li class="col-4 col-md-2 our-partner-item">
-                <a href="#"
-                  ><img src="public/partners/blackngreen-img.png" alt="partner"
-                /></a>
-              </li>
-
-              <li class="col-4 col-md-2 our-partner-item">
-                <a href="#"
-                  ><img src="public/partners/cloudnine-img.png" alt="partner"
-                /></a>
-              </li>
-
-              <li class="col-4 col-md-2 our-partner-item">
-                <a href="#"
-                  ><img src="public/partners/awfis.jpg" alt="partner"
-                /></a>
-              </li>
-
-              <li class="col-4 col-md-2 our-partner-item">
-                <a href="#"
-                  ><img src="public/partners/A&t.jpg" alt="partner"
-                /></a>
-              </li>
-
-              <li class="col-4 col-md-2 our-partner-item">
-                <a href="#"
-                  ><img src="public/partners/samsung.jpg" alt="partner"
-                /></a>
-              </li>
-
-              <li class="col-4 col-md-2 our-partner-item">
-                <a href="#"
-                  ><img src="public/partners/orange.jpg" alt="partner"
-                /></a>
-              </li>
-              <li class="col-4 col-md-2 our-partner-item">
-                <a href="#"
-                  ><img src="public/partners/olx.jpg" alt="partner"
-                /></a>
-              </li>
-
-              <li class="col-4 col-md-2 our-partner-item">
-                <a href="#"
-                  ><img src="public/partners/cardekho.jpg" alt="partner"
-                /></a>
-              </li>
-
-              <li class="col-4 col-md-2 our-partner-item">
-                <a href="#"
-                  ><img src="public/partners/dsv.jpg" alt="partner"
-                /></a>
-              </li>
-              <li class="col-4 col-md-2 our-partner-item">
-                <a href="#"
-                  ><img src="public/partners/filipkart.jpg" alt="partner"
-                /></a>
-              </li>
-
-              <li class="col-4 col-md-2 our-partner-item">
-                <a href="#"
-                  ><img src="public/partners/hdfc.jpg" alt="partner"
-                /></a>
-              </li>
-              <li class="col-4 col-md-2 our-partner-item">
-                <a href="#"
-                  ><img src="public/partners/panasonic.jpg" alt="partner"
-                /></a>
-              </li>
-
-
-          </div>
-        </div> -->
+          
         
               <div class="partners-grid-container">
                 <ul class="our-partner-grid row our-partner-border reveal">
@@ -576,70 +469,16 @@
 <!-- Our Partners  end  -->
 
 <!-- footer -->
-
-      <footer class="footer">
-      <div class="footer-top">
-      <div class="footer-container">
-        <div class="bg-footer-img">
-          <img src="public/footer/top-footer-img.png" alt="skyview-building">
-        </div>
-      <!-- Logo & Description -->
-          <div class="footer-col logo-col">
-            <img src="public/logo-img.jpg" alt="AssetEdge Logo" class="footer-logo">
-            <p>
-              Your trusted partner for premier office spaces in Delhi/NCR.<br />
-              Lease. Design. Build. Operate.<br />
-            </p>
-          </div>
-
-          <div class="footer-list">
-          <!-- About Us -->
-              <div class="footer-col">
-                <h4>About us</h4>
-                <ul>
-                  <li><a href="#">Who we are</a></li>
-                  <li><a href="#">Why AssetEdge</a></li>
-                  <li><a href="#">Our Work Flow</a></li>
-                </ul>
-              </div>
-
-              <!-- Contact Us -->
-              <div class="footer-col ">
-                <h4>Contact Us</h4>
-                <p>info@assetedge.in</p>
-                <p>+91-9773880555</p>
-                <p class="contact-footer">
-                  6th floor, Sauch Tower, Plot No.72, Udyog Vihar Phase-IV,
-                  Gurgaon Pin-122015 (HR) India
-                </p>
-              </div>
-          </div>
-
-        </div>
-        </div>
-  </div>
-
-  <!-- Bottom Bar -->
-  <div class = "footer-bottom">
-    <div class="footer-bottom-container">
-      <p>© 2026. AssetEdge, All rights reserved.</p>
-      <div class="footer-links">
-        <a href="privacy-policy.html">Privacy Policy</a>
-        <span>|</span>
-        <a href="privacy-policy.html">Terms & Condition</a>
-      </div>
-    </div>
-  </div>
-</footer>
+  <?php
+    include('include/footer.php');
+  ?>
 
 <!--footer End-->
 
 <a href="tel:+919773880555" class="floating-call-btn" aria-label="Call Us">
-    <i class="fi fi-sr-phone-call"></i>
-     
+    <i class="fi fi-sr-phone-call"></i>  
   <span class="pulse"></span>
 </a>
-   
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         const reveals = document.querySelectorAll(".reveal");
