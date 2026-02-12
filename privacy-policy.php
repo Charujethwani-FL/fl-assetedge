@@ -30,13 +30,13 @@
        
     </header>
       <section class="breadcrumbs-section">
-    <div class="breadcrumb">
-    <h1 class="breadcrumb-heading">Privacy & Terms</h1>
-    <a href="index.html">Home</a>
-    <span>/</span>
-    <span class="current">Privacy Policy</span>
-    </div>
-  </section>
+      <div class="breadcrumb">
+      <h1 class="breadcrumb-heading">Privacy & Terms</h1>
+      <a href="index.php">Home</a>
+      <span>/</span>
+      <span class="current">Privacy Policy</span>
+      </div>
+      </section>
 
  <section>  
 <div class="tp-wrapper">
@@ -50,10 +50,12 @@
   <!-- Tabs -->
    
   <div class="tp-tabs">
+    <div class="button-tp-div">
     <button class="tp-tab active" data-tab="terms">Terms & Conditions</button>
     <button class="tp-tab" data-tab="privacy">Privacy Policy</button>
-    <div class="tp-indicator"></div>
-  </div>
+    </div>
+    <div class="tp-indicator" ></div>
+    </div>
   
   <!-- TERMS -->
   <section class="terms-section tp-panel tp-content active" id="terms">
@@ -207,18 +209,21 @@
     AssetEdge may integrate third-party tools or services. We are not
     responsible for the privacy practices of external websites.
   </p>
-</div>
+  </div>
 
 <div class="privacy-block">
+
   <h3>Your Rights</h3>
   <p>
     You have the right to access, update, or request deletion of your
     personal data, subject to legal obligations and regulatory requirements.
   </p>
+
 </div>
 
 <div class="privacy-block">
   <h3>Policy Updates</h3>
+
   <p>
     This Privacy Policy may be updated periodically. Any changes will be
     reflected on this page with immediate effect.
@@ -244,7 +249,6 @@
   <span class="pulse"></span>
 </a>
 
-
  <script>
   document.addEventListener("DOMContentLoaded", () => {
   // Tabs functionality
@@ -253,15 +257,16 @@
   const indicator = document.querySelector(".tp-indicator");
 
   tabs.forEach((tab, index) => {
-    tab.addEventListener("click", () => {
-      tabs.forEach(t => t.classList.remove("active"));
-      contents.forEach(c => c.classList.remove("active"));
+  tab.addEventListener("click", () => {
+  tabs.forEach(t => t.classList.remove("active"));
+  contents.forEach(c => c.classList.remove("active"));
 
       tab.classList.add("active");
       document.getElementById(tab.dataset.tab).classList.add("active");
       
-      // Move indicator
-      if (indicator) indicator.style.transform = `translateX(${index * 180}px)`;
+      
+      if (indicator) indicator.style.transform = `translateX(${index * 170}px)`;
+      
     });
   });
 
@@ -282,10 +287,9 @@
       const targetBlock = parentSection.querySelector(`#${targetId}`);
       if (targetBlock) targetBlock.classList.add("active");
     }); 
-  });
-});
+    });
+    });
 
-
- </script>
-    </body>
-    </html>
+    </script>
+     </body>
+     </html>

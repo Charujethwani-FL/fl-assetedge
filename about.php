@@ -8,16 +8,15 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="fonts/flaticon.css" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
- <link rel="icon" type="image/png" sizes="16x16" href="public/faviconAE-img.jpg">
-  <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css">
-
-  </head>
-  <body>
+    <link rel="icon" type="image/png" sizes="16x16" href="public/faviconAE-img.jpg">
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css">
+    </head>
+    <body>
    
-    <header class="main-header ">
+    <header class="main-header">
     <div class="main-header-container">
       <div class="logo">
-        <img src="public/logo-img.jpg" alt="Asset Edge Logo">
+      <img src="public/logo-img.jpg" alt="AssetEdge Logo">
       </div>
 
       <nav class="navbar">
@@ -29,12 +28,12 @@
         </ul>
       </nav>
     </div>
-  </header>
+    </header>
 
    <section class="breadcrumbs-section">
     <div class="breadcrumb">
     <h1 class="breadcrumb-heading">About Us</h1>
-    <a href="index.html " >Home</a>
+    <a href="index.php " >Home</a>
     <span>/</span>
     <span class="current">About Us</span>
     </div>
@@ -235,7 +234,7 @@
 
      <!-- Left Content -->
         <div class="different-sec-content">
-        <span class="different-sec-subtitle">WHY WE ARE DIFFERENT</span>
+        <span class="different-sec-subtitle">WHAT MAKES US UNIQUE</span>
         <h2 class="different-sec-title">
           Smart Leasing Backed by Direct Mandates
         </h2>

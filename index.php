@@ -15,7 +15,9 @@
       rel="stylesheet"
     />
     <link rel="icon" type="image/png" sizes="16x16" href="public/faviconAE-img.jpg">
-    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css">
+     <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css">
+   <!-- <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/css/intlTelInput.css"/> -->
   </head>
 
   <body>
@@ -27,41 +29,42 @@
  <!-- hero-home section start -->
 
        <section class="hero-home-sec" id="homehero">
-       <div class="home-form">
-        <form class="home-form-container" id="homeForm">
-        <h2 class="home-form-title">Get in Touch</h2>
+       <!-- <div class="home-form">
+         <form class="home-form-container" id="homeForm">
+            <h2 class="home-form-title">Get in Touch</h2>
 
-    <div class="home-form-group">
-        <input type="text" class="home-form-input" id="name" name="name" placeholder="Name" required>
-    </div>
+            <div class="home-form-group">
+                <input type="text" class="home-form-input" id="name" name="name" placeholder="Name" required>
+            </div>
 
-    <div class="home-form-group">
-        <input type="email" class="home-form-input" id="email" name="email" placeholder="Email" required>
-    </div>
+            <div class="home-form-group">
+                <input type="email" class="home-form-input" id="email" name="email" placeholder="Email" required>
+            </div>
 
-    <div class="home-form-group">
-        <input type="tel" class="home-form-input" id="phone" name="phone" placeholder="Phone Number" required>
-        
-    </div>
+            <div class="input-group">
+                
+                    <input type="tel" id="phone" placeholder="Enter phone number" required>
+                  </div>
+                
 
-    <div class="home-form-group">
-        <textarea class="home-form-textarea" id="message" name="message" placeholder="Message" required></textarea>
-    </div>
+            <div class="home-form-group">
+                <textarea class="home-form-textarea" id="message" name="message" placeholder="Message" required></textarea>
+            </div>
 
-    <button type="submit" class="home-form-button">Submit</button>
+            <button type="submit" class="home-form-button">Submit</button>
 
-    <p class="home-form-error" id="formError">Please fill in all fields.</p>
-    <p class="home-form-success" id="formSuccess">Form submitted successfully!</p>
-    <button type="button" class="home-form-close" onclick="closeForm()">×</button>
-        </form>
-        </div>
+            <p class="home-form-error" id="formError">Please fill in all fields.</p>
+            <p class="home-form-success" id="formSuccess">Form submitted successfully!</p>
+            <button type="button" class="home-form-close" onclick="closeForm()">×</button>
+          </form>
+      </div> -->
   
         <div class="bg-img-shape">
           <img src="public/bg-shape.png" alt="">
         </div>
 
       <div class="home-hero-slider">
-          <!-- SLIDE 1 – HOME (Your existing content) -->
+          <!-- SLIDE 1 – HOME  -->
           <div class="home-hero slide active">
             <div class="home-hero-content">
               <h1>Smart Property Solutions<br>
@@ -72,8 +75,8 @@
               </p>
 
               <div class="home-hero-buttons">
-                <a href="inventory.html"><button class="btn-buy">Explore Properties</button></a>
-                <button class="btn-rent">Get Started</button>
+                <a href="inventory.php"><button class="btn-buy">Explore Properties</button></a>
+                <a href="contact.php"><button class="btn-rent">Get Started</button></a>
               </div>
             </div>
             <div class="home-hero-image">
@@ -91,8 +94,8 @@
                 We are a trusted real estate advisory firm offering strategic expertise, deep market intelligence, and tailored property solutions aligned with your business goals.
               </p>
               <div class="home-hero-buttons">
-                <a href="about.html"><button class="btn-buy">Learn More</button></a>
-                <button class="btn-rent btn-our-story">Our Story</button>
+                <a href="about.php"><button class="btn-buy">Learn More</button></a>
+                <a href="about.php"><button class="btn-rent btn-our-story">Our Story</button></a>
               </div>
             </div>
             <div class="home-hero-image">
@@ -111,8 +114,8 @@
                 Explore our exclusive portfolio of thoughtfully chosen commercial properties built for modern enterprises and smart investors. 
               </p>
               <div class="home-hero-buttons">
-                <a href="inventory.html"><button class="btn-buy">View Inventory</button></a>
-                <a href="contact.html"><button class="btn-rent">Schedule Visit</button></a>
+                <a href="inventory.php"><button class="btn-buy">View Inventory</button></a>
+                <a href="contact.php"><button class="btn-rent">Schedule Visit</button></a>
               </div>
             </div>
             <div class="home-hero-image">
@@ -131,12 +134,12 @@
                 Our experts are here to guide you with clarity and confidence.
               </p>
               <div class="home-hero-buttons">
-                <a href="contact.html"><button class="btn-buy">Contact Now</button></a>
-                <button class="btn-rent">Book Consultation</button>
+                <a href="contact.php"><button class="btn-buy">Contact Now</button></a>
+                <a href="contact.php"><button class="btn-rent">Book Consultation</button></a>
               </div>
             </div>
             <div class="home-hero-image">
-              <img src="public/home/home-hero4.jpg" alt="Contact us">
+              <img src="public/home/home-hero41.jpg" alt="Contact us">
             </div>
           </div>
       </div>
@@ -165,50 +168,50 @@
         
         <div class="feature-prop-slider" id="slider">
             
-            <div class="feature-prop-card" style="background-image: url('https://i.pinimg.com/1200x/9c/fc/63/9cfc632d2a19ee2d442b73bced0cf7f9.jpg');">
+            <div class="feature-prop-card" style="background-image: url('public/inventory/property/ucp-hero.png');">
                 <div class="feature-prop-content">
-                    <h2 class="feature-prop-title">Penthouse View</h2>
-                    <p class="feature-prop-description">Premium penthouse with skyline view.</p>
+                    <h2 class="feature-prop-title">Unitech Cyber Park</h2>
+                    <p class="feature-prop-description">Sector 39, Gurugram, Haryana 122003</p>
                     <button class="feature-prop-btn">View More &rarr;</button>
                 </div>
             </div>
 
-            <div class="feature-prop-card" style="background-image: url('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80');">
+            <div class="feature-prop-card" style="background-image: url('public/try/mgp-3.jpg');">
                 <div class="feature-prop-content">
-                    <h2 class="feature-prop-title">Luxury Residence</h2>
-                    <p class="feature-prop-description">Elegant living with premium finishes.</p>
+                    <h2 class="feature-prop-title">Magnum Global Park</h2>
+                    <p class="feature-prop-description">Sector 58, Gurugram, Haryana 122098</p>
                     <button class="feature-prop-btn">View More &rarr;</button>
                 </div>
             </div>
 
-            <div class="feature-prop-card" style="background-image: url('https://sobharealty.com/sites/default/files/styles/webp/public/2025-10/1006x608%20%E2%80%93%2095.jpg.webp?itok=LfjJt-ws');">
+            <div class="feature-prop-card" style="background-image: url('public/try/mcc.png');">
                 <div class="feature-prop-content">
-                    <h2 class="feature-prop-title">Beachside Villa</h2>
-                    <p class="feature-prop-description">Luxury villa with ocean views.</p>
+                    <h2 class="feature-prop-title">Magnum City Centre</h2>
+                    <p class="feature-prop-description">sector 63 A, Gurugram, Haryana 122098</p>
                     <button class="feature-prop-btn">View More &rarr;</button>
                 </div>
             </div>
 
-            <div class="feature-prop-card" style="background-image: url('https://i.pinimg.com/1200x/07/f5/54/07f55430b864c6a091a7091214724543.jpg');">
+            <div class="feature-prop-card" style="background-image: url('public/try/mt2.jpg');">
                 <div class="feature-prop-content">
-                    <h2 class="feature-prop-title">Urban Loft</h2>
-                    <p class="feature-prop-description">Modern loft in the city center.</p>
+                    <h2 class="feature-prop-title">Magnum Tower</h2>
+                    <p class="feature-prop-description">Sector 58, Gurugram, Haryana 122098</p>
                     <button class="feature-prop-btn">View More &rarr;</button>
                 </div>
             </div>
 
-            <div class="feature-prop-card" style="background-image: url('https://sobharealty.com/sites/default/files/styles/webp/public/2025-10/1006x608%20%E2%80%93%2095.jpg.webp?itok=LfjJt-ws');">
+            <div class="feature-prop-card" style="background-image: url('public/try/m3m-u.webp');">
                 <div class="feature-prop-content">
-                    <h2 class="feature-prop-title">Modern Tower</h2>
-                    <p class="feature-prop-description">Spacious interiors and garden.</p>
+                    <h2 class="feature-prop-title">M3M Urbana Business Park</h2>
+                    <p class="feature-prop-description">Sector 67, Gurugram, Haryana 122101</p>
                     <button class="feature-prop-btn">View More &rarr;</button>
                 </div>
             </div>
 
-            <div class="feature-prop-card" style="background-image: url('https://i.pinimg.com/1200x/07/f5/54/07f55430b864c6a091a7091214724543.jpg');">
+            <div class="feature-prop-card" style="background-image: url('public/try/aipl-1.jpg');">
                 <div class="feature-prop-content">
-                    <h2 class="feature-prop-title">Cozy Cottage</h2>
-                    <p class="feature-prop-description">Perfect getaway in the woods.</p>
+                    <h2 class="feature-prop-title">AIPL Business Club</h2>
+                    <p class="feature-prop-description">Sector 62, Gurugram, Haryana 122002</p>
                     <button class="feature-prop-btn">View More &rarr;</button>
                 </div>
             </div>
@@ -357,7 +360,7 @@
           
         
               <div class="partners-grid-container">
-                <ul class="our-partner-grid row our-partner-border reveal">
+                <ul class="our-partner-grid row our-partner-border ">
 
                   <!-- Always visible (first 6) -->
                   <li class="col-4 col-md-2 our-partner-item">
@@ -457,8 +460,8 @@
 
                 <!-- View More Button -->
                       <div class="partner-view-con">
-    <button class="partner-view-btn" onclick="togglePartners()">
-      <span class="btn-text">View More</span>
+            <button class="partner-view-btn" onclick="togglePartners()">
+              <span class="btn-text">View More</span>
       
     </button>
   </div>
@@ -479,53 +482,11 @@
     <i class="fi fi-sr-phone-call"></i>  
   <span class="pulse"></span>
 </a>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const reveals = document.querySelectorAll(".reveal");
-        const observer = new IntersectionObserver(
-          (entries) => {
-            entries.forEach((entry) => {
-              if (entry.isIntersecting) {
-                entry.target.classList.add("active");
-              }
-            });
-          },
-          {
-            threshold: 0.2, 
-          }
-        );
-
-        reveals.forEach((elem) => observer.observe(elem));
-        
-      });
-
-      function togglePartners() {
-      const extras = document.querySelectorAll('.extra-partners');
-      const btn = document.querySelector('.partner-view-btn');
-
-      const isOpen = extras[0].classList.contains('show');
-
-      extras.forEach(item => {
-        item.classList.toggle('show');
-      });
-
-      btn.textContent = isOpen ? 'View More' : 'View Less';
-
-    }
-
-  // const hamburger = document.getElementById("hamburger");
-  // const menuOverlay = document.getElementById("menuOverlay");
-
-  // hamburger.addEventListener("click", () => {
-  //   hamburger.classList.toggle("active");
-  //   menuOverlay.classList.toggle("active");
-  // });
-
-
-
-    </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
+<script src="script.js"></script>
+    
     <!-- Global JS -->
-    <script src="script.js"></script>
+    
   </body>
 
 </html>

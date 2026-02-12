@@ -9,8 +9,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="public/faviconAE-img.jpg">
     <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css">
     <link rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/css/intlTelInput.css"
-/>
+    href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/css/intlTelInput.css"/>
   </head> 
 <body>
 
@@ -34,7 +33,7 @@
   <section class="breadcrumbs-section">
     <div class="breadcrumb">
       <h1 class="breadcrumb-heading">Contact Us</h1>
-    <a href="index.html">Home</a>
+    <a href="index.php">Home</a>
     <span>/</span>
     <span class="current">Contact Us</span>
     </div>
@@ -60,7 +59,7 @@
           Share your requirements with us and we’ll guide you through available properties, pricing, and next steps.
         </p>
 
-        <form id="contactForm">
+        <form  class="contact-form" id="contactForm" >
           <div class="row">
             <div class="input-group">
               <label>First Name</label>
@@ -73,15 +72,17 @@
             </div>
           </div>
 
-          <div class="input-group">
-            <label>Email Address</label>
-            <input type="email" id="email" placeholder="Email address" required>
-          </div>
+          <div class="row">
+            <div class="input-group">
+              <label>Email Address</label>
+              <input type="email" id="email" placeholder="Email address" required>
+            </div>
 
-          <div class="input-group">
-              <label>Phone Number</label>
-            <input type="tel" id="phone" placeholder="Enter phone number" required>
-          </div>
+            <div class="input-group">
+                <label>Phone Number</label>
+              <input type="tel" id="phone" placeholder="Enter phone number" required>
+            </div>
+           </div>
 
           <div class="input-group">
             <label>Message</label>

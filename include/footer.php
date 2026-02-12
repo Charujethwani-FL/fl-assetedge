@@ -35,22 +35,22 @@
                   Gurgaon Pin-122015 (HR) India
                 </p>
               </div>
-          </div>
-
+              </div>
         </div>
         </div>
     </div>
+
      <!-- Bottom Bar -->
-  <div class = "footer-bottom">
-    <div class="footer-bottom-container">
-      <p>© 2026. AssetEdge, All rights reserved.</p>
-      <div class="footer-links">
-        <a href="privacy-policy.html">Privacy Policy</a>
-        <span>|</span>
-        <a href="privacy-policy.html">Terms & Condition</a>
+    <div class = "footer-bottom">
+      <div class="footer-bottom-container">
+        <p>© 2026. AssetEdge, All rights reserved.</p>
+        <div class="footer-links">
+          <a href="privacy-policy.php">Privacy Policy</a>
+          <span>|</span>
+          <a href="privacy-policy.php">Terms & Condition</a>
+        </div>
       </div>
     </div>
-  </div>
 </footer>
 
      <!--footer End-->

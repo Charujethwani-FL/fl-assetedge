@@ -9,6 +9,7 @@
           break;
       }
   }
+  
   if (!$property) {
       echo "<h1>Property not found!</h1>";
       exit;
@@ -35,16 +36,29 @@
 
 <body>
 
-  <?php
-    include('include/header.php');
-  ?>
+ <header class="main-header ">
+    <div class="main-header-container">
+      <div class="logo">
+        <img src="public/logo-img.jpg" alt="Asset Edge Logo">
+      </div>
+
+      <nav class="navbar">
+        <ul>
+          <li><a href="index.php" >Home</a></li>
+          <li><a href="about.php" class="active">About Us</a></li>
+          <li><a href="inventory.php">Inventory</a></li>
+          <li><a href="contact.php">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
  <section class="interoy-detail-hero">
   <div class="interoy-detail-slider">
     <?php foreach ($property['images-hero'] as $index => $image): ?>
       <img 
         src="<?php echo htmlspecialchars($image); ?>" 
-        class="interoy-detail-slide <?php echo $index === 0 ? 'active' : ''; ?>" 
+        class="interoy-detail-slide <?php echo $index === 0 ? 'active first-child' : ''; ?>" 
         alt="Property Image <?php echo $index + 1; ?>"
       />
     <?php endforeach; ?>
@@ -94,7 +108,7 @@
     <!-- DETAILS -->
     <div class="interoy-detail-sections">
       <div id="description">
-        <h2>Lease Description</h2>
+        <h2>About Property</h2>
         <p class="js-description"><?php echo htmlspecialchars($property['description']); ?></p>
       </div>
       <br>
@@ -103,19 +117,27 @@
         <table class="interoy-detail-table">
           <thead>
             <tr>
+              <th>Area</th>
               <th>Floor</th>
-              <th>Size</th>
-              <th>Type</th>
               <th>Availability</th>
+              <th>Rent/ Sq.Ft</th>
             </tr>
           </thead>
           <tbody class="js-space-rows">
             <?php foreach ($property['space-rows'] as $space): ?>
                 <tr>
-                    <td><?php echo htmlspecialchars($space['floor']); ?></td>
-                    <td><?php echo htmlspecialchars($space['size']); ?></td>
-                    <td><?php echo htmlspecialchars($space['type']); ?></td>
-                    <td><?php echo htmlspecialchars($space['availability']); ?></td>
+                  <td><?php echo htmlspecialchars($space['area']); ?></td>
+                   <td class="link-cell">
+                    <a href="contact.php?floor=<?php echo urlencode($space['floor']); ?>">
+                      <?php echo htmlspecialchars($space['floor']); ?>
+                    </a>
+                  </td>
+                  <td><?php echo htmlspecialchars($space['availability']); ?></td>
+                  <td class="link-cell">
+                  <a href="contact.php?rent=<?php echo urlencode($space['rent-sq-ft']); ?>">
+                    <?php echo htmlspecialchars($space['rent-sq-ft']); ?>
+                  </a>
+                </td>
                 </tr>
             <?php endforeach; ?>
           </tbody>
@@ -143,24 +165,32 @@
       </div>
       <br>
 
-      <!-- Location -->
-      <div id="location">
-        <h2>Location</h2>
-        <div class="map-container">
-          <iframe src="https://www.google.com/maps?q=DLF%20Corporate%20Greens%20Gurugram&output=embed" loading="lazy">
-          </iframe>
-        </div>
+        <!-- Location -->
+   
+    <div id="location">
+      <h2>Location</h2>
+      <div class="map-container">
+         <iframe 
+            src="<?php echo htmlspecialchars($property['location-URL'][0]); ?>&output=embed" 
+            loading="lazy">
+        </iframe>
       </div>
-      <br>
+    </div>
+    <br>
+   
 
-      <!-- Floor Plan -->
-      <div id="floor-plan">
+    <!-- Floor Plan -->
+   
+    <!-- <div id="floor-plan">
         <h2>Floor Plan</h2>
-        <a href="floor-plan.svg" download="Office-Floor-Plan.svg" class="floor-image">
-          <img src="public/inventory-detail/floor-plan.jpg" alt="Floor Plan Preview">
-          <span class="download-icon">⬇</span>
-        </a>
-      </div>
+        <div class="floor-image">
+            <img 
+                src="<?php echo htmlspecialchars($property['floorplan-image'][0]); ?>" 
+                alt="Floor Plan Preview"
+            >
+        </div>
+    </div> -->
+   
 
     </div>
   </section>
@@ -174,8 +204,8 @@
 
       <h2>Property Inquiry</h2>
       <form>
-        <input type="text" placeholder="First Name" required />
-         <input type="text" placeholder="Last Name" required />
+        <input type="text" placeholder="Name" required />
+         <input type="text" placeholder=" Company Name" required />
         <input type="email" placeholder="Email" required />
         <input type="tel" placeholder="Phone Number" />
         <textarea placeholder="Message"></textarea>
@@ -192,10 +222,10 @@
     ?>
   <!--footer End-->
 
-  <a href="tel:+919773880555" class="call-btn" aria-label="Call Us">
-    <i class="fi fi-sr-phone-call"></i>
-    <span class="pulse"></span>
-  </a>
+ <a href="tel:+919773880555" class="floating-call-btn" aria-label="Call Us">
+    <i class="fi fi-sr-phone-call"></i>  
+  <span class="pulse"></span>
+</a>
 
   <script>
     const interoyHeroSlider = {

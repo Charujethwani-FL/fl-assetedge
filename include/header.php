@@ -23,13 +23,14 @@
 
    
         <!-- Mobile / Tablet Overlay Menu -->
-  <div class="menu-overlay" id="menuOverlay">
-    <button id="closeMenu" class="close-btn-menu">&times;</button>
-    <ul>
-      <li><a href="index.php" class="menu-link">Home</a></li>
-      <li><a href="about.php" class="menu-link">About us</a></li>
-      <li><a href="inventory.php" class="menu-link">Property</a></li>
-      <li><a href="contact.php" class="menu-link">Contact Us</a></li>
-      <li><a href="privacy-policy.php" class="menu-link">Privacy Policy</a></li>  
-    </ul>
-  </div>
+    <div class="menu-overlay" id="menuOverlay">
+     <button id="closeMenu" class="close-btn-menu">&times;</button>
+        <ul>
+          <li><a href="index.php" class="menu-link">Home</a></li>
+          <li><a href="about.php" class="menu-link">About us</a></li>
+          <li><a href="inventory.php" class="menu-link">Property</a></li>
+          <li><a href="contact.php" class="menu-link">Contact Us</a></li>
+          <li><a href="privacy-policy.php" class="menu-link">Privacy Policy</a></li>  
+        </ul>
+
+    </div>
