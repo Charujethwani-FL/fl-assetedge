@@ -4130,6 +4130,50 @@ display: grid;
   z-index: -1;
 }
 
+/* Response Message Styling */
+#formResponse {
+  margin-top: 20px;
+}
+
+.form-alert {
+  padding: 14px 18px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+.form-alert.success {
+  background-color: #e6f6ec;
+  color: #1e7e34;
+  border-left: 4px solid #28a745;
+}
+
+.form-alert.error {
+  background-color: #fdecea;
+  color: #b02a37;
+  border-left: 4px solid #dc3545;
+}
+
+.form-alert i {
+  font-size: 16px;
+}
+
+/* Smooth animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 
  /* Responsivie Tablet */
 
