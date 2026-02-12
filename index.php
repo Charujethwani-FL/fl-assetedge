@@ -145,12 +145,12 @@
       </div>
 
       <div class="pagination-container-home">
-      <div class="home-hero-pagination">
-      <span class="dot active" data-slide="0"></span>
-      <span class="dot" data-slide="1"></span>
-      <span class="dot" data-slide="2"></span>
-      <span class="dot" data-slide="3"></span>
-      </div>
+        <div class="home-hero-pagination">
+        <span class="dot active" data-slide="0"></span>
+        <span class="dot" data-slide="1"></span>
+        <span class="dot" data-slide="2"></span>
+        <span class="dot" data-slide="3"></span>
+        </div>
       </div>
       </section>
 
@@ -172,7 +172,7 @@
                 <div class="feature-prop-content">
                     <h2 class="feature-prop-title">Unitech Cyber Park</h2>
                     <p class="feature-prop-description">Sector 39, Gurugram, Haryana 122003</p>
-                    <button class="feature-prop-btn">View More &rarr;</button>
+                    <a href="inventory-detail.php?property=unitech-cyber-park-16000"><button class="feature-prop-btn">View More &rarr;</button></a>
                 </div>
             </div>
 
@@ -180,7 +180,7 @@
                 <div class="feature-prop-content">
                     <h2 class="feature-prop-title">Magnum Global Park</h2>
                     <p class="feature-prop-description">Sector 58, Gurugram, Haryana 122098</p>
-                    <button class="feature-prop-btn">View More &rarr;</button>
+                    <a href="inventory-detail.php?property=magnum-global-park"><button class="feature-prop-btn">View More &rarr;</button></a>
                 </div>
             </div>
 
@@ -188,7 +188,7 @@
                 <div class="feature-prop-content">
                     <h2 class="feature-prop-title">Magnum City Centre</h2>
                     <p class="feature-prop-description">sector 63 A, Gurugram, Haryana 122098</p>
-                    <button class="feature-prop-btn">View More &rarr;</button>
+                    <a href="inventory-detail.php?property=magnum-city-centre-6927"><button class="feature-prop-btn">View More &rarr;</button></a>
                 </div>
             </div>
 
@@ -196,7 +196,7 @@
                 <div class="feature-prop-content">
                     <h2 class="feature-prop-title">Magnum Tower</h2>
                     <p class="feature-prop-description">Sector 58, Gurugram, Haryana 122098</p>
-                    <button class="feature-prop-btn">View More &rarr;</button>
+                   <a href="inventory-detail.php?property=magnum-tower-3860"> <button class="feature-prop-btn">View More &rarr;</button></a>
                 </div>
             </div>
 
@@ -204,7 +204,7 @@
                 <div class="feature-prop-content">
                     <h2 class="feature-prop-title">M3M Urbana Business Park</h2>
                     <p class="feature-prop-description">Sector 67, Gurugram, Haryana 122101</p>
-                    <button class="feature-prop-btn">View More &rarr;</button>
+                    <a href="inventory-detail.php?property=m3m-urbana-business-park-9897"><button class="feature-prop-btn">View More &rarr;</button></a>
                 </div>
             </div>
 
@@ -212,7 +212,7 @@
                 <div class="feature-prop-content">
                     <h2 class="feature-prop-title">AIPL Business Club</h2>
                     <p class="feature-prop-description">Sector 62, Gurugram, Haryana 122002</p>
-                    <button class="feature-prop-btn">View More &rarr;</button>
+                    <a href="inventory-detail.php?property=aipl-business-club-4000"><button class="feature-prop-btn">View More &rarr;</button></a>
                 </div>
             </div>
 
