@@ -244,7 +244,7 @@
           experience—so you can lease with complete confidence.
         </p>
 
-        <a href="#properties" class="different-sec-btn">
+        <a href="inventory.php" class="different-sec-btn">
           Explore Properties
         </a>
       </div>

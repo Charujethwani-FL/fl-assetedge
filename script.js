@@ -233,9 +233,9 @@
           });
 
 
-          /* ===========================
+             /* ===========================
                 Inventory Page
-             =========================== */
+                =========================== */
 
 
 
@@ -271,64 +271,59 @@
 
 
 
- /* ===========================
-   click functions EFFECT
-   =========================== */
+      /* ===========================
+        click functions EFFECT
+        =========================== */
 
-// document.addEventListener('DOMContentLoaded', function () {
-//   const btn = document.querySelector('.btn-our-story');
-//   const target = document.getElementById('our-story');
-//   btn.addEventListener('click', function () {
-//     target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-//   });
-// });
+document.addEventListener('DOMContentLoaded', function () {
+  const btn = document.querySelector('.btn-our-story');
+  const target = document.getElementById('our-story');
+  btn.addEventListener('click', function () {
+    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+});
 
 
    
 // our vision
 
-  // document.addEventListener("DOMContentLoaded", () => {
-  // const cards = document.querySelectorAll(".about-company-card");
-  //  cards.forEach((card, index) => {
-  //   card.style.opacity = "0";
-  //   card.style.transform = "translateY(30px)";
-  //   setTimeout(() => {
-  //     card.style.transition = "0.6s ease";
-  //     card.style.opacity = "1";
-  //     card.style.transform = "translateY(0)";
-  //   }, index * 200);
-  //   });
-  //   });
+  document.addEventListener("DOMContentLoaded", () => {
+  const cards = document.querySelectorAll(".about-company-card");
+   cards.forEach((card, index) => {
+    card.style.opacity = "0";
+    card.style.transform = "translateY(30px)";
+    setTimeout(() => {
+      card.style.transition = "0.6s ease";
+      card.style.opacity = "1";
+      card.style.transform = "translateY(0)";
+    }, index * 200);
+    });
+    });
 
 
     /* ===========================
             home form
        =========================== */
 
-// function closeForm() {
-//     const form = document.querySelector('.home-form-container');
-//     form.classList.add('home-form-hide');
+function closeForm() {
+    const form = document.querySelector('.home-form-container');
+    form.classList.add('home-form-hide');
 
-//     // Optional: fully remove after animation
-//     setTimeout(() => {
-//         form.style.display = 'none';
-//     }, 600);
-// }
+    // Optional: fully remove after animation
+    setTimeout(() => {
+        form.style.display = 'none';
+    }, 600);
+}
 
-// window.addEventListener("scroll", function () {
-//   const header = document.querySelector(".main-header");
+window.addEventListener("scroll", function () {
+  const header = document.querySelector(".main-header");
 
-//   if (window.scrollY > 50) {
-//     header.classList.add("scrolled");
-//   } else {
-//     header.classList.remove("scrolled");
-//   }
-// });
-
-
-
-
-  
+  if (window.scrollY > 50) {
+    header.classList.add("scrolled");
+  } else {
+    header.classList.remove("scrolled");
+  }
+});
 
 
 /* ===========================
@@ -336,15 +331,15 @@
 =========================== 
 */
 
-// const contactForm = document.getElementById("contactForm");
+const contactForm = document.getElementById("contactForm");
 
-// if (contactForm) {
-//   contactForm.addEventListener("submit", function (e) {
-//     e.preventDefault();
-//     alert("Message sent successfully!");
-//     this.reset();
-//   });
-// }
+if (contactForm) {
+  contactForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+    alert("Message sent successfully!");
+    this.reset();
+  });
+}
 
 
 /* ===========================
@@ -467,26 +462,26 @@
        =========================== */
 
 
-//   document.addEventListener("DOMContentLoaded", () => {
-//   console.log("SCRIPT LOADED");
-//   const tabs = document.querySelectorAll(".tp-tab");
-//   const contents = document.querySelectorAll(".tp-content");
-//   const indicator = document.querySelector(".tp-indicator");
+  document.addEventListener("DOMContentLoaded", () => {
+  console.log("SCRIPT LOADED");
+  const tabs = document.querySelectorAll(".tp-tab");
+  const contents = document.querySelectorAll(".tp-content");
+  const indicator = document.querySelector(".tp-indicator");
 
-//   if (!tabs.length || !contents.length || !indicator) {
-//     console.error("Missing elements", { tabs, contents, indicator });
-//     return;
-//   }
+  if (!tabs.length || !contents.length || !indicator) {
+    console.error("Missing elements", { tabs, contents, indicator });
+    return;
+  }
 
-//   tabs.forEach((tab, index) => {
-//   tab.addEventListener("click", () => {
-//   tabs.forEach(t => t.classList.remove("active"));
-//   contents.forEach(c => c.classList.remove("active"));
+  tabs.forEach((tab, index) => {
+  tab.addEventListener("click", () => {
+  tabs.forEach(t => t.classList.remove("active"));
+  contents.forEach(c => c.classList.remove("active"));
 
-//   tab.classList.add("active");
-//   document.getElementById(tab.dataset.tab).classList.add("active");
-//       indicator.style.transform = `translateX(${index * 180}px)`;
-//     });
-//   });
-// });
+  tab.classList.add("active");
+  document.getElementById(tab.dataset.tab).classList.add("active");
+      indicator.style.transform = `translateX(${index * 180}px)`;
+    });
+  });
+});
 
