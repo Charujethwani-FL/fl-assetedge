@@ -18,9 +18,10 @@
 
 <body>
 
-  <?php
-    include('include/header.php');
-  ?>
+      <?php
+      $headerClass = 'secondary-header';
+      include('include/header.php');
+      ?>
 
   <section class="breadcrumbs-section">
     <div class="breadcrumb">

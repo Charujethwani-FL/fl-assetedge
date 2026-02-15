@@ -36,22 +36,10 @@
 
 <body>
 
- <header class="main-header ">
-    <div class="main-header-container">
-      <div class="logo">
-        <img src="public/logo-img.jpg" alt="Asset Edge Logo">
-      </div>
-
-      <nav class="navbar">
-        <ul>
-          <li><a href="index.php" >Home</a></li>
-          <li><a href="about.php" class="active">About Us</a></li>
-          <li><a href="inventory.php">Inventory</a></li>
-          <li><a href="contact.php">Contact Us</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+     <?php
+      $headerClass = 'main-header';
+      include('include/header.php');
+      ?>
 
  <section class="interoy-detail-hero">
   <div class="interoy-detail-slider">

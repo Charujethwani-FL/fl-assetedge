@@ -16,20 +16,21 @@
     />
     <link rel="icon" type="image/png" sizes="16x16" href="public/faviconAE-img.jpg">
      <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css">
-   <!-- <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/css/intlTelInput.css"/> -->
+   <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/css/intlTelInput.css"/>
   </head>
 
   <body>
    
-  <?php
-    include('include/header.php');
-  ?>
+     <?php
+      $headerClass = 'secondary-header';
+      include('include/header.php');
+      ?>
 
- <!-- hero-home section start -->
+   <!-- hero-home section start -->
 
        <section class="hero-home-sec" id="homehero">
-       <!-- <div class="home-form">
+       <div class="home-form">
          <form class="home-form-container" id="homeForm">
             <h2 class="home-form-title">Get in Touch</h2>
 
@@ -57,7 +58,7 @@
             <p class="home-form-success" id="formSuccess">Form submitted successfully!</p>
             <button type="button" class="home-form-close" onclick="closeForm()">×</button>
           </form>
-      </div> -->
+      </div>
   
         <div class="bg-img-shape">
           <img src="public/bg-shape.png" alt="">
@@ -471,22 +472,23 @@
           
 <!-- Our Partners  end  -->
 
-<!-- footer -->
-  <?php
-    include('include/footer.php');
-  ?>
+  <!-- footer -->
+    <?php
+      include('include/footer.php');
+    ?>
 
-<!--footer End-->
+  <!--footer End-->
 
-<a href="tel:+919773880555" class="floating-call-btn" aria-label="Call Us">
-    <i class="fi fi-sr-phone-call"></i>  
-  <span class="pulse"></span>
-</a>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
-<script src="script.js"></script>
+  <a href="tel:+919773880555" class="floating-call-btn" aria-label="Call Us">
+      <i class="fi fi-sr-phone-call"></i>  
+    <span class="pulse"></span>
+  </a>
+    
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
+  <script src="script.js"></script>
     
     <!-- Global JS -->
     
-  </body>
+    </body>
 
-</html>
+  </html>

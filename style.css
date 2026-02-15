@@ -41,7 +41,7 @@ body{
 
 
 /* HEADER BASE */
-.main-header {
+/* .main-header {
     position: fixed;
     top: 0;
     left: 0;
@@ -49,7 +49,7 @@ body{
     padding: 8px 0 5px;
     z-index: 1000;
      transition: background-color 0.3s ease, box-shadow 0.3s ease;  
-}
+} */
 
 
 .main-heading-container{
@@ -67,46 +67,44 @@ body{
   padding: 40px 0 50px ;
 }
 
+/* =========================================
+   MAIN HEADER BASE
+========================================= */
+
+.main-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  transition: all 0.3s ease;
+  background: transparent;
+}
 
 .main-header-container {
-    width: 90%;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px 0;
 }
 
+/* =========================================
+   LOGO
+========================================= */
 
 .logo img {
-    height: 55px;
-    width:125px;
-    padding-top: 5px;
-    padding-left: 20px;
-   
-    
+  height: 55px;
+  width: 125px;
+  padding-top: 5px;
+  padding-left: 20px;
+  transition: 0.3s;
 }
 
-/* HOME PAGE ONLY */
-.home-header{
-  background-color: #fff;
-}
-
-.home-header .navbar ul li a {
-  color:var(--para-primary-color);
-}
-
-/* Active link on Home page */
-.home-header .navbar ul li a.active {
-  color: var(--main-color);
-}
-
-/* Hover effect (Home only) */
-.home-header .navbar ul li a:hover {
-  color: var(--main-color);
-}
-
-/* ======== GLOBAL STYLES ======== */
-
+/* =========================================
+   NAVBAR BASE STYLES
+========================================= */
 
 .navbar ul {
   list-style: none;
@@ -120,34 +118,81 @@ body{
 
 .navbar ul li a {
   text-decoration: none;
-  color: #fff;
   font-size: 18px;
   letter-spacing: 0.5px;
   transition: 0.3s;
   padding-bottom: 5px;
 }
 
-/* Header scrolled state */
+/* =========================================
+   DEFAULT HEADER (Transparent + White)
+========================================= */
+
+.main-header .navbar ul li a {
+  color: #ffffff;
+}
+
+.main-header .hamburger span {
+  background: #ffffff;
+}
+
+/* Hover + Active (transparent mode) */
+.main-header .navbar ul li a:hover,
+.main-header .navbar ul li a.active {
+  color: var(--main-color);
+}
+
+/* =========================================
+   SECONDARY HEADER (White + Dark Text)
+========================================= */
+
+.main-header.secondary-header {
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.main-header.secondary-header .navbar ul li a {
+  color: var(--para-primary-color);
+}
+
+.main-header.secondary-header .navbar ul li a:hover,
+.main-header.secondary-header .navbar ul li a.active {
+  color: var(--main-color);
+}
+
+.main-header.secondary-header .hamburger span {
+  background: var(--para-primary-color);
+}
+
+/* =========================================
+   SCROLLED STATE (Same As Secondary)
+========================================= */
+
 .main-header.scrolled {
   background-color: #ffffff;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
-.main-header.scrolled a {
+.main-header.scrolled .navbar ul li a {
   color: var(--para-primary-color);
 }
 
-.main-header.scrolled a:hover,
-.main-header.scrolled a:active,
-.main-header.scrolled a:focus,
-.main-header.scrolled a.active {
+.main-header.scrolled .navbar ul li a:hover,
+.main-header.scrolled .navbar ul li a.active {
   color: var(--main-color);
 }
+
+.main-header.scrolled .hamburger span {
+  background: var(--para-primary-color);
+}
+
+/* =========================================
+   MENU LINK UNDERLINE EFFECT
+========================================= */
 
 .menu-link {
   position: relative;
   text-decoration: none;
-  color: inherit; 
 }
 
 .menu-link::after {
@@ -161,41 +206,54 @@ body{
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.3s ease;
-  z-index: 1;
 }
-
 
 .menu-link:hover::after {
   transform: scaleX(1);
 }
 
+/* =========================================
+   HAMBURGER
+========================================= */
 
 .hamburger {
-  display: none; 
+  display: none;
   position: relative;
   z-index: 10003;
   flex-direction: column;
   justify-content: space-between;
-  width: 25px;
-  height: 20px;
+  width: 31px;
+  height: 22px;
   cursor: pointer;
 }
 
 .hamburger span {
   display: block;
   height: 3px;
-  background-color: #343a40;
   border-radius: 2px;
   transition: 0.3s;
 }
+/* When active (cross) */
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
 
+.hamburger.active span:nth-child(2) {
+  opacity: 0; /* middle line disappears */
+}
 
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* =========================================
+   MOBILE OVERLAY MENU
+========================================= */
 
 .menu-overlay {
-  
-  display:none;}
-
-
+  display: none;
+  background-color: #343a40;
+}
 
      
     /* ============================ 
@@ -573,127 +631,151 @@ body{
   .home-hero-pagination .dot.active {
     background:#006599;
   }
-  .home-form{
+  .home-form {
   position: relative;
-  }
-  .phone-group{
-    display: flex;
-  }
-.phone-number-input {
-    background-color: var(--text-para-secondary-color);
-    border: none;
-    padding: .75rem;
-    font-size: 1rem;}
+  z-index: 2;
+}
 
 .home-form-container {
   position: absolute;
-  z-index: 2;
-  top:140px;
-  right:20px;
-    background: #ffffff;
-    padding: 25px 35px;
-    width: 350px;
-    border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-     transform: translateX(60px);
-    opacity: 0;
-    animation: formSlideIn 0.9s ease forwards;
+  top: 140px;
+  right: 20px;
+  width: 350px;
+  background: #ffffff;                 /* match contact form */
+  padding: 30px 30px;                 /* same as contact form */
+  border-radius: 20px;                 /* match contact form */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* same shadow as contact form */
+  transform: translateX(60px);
+  opacity: 0;
+  animation: formSlideIn 0.9s ease forwards;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-/* Slide-in animation */
+/* Slide-in / Slide-out Animations */
 @keyframes formSlideIn {
-    from {
-        transform: translateX(60px);
-        opacity: 0;
-    }
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
+  from { transform: translateX(60px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
 }
 
-/* Slide-out animation */
 .home-form-hide {
-    animation: formSlideOut 0.6s ease forwards;
+  animation: formSlideOut 0.6s ease forwards;
 }
 
 @keyframes formSlideOut {
-    from {
-        transform: translateX(0);
-        opacity: 1;
-    }
-    to {
-        transform: translateX(80px);
-        opacity: 0;
-    }
+  from { transform: translateX(0); opacity: 1; }
+  to { transform: translateX(80px); opacity: 0; }
 }
 
+/* Close Button */
 .home-form-close {
-    position: absolute;
-    top: 18px;
-    right: 20px;
-    padding: 1px 8px;
-    background: transparent;
-    border: none;
-    font-size: 28px;
-    font-weight: 200;
-    cursor: pointer;
-    color:var(--dark-text);
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  padding: 1px 8px;
+  background: transparent;
+  border: none;
+  font-size: 28px;
+  font-weight: 200;
+  cursor: pointer;
+  color: var(--dark-text);
+  transition: 0.3s;
 }
 
 .home-form-close:hover {
-    color:white;
-    background:var(--main-color);
-    border-radius: 5px;
+  color: white;
+  background: var(--main-color);
+  border-radius: 5px;
 }
 
+/* Form Title and Labels */
 .home-form-title {
-    color: #0a5c8f;
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 15px;
+  color:var(--main-color);   
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
 }
 
-.home-form-group {
-    margin-bottom: 10px;
+.home-form-group label {
+  display: block;
+  font-size: 16px;
+  color: #555;              
+  margin-bottom: 8px;
 }
 
+/* Input and Textarea Styling */
 .home-form-input,
-.home-form-textarea {
-    width: 100%;
-    padding: 12px 12px;
-    border-radius: 8px;
-    border: 1px solid #dce6f0;
-    font-size: 12px;
-}
-
-.home-form-textarea {
-    resize: none;
-    height: 90px;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    margin-bottom: 20px;
+.home-form-textarea,
+#phone {
+  width: 100%;
+  padding: 10px;               
+  border-radius: 10px;         
+  border: 1px solid #e2e8f0;  
+  background-color: #f7fafc;   
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 14px;            
+  color: #333;                 
+  transition: 0.3s;
 }
 
 .home-form-input:focus,
-.home-form-textarea:focus {
-    border-color: #0a5c8f;
-    outline: none;
+.home-form-textarea:focus,
+#phone:focus {
+  border-color: #4a90e2;       /* same focus color as contact form */
+  outline: none;
+  background-color: #f7fafc;
 }
 
+.home-form-textarea {
+  resize: none;
+  height: 80px;
+  
+}
+
+/* Phone Input Wrapper (if using intl-tel-input) */
+.phone-group,
+#phone {
+  background-color: #f7fafc;    /* match contact form */
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+  padding-left: 12px;
+  color: #333;
+}
+
+/* Form Button */
 .home-form-button {
-    width: 100%;
-    padding: 10px 20px;
-    color:#006599;
-    background: transparent;
-    border: 2px solid #006599;
-    border-radius: 8px;
-    font-size: 16px;
-    cursor: pointer;
+  width: 100%;
+  padding: 12px;
+  background-color: #006599;    /* primary color */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 .home-form-button:hover {
-    background-color: #006599;
-    color: white;
+  background-color: #00497a;    /* slightly darker on hover */
+}
+
+/* Error and Success Messages */
+.home-form-error {
+  color: #f44336;
+  font-size: 14px;
+  margin-top: 10px;
+  display: none;
+}
+
+.home-form-success {
+  color: #4CAF50;
+  font-size: 14px;
+  margin-top: 10px;
+  display: none;
+}
+
+/* Form Groups Spacing */
+.home-form-group {
+  margin-bottom: 15px;
 }
 
 .home-form-error {
@@ -1437,9 +1519,10 @@ overflow: hidden;
    LEFT FORM
 ========================= */
 .properties-form {
+  background-color: #fff;
   width: 28%;
   padding: 28px;
-  height: 450px;
+  height: 425px;
   border-radius: 14px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.06);
   animation: formSlideIn 0.9s ease forwards;
@@ -1451,46 +1534,77 @@ overflow: hidden;
   color: #006599;
 }
 
-.properties-form__box input,
-.properties-form__box textarea {
+
+.properties-form__box {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Inputs, Textarea, Phone */
+.properties-form input,
+.properties-form textarea,
+.properties-form #phone {
   width: 100%;
-  padding: 12px 14px;
-  margin-bottom: 14px;
-  border-radius: 8px;
-  border: 1px solid #e3edf4;
+  padding: 10px;
+  border-radius: 10px;               /* same as contact form */
+  border: 1px solid #e2e8f0;        /* same border */
+  background-color: #f7fafc;         /* same input bg */
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 14px;
+  color: #333;
   transition: 0.3s;
+  
+}
+.properties-form .input-group {
+  margin-bottom: 0;
 }
 
-.properties-form__box textarea {
-  resize: none;
-  height: 100px;
-  font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; ;
+.iti__selected-flag {
+  padding: 0 0 0 8px !important;
 }
+.iti {
+    width: 100% !important;
+  }
 
-.properties-form__box input:focus,
-.properties-form__box textarea:focus {
+.properties-form input:focus,
+.properties-form textarea:focus,
+.properties-form #phone:focus {
+  border-color: #4a90e2;             /* same focus color */
   outline: none;
-  border-color: #006599;
 }
 
-.properties-form__box button {
-  width: 100%;
-  padding: 13px;
-  background: #006599;
-  color: #ffffff;
-  border: none;
+.properties-form textarea {
+  height: 90px;
+  resize: none;
+}
+
+/* Phone input wrapper if needed */
+.properties-form .input-group,
+.properties-form #phone {
+  background-color: #f7fafc;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+  padding-left: 12px;
+  color: #333;
+}
+
+/* Button */
+.properties-form button {
+  padding: 12px;
   border-radius: 8px;
-  font-size: 15px;
-  font-weight: 600;
+  border: none;
+  background-color: #006599;         /* primary color */
+  color: white;
+  font-size: 16px;
   cursor: pointer;
   transition: 0.3s;
-  margin-top: 10px;
 }
 
-.properties-form__box button:hover {
-  background: #004b70;
+.properties-form button:hover {
+  background-color: #00497a;         /* hover effect */
 }
+
 
 /* =========================
    RIGHT CONTENT
@@ -3825,6 +3939,7 @@ display: grid;
   }
 
 
+
 .interoy-detail-table tbody.js-space-rows td a {
     display: inline-block;
     padding-bottom: 2px;
@@ -3856,10 +3971,10 @@ display: grid;
     font-size: 16px;
   }
 
-    .iti--separate-dial-code .iti__selected-flag{
-      background-color: #e3edf4 !important;
+   .iti--separate-dial-code .iti__selected-flag {
+    background-color: #f7fafc !important;
     }
-
+    
   .interoy-detail-sections ul {
     list-style: none;
     padding-left: 0;
@@ -4063,6 +4178,23 @@ display: grid;
   gap: 40px;
   padding-top: 20px;
 }
+.tp-wrapper .tp-card .privacy-block h4  {
+    margin: 12px 0 5px;
+    color: var(--text-muted);
+    
+}
+/* Lists inside privacy content */
+.tp-wrapper .tp-card .privacy-block ul {
+    padding-left: 20px;
+    margin-bottom: 20px;
+    list-style-type: disc;
+}
+
+.tp-wrapper .tp-card .privacy-block ul li {
+    margin-bottom: 8px;
+    line-height: 1.6;
+    color: var(--text-muted);
+}
 
 /* Sections */
 .tp-wrapper .terms-section h2,
@@ -4087,6 +4219,7 @@ display: grid;
   color: var(--text-muted);
   line-height: 1.8;
 }
+
 
   .floating-call-btn {
   position: fixed;
@@ -4502,9 +4635,9 @@ display: grid;
           }
 
 
-        .workflow-card {
-          width: 330px;
-          height: 400px;
+       .workflow-container .workflow-steps .workflow-card {
+          width: 300px;
+          height: 415px;
         }
   .workflow-image {
     height: 160px;
@@ -4555,13 +4688,14 @@ display: grid;
        ============================ */
        
        .properties-container{   
-        flex-direction: column;
+          flex-direction: column-reverse;
           padding: 40px 80px;
           gap: 40px;
        }
-            .properties-form {
-              display: none;
-            }
+         .properties-form 
+          {
+            width:100%;
+          }   
 
             .properties-content {
               width:100%;
@@ -4736,17 +4870,19 @@ display: grid;
     padding: 60px 80px 50px;
   }
 
-  .contactus-container {
-    gap: 30px;
+ .contactus-container {
+    gap: 30px; 
+    flex-direction: column;
   }
 
-  .info-container {
-    max-width: 350px;
+  .contactus-container .info-container {
+   max-width: 100%;
+   flex-direction: row;
   }
 
   .image-box {
-    width: 320px;
-    height: 320px;
+    width: 427px;
+    height: 300px;
   }
 
   /* ===== FORM ===== */
@@ -4777,8 +4913,7 @@ display: grid;
 
   /* ===== CONTACT INFO ===== */
 
-        .image-box {
-        width: 300px;}
+    
 
       .info-container {
         max-width: 300px;
@@ -4793,7 +4928,7 @@ display: grid;
       }
 
       .contact-card {
-        width: 100%;
+        width: 50%;
         margin-top: 10px;
         row-gap: 20px;
       }
@@ -4913,8 +5048,8 @@ display: grid;
       .hamburger {
         display: flex;
         position: fixed;
-        top: 20px;
-        right: 20px;
+        top: 25px;
+        right: 30px;
       }
  
       /* Overlay menu */
@@ -4993,6 +5128,7 @@ display: grid;
     align-items: flex-start;
     row-gap: 20px;
     height: 90vh;
+    gap:50px;
   }
 
   .bg-img-shape {
@@ -5003,11 +5139,16 @@ display: grid;
     padding-bottom: 10px;
     margin-top: 50px;
   }
+  .home-hero-slider {
+    padding-bottom: 60px;
+  }
 
   .home-hero-image { 
-    width: 100%;
-    padding: 15px 80px 30px;
-    height: 600px;
+            width: 90%;
+        padding: 60px 80px 30px;
+        height: 550px;
+        display: block;
+        margin: auto;
   }
 
   .home-hero-image img { 
@@ -5021,7 +5162,7 @@ display: grid;
     text-align: left;
     display: flex;
     flex-direction: column;
-    padding: 70px 60px 0 90px;
+    padding: 10px 60px 0 90px;
     justify-content: center;
   }
 
@@ -5029,15 +5170,8 @@ display: grid;
     font-size: 18px;
   }
 
-  .pagination-container-home {
-    position: absolute;
-    left: 50%;
-    bottom: 250px;
-  }
-
-  .home-hero-pagination .dot {
-    width: 12px;
-    height: 12px;
+  .home-hero-pagination {
+    bottom: 10px;
   }
 
   .home-form-container {
@@ -5290,13 +5424,20 @@ display: grid;
   .contact-item p {
     font-size: 13px;
   }
-
+.contact-item {
+      width:100%;
+    }
 
 
 
 }
 
   @media (max-width: 486px) { 
+
+    .p-sec{
+        padding: 40px 40px 30px;;
+    }
+
     .menu-overlay::before {
   content: "";
   position:absolute;
@@ -5463,7 +5604,7 @@ display: grid;
 
   /* Services */
   .services {
-    padding: 40px 20px;
+    padding: 40px 30px;
   }
 
   .services-container {
@@ -5472,7 +5613,10 @@ display: grid;
   }
 
   .bg-container-style {
-    padding: 30px 20px;
+   padding :37px 30px 30px 20px;
+   border-top-left-radius: 0;     
+  border-bottom-left-radius: 0;
+
   }
 
   .bg-container-style h2 {
@@ -5497,7 +5641,7 @@ display: grid;
   }
 
   .services-image img {
-    width: 100%;
+    width: 80%;
     height: auto;
   }
 
@@ -5517,9 +5661,12 @@ display: grid;
 
   /* Workflow */
   .workflow-container {
-    padding: 0 20px;
+    padding: 0 40px;
   }
-
+  .workflow {
+    
+    padding: 60px 0;
+  }
   .workflow-header {
     flex-direction: column;
     gap: 16px;
@@ -5539,6 +5686,9 @@ display: grid;
   .workflow-steps {
     grid-template-columns: 1fr;
     row-gap: 20px;
+      width: 90%;          /* container is 90% of viewport width */
+    margin: 0 auto;      /* center container horizontally */
+    justify-items: center; 
   }
 
   .workflow-steps > .workflow-card:nth-child(2),
@@ -5565,6 +5715,10 @@ display: grid;
   .workflow-card p {
     font-size: 16px;
   }
+      .workflow-container .workflow-steps .workflow-card {
+        width: 320px;
+        height: 358px;
+    }
 
   /* Different Section */
 
@@ -5579,11 +5733,15 @@ display: grid;
     display: grid;
     grid-template-columns: repeat(1, 1fr) !important;
     gap: 16px;
-    margin: 24px 0;
+    margin: 20px 0;
   }
 
-  .different-sec-card {
+  
+  
+  .different-sec-cards {
     width: 100%;
+             display: flex;
+        flex-direction: column;
   }
 
   
@@ -5591,6 +5749,11 @@ display: grid;
     font-size: 18px;
     margin-bottom: 6px;
   }
+  .different-sec-icon {
+    
+    display: block;
+    margin: auto;
+}
 
   .different-sec-card p {
     font-size: 16px;
@@ -5840,9 +6003,23 @@ display: grid;
     line-height: 1.6;
   }
 
- /* about us page */
+ /* inventory page  */
+ .properties-cards.grid-view {
+        grid-template-columns: repeat(1, 1fr);
+ }
+     .properties-cards.list-view{
+      display: none;
+     }
 
+    .properties-container {
+        
+        padding: 40px 40px;}
+
+ .properties-card__info {
+    padding: 16px 16px 5px 16px;}
  
-
+.arrow-img-contactus {
+  display: none;
+}
 
 }
