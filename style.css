@@ -99,8 +99,9 @@ body{
 
 /* Main header logo */
 .main-header .logo img {
-  height: 55px;
-  width: 120px;
+  height: 58px;
+  width: 110px;
+  padding: 10px 0 0;
 }
 
 /* Secondary header logo */
@@ -242,6 +243,71 @@ body{
 .hamburger.active span:nth-child(3) {
   transform: rotate(-45deg) translate(5px, -5px);
 }
+
+
+/* ===============================
+   MENU OVERLAY
+================================= */
+
+ .menu-overlay {
+    display: none;
+  }
+
+.menu-overlay {
+  position: fixed;
+  inset: 0;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-100%);
+  transition: transform 0.4s ease-in-out;
+  z-index: 1000;
+}
+
+/* Active state */
+.menu-overlay.active {
+  transform: translateY(0);
+}
+
+/* Background image overlay */
+.menu-overlay::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("public/bg-menu1.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  opacity: 0.8;
+  pointer-events: none;
+}
+
+/* Overlay menu links */
+.overlay-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.overlay-content a {
+  display: block;
+  font-size: 24px;
+  margin: 18px 0;
+  text-decoration: none;
+  color: #000;
+  transition: 0.3s ease;
+}
+
+.overlay-content a:hover {
+  color: #006599;
+}
+
+/* Prevent background scroll */
+.no-scroll {
+  overflow: hidden;
+}
+
 
 
 
@@ -493,7 +559,7 @@ body{
   
 }
 .hero-home-sec{
-  margin-top: -70px;
+  margin-top: -20px;
 }
 
 .bg-img-shape{
@@ -2323,7 +2389,7 @@ textarea:focus {
   /* ====== Contact Form Section end   ====== */ 
 
   /* ====== Why Choose us Section  Start====== */ 
-
+/* 
   .our-story-sec1 {
       width: 100%;
       height: auto;
@@ -2333,15 +2399,15 @@ textarea:focus {
       align-items: center;
       justify-content: center;
        
-  }
+  } */
 
   /* LEFT COLUMN */
-  .ourstory-left-container {
+  /* .ourstory-left-container {
       max-width: 500px;
       padding: 40px;
-  }
+  } */
 
-  .blue-card {
+  /* .blue-card {
       width: 200px;
       position: absolute;
       z-index: 2;
@@ -2356,15 +2422,14 @@ textarea:focus {
       opacity: 0.8;
       margin-bottom: 10px;
       font-weight: 400;
-  } 
+  }  */
 
-  .blue-card h2 {
+  /* .blue-card h2 {
       font-size: 32px;
       line-height: 1.2;
       margin: 0;
   }
 
-  /* Image grid */
     .image-grid{
       width: 100%;
       height: 400px;
@@ -2375,11 +2440,11 @@ textarea:focus {
       width: 100%;
       height:100%;
       object-fit: cover;
-  }
+  } */
 
 
-  /* RIGHT COLUMN */
-  .ourstory-right-container {
+  
+  /* .ourstory-right-container {
       max-width:550px;   
   }
   .aboutus-ourstory-content{
@@ -2396,9 +2461,9 @@ textarea:focus {
       line-height: 1.6;
       text-align: justify;
       width: 100%;
-  }
+  } */
 
-  .learn-btn {
+  /* .learn-btn {
       display: inline-block;
       padding: 12px 25px;
       background: #eef3ff;
@@ -2411,7 +2476,7 @@ textarea:focus {
 
   .learn-btn:hover {
       background: #dbe5ff;
-  }
+  } */
 
   /* RESPONSIVE */
   /* @media (max-width: 900px) {
@@ -2649,12 +2714,7 @@ textarea:focus {
   color: #fff;
 }
 
-/* Responsive */
-/* @media (max-width: 900px) {
-  .about-company-container {
-    grid-template-columns: 1fr;
-  }
-} */
+
 
 
         
@@ -4573,9 +4633,27 @@ display: grid;
          font-size: 20px;
         }
 
-        .about-company-section{
-          display:none;
-        }
+            .about-company-container {
+              padding:  40px 0 0;
+               flex-direction: column;
+               gap: 20px;
+            }
+            
+            .about-company-left img {
+    width: 100%;
+    height: 460px;}
+
+
+.about-company-left {
+  width:100%
+}
+.about-company-right {
+  width: 100%;
+}
+.icon-container img {
+    width: 90%;
+    height: 90px;}
+      
 
         .workflow-image-container img {
           width: 100%;
@@ -4583,6 +4661,7 @@ display: grid;
 
         .services{
           padding: 100px 90px ;
+         
           
         }
 
@@ -5101,73 +5180,12 @@ display: grid;
     width: 90px;
 }
  
-      /* Overlay menu */
-    .menu-overlay {
-      position: fixed;
-      inset: 0;
-      background: #fff;
-      z-index: 1002;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      opacity: 0;
-      visibility: hidden;
-      transition: opacity 0.3s ease, visibility 0.3s ease;
-    }
+    
+   
 
-    /* Blueprint background */
-    .menu-overlay::before {
-      content: "";
-      position:absolute;
-      inset: 0;
-      z-index:0;
-      background-image: url("public/bg-menu.png");
-      background-repeat: no-repeat;
-      background-position:bottom;
-      width: 100%;
-      opacity: 0.90;
-      pointer-events: none;
-    }
-
-    .close-btn-menu {
-      position: absolute;
-      top: 30px;
-      right: 55px;
-      background: transparent;
-      border: none;
-      font-size: 90px;
-      cursor: pointer;
-      z-index: 10001; 
-      color: #343a40;
-    }
-
-    .menu-overlay.active {
-      opacity: 1;
-      visibility: visible;
-    }
-
-    .menu-overlay ul {
-      list-style: none;
-      text-align: center;
-    }
-
-    .menu-overlay li {
-      margin: 16px 0;
-    }
-
-    .menu-overlay a {
-      font-size: 28px;
-      color: black;
-      text-decoration: none;
-    }
-
-  .menu-overlay a:hover {
-    color: var(--main-color);
-
+.menu-overlay {
+    display: flex;
   }
-
-
 
   .home-hero {
     background-color: #fff;
@@ -5345,6 +5363,56 @@ display: grid;
         padding: 0 30px;
     } */
     
+.about-company-container {
+  display: flex;
+}
+
+     .about-company-container {
+    flex-direction: column;
+    padding: 30px 50px;
+    gap: 30px;
+  }
+
+  .about-company-left,
+  .about-company-right {
+    width: 100%;
+  }
+
+  .about-company-left img {
+    height: 400px;
+  }
+
+  .about-company-right {
+    padding-top: 40px;
+    gap: 50px;
+  }
+
+  .about-company-card {
+    padding: 30px 15px 10px;
+  }
+
+  .about-company-title {
+    font-size: 20px;
+  }
+
+  .about-company-text {
+    font-size: 14px;
+  }
+
+  .icon-container {
+    top: -60px;
+    width: 80px;
+    padding: 8px;
+  }
+
+  .icon-container img {
+    height: 80px;
+  }
+
+
+ .services{
+  padding: 20px 90px 100px;
+ }
 
     .services-container {
     grid-template-columns: 1fr;
@@ -5596,7 +5664,7 @@ display: grid;
 
   .hero-home-sec {
     padding-bottom: 10px;
-    margin-top: 20px;
+    margin-top: 40px;
   }
 
   .home-hero-image { 
@@ -5647,12 +5715,72 @@ display: grid;
   .feature-property-sec {
         padding: 40px 66px 50px;}
 
+        .feature-prop-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 15pxpx;
+}
+
+.feature-prop-content{
+  left:20px;
+}
+    
+        .feature-prop-description {
+          padding:  0 ;
+          font-size: 1rem;
+          margin-bottom: 10px;
+        }
+           
+            .feature-prop-btn{
+              font-size: 0.8rem;
+            }
+
+
   .main-heading-container {
     padding: 0;
   }
 
   .main-heading-container h1 {
     font-size: 28px;}
+
+            
+.about-company-container {
+  display:none;
+}
+
+     .about-company-container {
+    flex-direction: column;
+    padding: 30px 0px;
+    gap: 30px;
+  }
+
+        .why-choose-us-small-img img {
+          display: none;
+        }
+
+            .why-choose-us-main-img img {
+        width: 299px;
+        height: 316px;}
+        .why-choose-us-main-img {
+        padding-right: 0px;
+    }
+
+    .why-choose-us-container {
+        
+        margin-bottom: 30px;
+    }
+
+    .feature-container {
+        
+        grid-template-columns: repeat(1, 2fr);
+    }
+    .our-partner-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .our-partner-item {
+    max-width: 130px;
+    height: 90px;}
 
   
 
@@ -5674,9 +5802,7 @@ display: grid;
   }
 
   /* About section */
-  .about-company-section {
-    display: none;
-  }
+  
 
   /* Services */
   .services {

@@ -94,11 +94,11 @@
               </div>
             </div>
             <div class="contact-item">
-              <div class="contact-icon"><i class=" fa-light fa-phone" style=" color:#006599; font-size:22px;"></i></div>
+              <div class="contact-icon"> <i class=" fa-light fa-phone" style=" color:#006599; font-size:22px;"></i></div>
               <div>
                 <h4>Phone</h4>
-                <p>91233 24921</p>
-              </div>
+                <p>+91-9773880555</p>
+              </div>  
             </div>
           </div>
         </div>

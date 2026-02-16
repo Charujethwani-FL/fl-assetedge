@@ -29,8 +29,7 @@ $headerClass = in_array($currentPage, $mainHeaderPages) ? 'main-header' : 'secon
 include 'include/header.php';
 ?>
 
-<!-- Page content -->
-<h1>Welcome to Homepage</h1>
+
 
 
 
@@ -493,6 +492,9 @@ include 'include/header.php';
     
   <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
   <script>
+
+    
+
    document.addEventListener('DOMContentLoaded', function () {
 
   function togglePartners() {

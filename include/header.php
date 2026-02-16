@@ -25,6 +25,18 @@
         <span></span>
       </div>
 
+      <div class="menu-overlay" id="menuOverlay">
+          <div class="overlay-content">
+            <a href="index.php">Home</a>
+            <a href="about.php">About Us</a>
+            <a href="inventory.php">Property</a>
+            <a href="contact.php">Contact Us</a>
+            <a href="privacy-policy.php">Privacy Policy</a>
+          </div>
+
+      
+      </div>
+
       
 
     </nav>
