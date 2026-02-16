@@ -40,17 +40,6 @@ body{
       ============================ */
 
 
-/* HEADER BASE */
-/* .main-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 8px 0 5px;
-    z-index: 1000;
-     transition: background-color 0.3s ease, box-shadow 0.3s ease;  
-} */
-
 
 .main-heading-container{
     display: flex;
@@ -71,14 +60,24 @@ body{
    MAIN HEADER BASE
 ========================================= */
 
-.main-header {
+
+.main-header,
+.secondary-header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 9999;
   transition: all 0.3s ease;
+}
+
+.main-header {
   background: transparent;
+}
+
+.secondary-header {
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 
 .main-header-container {
@@ -87,7 +86,7 @@ body{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 4px 0;
+  padding: 6px 0;
 }
 
 /* =========================================
@@ -95,15 +94,23 @@ body{
 ========================================= */
 
 .logo img {
+  transition: all 0.3s ease;
+}
+
+/* Main header logo */
+.main-header .logo img {
   height: 55px;
-  width: 125px;
-  padding-top: 5px;
-  padding-left: 20px;
-  transition: 0.3s;
+  width: 120px;
+}
+
+/* Secondary header logo */
+.secondary-header .logo img {
+  height: 58px;
+  width: 112px;
 }
 
 /* =========================================
-   NAVBAR BASE STYLES
+   NAVBAR BASE
 ========================================= */
 
 .navbar ul {
@@ -124,11 +131,16 @@ body{
   padding-bottom: 5px;
 }
 
-/* =========================================
-   DEFAULT HEADER (Transparent + White)
-========================================= */
+.mobile-only {
+  display: none;
+}
 
 .main-header .navbar ul li a {
+  color: #ffffff;
+}
+
+.main-header .navbar ul li a:hover,
+.main-header .navbar ul li a.active {
   color: #ffffff;
 }
 
@@ -136,53 +148,18 @@ body{
   background: #ffffff;
 }
 
-.main-header .navbar ul li a:hover,
-.main-header .navbar ul li a.active {
-  color: #fff;
-}
-
-/* =========================================
-   SECONDARY HEADER (White + Dark Text)
-========================================= */
-
-.secondary-header {
-  background-color: #ffffff;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-}
-
-.secondary-header .navbar ul li a.active {
-  color:var(--main-color);
-  cursor: pointer;
-  
-}
-
-.secondary-header .navbar ul li a:hover{
- color:var(--main-color) !important;
-  cursor: pointer !important;
-}
-
-
 .secondary-header .navbar ul li a {
   color: var(--para-primary-color);
 }
 
-/* .main-header .navbar ul li a:hover,
-.main-header .navbar ul li a.active {
-  color: #FFF;
-} */
-
+.secondary-header .navbar ul li a:hover,
+.secondary-header .navbar ul li a.active {
+  color: var(--main-color);
+}
 
 .secondary-header .hamburger span {
   background: var(--para-primary-color);
 }
-
-.main-header .menu-link::after .hamburger span {
-  background: var(--para-primary-color);
-}
-
-/* =========================================
-   SCROLLED STATE (Same As Secondary)
-========================================= */
 
 .main-header.scrolled {
   background-color: #ffffff;
@@ -198,17 +175,12 @@ body{
   color: var(--main-color);
 }
 
-.main-header .menu-overlay .hamburger span {
+.main-header.scrolled .hamburger span {
   background: var(--para-primary-color);
 }
 
-/* =========================================
-   MENU LINK UNDERLINE EFFECT
-========================================= */
-
 .menu-link {
   position: relative;
-  text-decoration: none;
 }
 
 .menu-link::after {
@@ -223,68 +195,55 @@ body{
   transition: transform 0.3s ease;
 }
 
-/* Secondary Header (existing - main color) */
-.secondary-header  .menu-link::after {
-  background-color: #006599;
-}
-.secondary-header .navbar ul li a.menu-link:hover {
-  color: #006599;
-  cursor: pointer;
+/* Secondary header underline */
+.secondary-header .menu-link::after {
+  background-color: var(--main-color);
 }
 
-
-/* Main Header (new - white color) */
+/* Main header underline */
 .main-header .menu-link::after {
   background-color: #ffffff;
 }
 
+/* Scrolled state */
+.main-header.scrolled .menu-link::after {
+  background-color: var(--main-color);
+}
 
 .menu-link:hover::after {
   transform: scaleX(1);
 }
 
-/* =========================================
-   HAMBURGER
-========================================= */
-
 .hamburger {
   display: none;
-  position: relative;
-  z-index: 10003;
   flex-direction: column;
   justify-content: space-between;
-  width: 31px;
+  width: 30px;
   height: 22px;
   cursor: pointer;
+  z-index: 10003;
 }
 
 .hamburger span {
-  display: block;
   height: 3px;
   border-radius: 2px;
   transition: 0.3s;
 }
-/* When active (cross) */
+
+/* Active (cross) */
 .hamburger.active span:nth-child(1) {
   transform: rotate(45deg) translate(5px, 5px);
 }
 
 .hamburger.active span:nth-child(2) {
-  opacity: 0; /* middle line disappears */
+  opacity: 0;
 }
 
 .hamburger.active span:nth-child(3) {
   transform: rotate(-45deg) translate(5px, -5px);
 }
 
-/* =========================================
-   MOBILE OVERLAY MENU
-========================================= */
 
-.menu-overlay {
-  display: none;
-  background-color: #343a40;
-}
 
      
     /* ============================ 
@@ -5136,6 +5095,11 @@ display: grid;
         top: 25px;
         right: 30px;
       }
+
+      .secondary-header .logo img {
+    height: 57px;
+    width: 90px;
+}
  
       /* Overlay menu */
     .menu-overlay {
@@ -5527,10 +5491,10 @@ display: grid;
         padding: 40px 40px 30px;;
     }
     
-    .logo img {
-        height: 55px;
-        width: 100px;
-    }
+     .secondary-header .logo img {
+    height: 48px;
+    width: 99px;
+}
 
     .floating-call-btn {
         right: 30px;
@@ -5636,9 +5600,9 @@ display: grid;
   }
 
   .home-hero-image { 
-    width: 100%;
+    width: 80%;
     padding: 10px 20px 20px;
-    height: 300px;
+    height: 360px;
   }
 
   .home-hero-image img { 
@@ -5650,12 +5614,15 @@ display: grid;
 
   .home-hero-content {
     max-width: 100%;
-    padding: 20px;
+    padding: 40px 20px 0 40px;
     text-align: left;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
+      .pagination-container-home .home-hero-pagination {
+        bottom: 469px;
+    }
 
   .home-hero-content p {
     font-size: 16px;
@@ -5677,8 +5644,17 @@ display: grid;
     display: none;
   }
 
+  .feature-property-sec {
+        padding: 40px 66px 50px;}
 
- /* about us page */
+  .main-heading-container {
+    padding: 0;
+  }
+
+  .main-heading-container h1 {
+    font-size: 28px;}
+
+  
 
 
   /* Breadcrumbs */

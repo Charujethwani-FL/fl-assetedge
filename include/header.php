@@ -1,37 +1,32 @@
-<header class=" secondary-header">
-      <div class="main-header-container">
-        <div class="logo">
-          <img src="public/assetEdge-logo.jpg" alt="Asset Edge Logo" />
-        </div>
+<header class="<?php echo isset($headerClass) ? $headerClass : 'secondary-header'; ?>">
+  <div class="main-header-container">
 
-        <nav class="navbar ">
-          <div class="menu-overlay" id="menuOverlay">
-        <ul>
-            <li><a href="index.php" class=" menu-link active">Home</a></li>
-            <li><a href="about.php" class="menu-link">About Us</a></li>
-            <li><a href="inventory.php" class="menu-link">Inventory</a></li>
-            <li><a href="contact.php" class="menu-link">Contact Us</a></li>
-        </ul>
-           </div>
-           
-        <div class="hamburger" id="hamburger">
-        <span> </span>
-        <span> </span>
-        <span> </span>
-        </div>
-        </nav>
-        </div>
-        </header>
+    <!-- Logo -->
+    <div class="logo">
+      <a href="index.php">
+        <img src="public/assetEdge-logo.jpg" alt="Asset Edge Logo" />
+      </a>
+    </div>
 
-   
-        <!-- Mobile / Tablet Overlay Menu -->
-       <div class="menu-overlay" id="menuOverlay">
-          <!-- <button id="closeMenu" class="close-btn-menu">&times;</button> -->
-            <ul>
-              <li><a href="index.php" class="menu-link">Home</a></li>
-              <li><a href="about.php" class="menu-link">About us</a></li>
-              <li><a href="inventory.php" class="menu-link">Property</a></li>
-              <li><a href="contact.php" class="menu-link">Contact Us</a></li>
-              <li><a href="privacy-policy.php" class="menu-link">Privacy Policy</a></li>  
-            </ul>
-        </div>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.php" class="menu-link">Home</a></li>
+        <li><a href="about.php" class="menu-link">About Us</a></li>
+        <li><a href="inventory.php" class="menu-link">Inventory</a></li>
+        <li><a href="contact.php" class="menu-link">Contact Us</a></li>
+        <li class="mobile-only"><a href="privacy-policy.php" class="menu-link">Privacy Policy</a></li>
+      </ul>
+
+      <!-- Hamburger -->
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      
+
+    </nav>
+  </div>
+</header>
