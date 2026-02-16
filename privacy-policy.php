@@ -12,10 +12,41 @@
 </head>
   <body>
 
-      <?php
-        $headerClass = 'main-header';
-        include('include/header.php');
-        ?>
+      <header class="main-header">
+         <div class="main-header-container">
+            <div class="logo">
+              <img src="public/assetEdge-logo.jpg" alt="Asset Edge Logo" />
+            </div>
+
+              <nav class="navbar ">
+              <ul>
+                  <li><a href="index.php" class=" menu-link ">Home</a></li>
+                  <li><a href="about.php" class="menu-link ">About Us</a></li>
+                  <li><a href="inventory.php" class="menu-link">Inventory</a></li>
+                  <li><a href="contact.php" class="menu-link">Contact Us</a></li>
+              </ul>
+                
+              <div class="hamburger" id="hamburger">
+              <span> </span>
+              <span> </span>
+              <span> </span>
+              </div>
+              </nav>
+          </div>
+       </header>
+
+   
+        <!-- Mobile / Tablet Overlay Menu -->
+       <div class="menu-overlay" id="menuOverlay">
+          <!-- <button id="closeMenu" class="close-btn-menu">&times;</button> -->
+            <ul>
+              <li><a href="index.php" class="menu-link">Home</a></li>
+              <li><a href="about.php" class="menu-link">About us</a></li>
+              <li><a href="inventory.php" class="menu-link">Property</a></li>
+              <li><a href="contact.php" class="menu-link">Contact Us</a></li>
+              <li><a href="privacy-policy.php" class="menu-link">Privacy Policy</a></li>  
+            </ul>
+        </div>
           
             <section class="breadcrumbs-section">
             <div class="breadcrumb">
@@ -410,6 +441,16 @@
           }); 
           });
           });
+          
+window.addEventListener("scroll", function () {
+  const header = document.querySelector(".main-header");
+
+  if (window.scrollY > 50) {
+    header.classList.add("scrolled");
+  } else {
+    header.classList.remove("scrolled");
+  }
+});
 
           </script>
   </body>

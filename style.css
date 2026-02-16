@@ -136,31 +136,47 @@ body{
   background: #ffffff;
 }
 
-/* Hover + Active (transparent mode) */
 .main-header .navbar ul li a:hover,
 .main-header .navbar ul li a.active {
-  color: var(--main-color);
+  color: #fff;
 }
 
 /* =========================================
    SECONDARY HEADER (White + Dark Text)
 ========================================= */
 
-.main-header.secondary-header {
+.secondary-header {
   background-color: #ffffff;
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 
-.main-header.secondary-header .navbar ul li a {
+.secondary-header .navbar ul li a.active {
+  color:var(--main-color);
+  cursor: pointer;
+  
+}
+
+.secondary-header .navbar ul li a:hover{
+ color:var(--main-color) !important;
+  cursor: pointer !important;
+}
+
+
+.secondary-header .navbar ul li a {
   color: var(--para-primary-color);
 }
 
-.main-header.secondary-header .navbar ul li a:hover,
-.main-header.secondary-header .navbar ul li a.active {
-  color: var(--main-color);
+/* .main-header .navbar ul li a:hover,
+.main-header .navbar ul li a.active {
+  color: #FFF;
+} */
+
+
+.secondary-header .hamburger span {
+  background: var(--para-primary-color);
 }
 
-.main-header.secondary-header .hamburger span {
+.main-header .menu-link::after .hamburger span {
   background: var(--para-primary-color);
 }
 
@@ -182,7 +198,7 @@ body{
   color: var(--main-color);
 }
 
-.main-header.scrolled .hamburger span {
+.main-header .menu-overlay .hamburger span {
   background: var(--para-primary-color);
 }
 
@@ -202,11 +218,26 @@ body{
   bottom: -4px;
   width: 100%;
   height: 2px;
-  background-color: var(--main-color);
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.3s ease;
 }
+
+/* Secondary Header (existing - main color) */
+.secondary-header  .menu-link::after {
+  background-color: #006599;
+}
+.secondary-header .navbar ul li a.menu-link:hover {
+  color: #006599;
+  cursor: pointer;
+}
+
+
+/* Main Header (new - white color) */
+.main-header .menu-link::after {
+  background-color: #ffffff;
+}
+
 
 .menu-link:hover::after {
   transform: scaleX(1);
@@ -502,11 +533,14 @@ body{
   transition: opacity 1s ease-in-out; 
   
 }
+.hero-home-sec{
+  margin-top: -70px;
+}
 
 .bg-img-shape{
   display: inline-block;
     position: absolute;
-    top:100px;
+    top:50px;
     left:0px;
     z-index: -1;
     width: 500px;
@@ -4315,6 +4349,9 @@ display: grid;
     padding: 30px 90px 60px;
   }
   
+  .logo img {
+    height: 62px;
+  }
 
    .main-heading-container{
     padding: 20px 0;
@@ -4766,14 +4803,18 @@ display: grid;
          ============================ */
 
 
-  .interoy-detail-hero {
+   .interoy-detail-hero {
     height: 40vh;
+    min-height: 480px;
+  }
+   .interoy-detail-slide {
+    transform: scale(1.05);
   }
 
-  .interoy-detail-slide {
+  /* .interoy-detail-slide {
     background-position: center;
     height: 100%;
-  }
+  } */
 
 
 
@@ -5180,8 +5221,8 @@ display: grid;
   }
 
   .hero-home-sec {
-    padding-bottom: 10px;
-    margin-top: 50px;
+    padding-bottom: 40px;
+    margin-top: 0;
   }
   .home-hero-slider {
     padding-bottom: 60px;
@@ -5214,8 +5255,8 @@ display: grid;
     font-size: 18px;
   }
 
-  .home-hero-pagination {
-    bottom: 10px;
+  .pagination-container-home .home-hero-pagination {
+    bottom: -37px;
   }
 
   .home-form-container {
@@ -5356,6 +5397,10 @@ display: grid;
 /* ============================ 
      Inventory Detail Page 
    ============================ */
+    .interoy-detail-hero {
+    height: 30vh;
+    min-height: 420px;
+  }
     
   .interoy-detail-sidebar {
     display: none;
@@ -5481,6 +5526,17 @@ display: grid;
     .p-sec{
         padding: 40px 40px 30px;;
     }
+    
+    .logo img {
+        height: 55px;
+        width: 100px;
+    }
+
+    .floating-call-btn {
+        right: 30px;
+        bottom: 30px;
+        width: 60px;
+        height: 60px;}
 
     .menu-overlay::before {
   content: "";
@@ -5628,7 +5684,7 @@ display: grid;
   /* Breadcrumbs */
   .breadcrumbs-section {
     padding-top: 30px;
-    height: auto;
+    height:30vh;
   }
 
   .breadcrumbs-section h1 {
@@ -5830,7 +5886,12 @@ display: grid;
   ====================== */
 
   .interoy-detail-hero {
-    height: 40vh;
+    height: 30vh;
+    min-height: 278px;
+  }
+
+  .interoy-detail-slide {
+    object-position: center;
   }
 
   /* ======================
@@ -6054,6 +6115,11 @@ display: grid;
      .properties-cards.list-view{
       display: none;
      }
+
+         .propertypopup {
+        width: 300px;
+        
+    }
 
     .properties-container {
         

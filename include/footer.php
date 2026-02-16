@@ -7,7 +7,7 @@
         </div>
       <!-- Logo & Description -->
           <div class="footer-col logo-col">
-            <img src="public/logo-img.jpg" alt="AssetEdge Logo" class="footer-logo">
+            <img src="public/assetEdge-logo.jpg" alt="AssetEdge Logo" class="footer-logo">
             <p>
               Your trusted partner for premier office spaces in Delhi/NCR.<br />
               Lease. Design. Build. Operate.<br />

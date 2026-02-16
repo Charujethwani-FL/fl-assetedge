@@ -18,10 +18,41 @@
 
 <body>
 
-      <?php
-      $headerClass = 'secondary-header';
-      include('include/header.php');
-      ?>
+        <header class="main-header ">
+         <div class="main-header-container">
+            <div class="logo">
+              <img src="public/assetEdge-logo.jpg" alt="Asset Edge Logo" />
+            </div>
+
+              <nav class="navbar ">
+              <ul>
+                  <li><a href="index.php" class=" menu-link ">Home</a></li>
+                  <li><a href="about.php" class="menu-link ">About Us</a></li>
+                  <li><a href="inventory.php" class="menu-link active">Inventory</a></li>
+                  <li><a href="contact.php" class="menu-link">Contact Us</a></li>
+              </ul>
+                
+              <div class="hamburger" id="hamburger">
+              <span> </span>
+              <span> </span>
+              <span> </span>
+              </div>
+              </nav>
+          </div>
+       </header>
+
+   
+        <!-- Mobile / Tablet Overlay Menu -->
+       <div class="menu-overlay" id="menuOverlay">
+          <!-- <button id="closeMenu" class="close-btn-menu">&times;</button> -->
+            <ul>
+              <li><a href="index.php" class="menu-link">Home</a></li>
+              <li><a href="about.php" class="menu-link">About us</a></li>
+              <li><a href="inventory.php" class="menu-link">Property</a></li>
+              <li><a href="contact.php" class="menu-link">Contact Us</a></li>
+              <li><a href="privacy-policy.php" class="menu-link">Privacy Policy</a></li>  
+            </ul>
+        </div>
 
   <section class="breadcrumbs-section">
     <div class="breadcrumb">
@@ -210,6 +241,40 @@
       utilsScript:
         "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/utils.js"
     });
+
+    window.addEventListener("scroll", function () {
+  const header = document.querySelector(".main-header");
+
+  if (window.scrollY > 50) {
+    header.classList.add("scrolled");
+  } else {
+    header.classList.remove("scrolled");
+  }
+});
+
+ document.addEventListener('DOMContentLoaded', function () { 
+          const hamburger = document.getElementById("hamburger");
+          const menuOverlay = document.getElementById("menuOverlay");
+          const closeMenu = document.getElementById("closeMenu");
+          const menuLinks = document.querySelectorAll(".menu-overlay a");
+
+          function toggleMenu() {
+          hamburger.classList.toggle("active");     
+          menuOverlay.classList.toggle("active");   
+          }
+
+          hamburger.addEventListener("click", toggleMenu);
+          closeMenu.addEventListener("click", () => {
+          menuOverlay.classList.remove("active");
+          });
+
+          menuLinks.forEach(link => {
+          link.addEventListener("click", () => {
+          hamburger.classList.remove("active");   
+          menuOverlay.classList.remove("active"); 
+          });
+          });
+          });
 
   </script>
 

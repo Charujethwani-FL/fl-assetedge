@@ -1,16 +1,18 @@
-<header class="main-header secondary-header">
+<header class=" secondary-header">
       <div class="main-header-container">
         <div class="logo">
           <img src="public/assetEdge-logo.jpg" alt="Asset Edge Logo" />
         </div>
 
         <nav class="navbar ">
+          <div class="menu-overlay" id="menuOverlay">
         <ul>
             <li><a href="index.php" class=" menu-link active">Home</a></li>
             <li><a href="about.php" class="menu-link">About Us</a></li>
             <li><a href="inventory.php" class="menu-link">Inventory</a></li>
             <li><a href="contact.php" class="menu-link">Contact Us</a></li>
         </ul>
+           </div>
            
         <div class="hamburger" id="hamburger">
         <span> </span>

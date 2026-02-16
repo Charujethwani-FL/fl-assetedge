@@ -22,10 +22,41 @@
 
   <body>
    
-     <?php
-      $headerClass = 'secondary-header';
-      include('include/header.php');
-      ?>
+     <header class="secondary-header ">
+         <div class="main-header-container">
+            <div class="logo">
+              <img src="public/assetEdge-logo.jpg" alt="Asset Edge Logo" />
+            </div>
+
+              <nav class="navbar ">
+              <ul>
+                  <li><a href="index.php" class=" menu-link active">Home</a></li>
+                  <li><a href="about.php" class="menu-link ">About Us</a></li>
+                  <li><a href="inventory.php" class="menu-link">Inventory</a></li>
+                  <li><a href="contact.php" class="menu-link">Contact Us</a></li>
+              </ul>
+                
+              <div class="hamburger" id="hamburger">
+              <span> </span>
+              <span> </span>
+              <span> </span>
+              </div>
+              </nav>
+          </div>
+       </header>
+
+   
+        <!-- Mobile / Tablet Overlay Menu -->
+       <div class="menu-overlay" id="menuOverlay">
+          <!-- <button id="closeMenu" class="close-btn-menu">&times;</button> -->
+            <ul>
+              <li><a href="index.php" class="menu-link">Home</a></li>
+              <li><a href="about.php" class="menu-link">About us</a></li>
+              <li><a href="inventory.php" class="menu-link">Property</a></li>
+              <li><a href="contact.php" class="menu-link">Contact Us</a></li>
+              <li><a href="privacy-policy.php" class="menu-link">Privacy Policy</a></li>  
+            </ul>
+        </div>
 
    <!-- hero-home section start -->
 
@@ -485,6 +516,40 @@
   </a>
     
   <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
+  <script>
+   document.addEventListener('DOMContentLoaded', function () {
+
+  function togglePartners() {
+    const extras = document.querySelectorAll('.extra-partners');
+    const btn = document.querySelector('.partner-view-btn');
+
+    if (!extras.length) return;
+
+    const isOpen = extras[0].classList.contains('show');
+
+    extras.forEach(item => {
+      item.classList.toggle('show');
+    });
+
+    btn.textContent = isOpen ? 'View More' : 'View Less';
+  }
+
+  const viewBtn = document.querySelector('.partner-view-btn');
+  if (viewBtn) {
+    viewBtn.addEventListener('click', togglePartners);
+  }
+
+  document.querySelectorAll(".view-details").forEach(btn => {
+    btn.addEventListener("click", function () {
+      const propertyId = this.closest(".property-card").dataset.id;
+      localStorage.setItem("selectedPropertyId", propertyId);           
+      window.location.href = "property-detail.php";
+    });
+  });
+
+});
+
+  </script>
   <script src="script.js"></script>
     
     <!-- Global JS -->
