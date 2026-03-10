@@ -1,20 +1,20 @@
 <?php
-  $jsonData = file_get_contents('properties.json');
-  $properties = json_decode($jsonData, true);
-  $slug = $_GET['property'] ?? null;
-  $property = null;
-  foreach ($properties as $id => $prop) {
-      if ($prop['slug'] === $slug) {
-          $property = $prop;
-          break;
-      }
+$jsonData = file_get_contents('properties.json');
+$properties = json_decode($jsonData, true);
+$slug = $_GET['property'] ?? null;
+$property = null;
+foreach ($properties as $id => $prop) {
+  if ($prop['slug'] === $slug) {
+    $property = $prop;
+    break;
   }
-  
-  if (!$property) {
-      echo "<h1>Property not found!</h1>";
-      exit;
-  }
- ?>
+}
+
+if (!$property) {
+  echo "<h1>Property not found!</h1>";
+  exit;
+}
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -30,30 +30,29 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="icon" type="image/png" sizes="16x16" href="public/faviconAE-img.jpg">
   <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css">
-
+  <script src="https://www.google.com/recaptcha/api.js?render=6LcpmoUsAAAAABJILMcnSdU-AZ6WitnWKSMmhUJT"></script>
 
 </head>
 
 <body>
 
-    <?php
-$mainHeaderPages = ['about.php', 'contact.php', 'inventory.php', 'privacy-policy.php', 'inventory-detail.php',];
-$currentPage = basename($_SERVER['PHP_SELF']);
-$headerClass = in_array($currentPage, $mainHeaderPages) ? 'main-header' : 'secondary-header';
-include 'include/header.php';
-?>
+  <?php
+  $mainHeaderPages = ['about.php', 'contact.php', 'inventory.php', 'privacy-policy.php', 'inventory-detail.php',];
+  $currentPage = basename($_SERVER['PHP_SELF']);
+  $headerClass = in_array($currentPage, $mainHeaderPages) ? 'main-header' : 'secondary-header';
+  include 'include/header.php';
+  ?>
 
- <section class="interoy-detail-hero">
-  <div class="interoy-detail-slider">
-    <?php foreach ($property['images-hero'] as $index => $image): ?>
-      <img 
-        src="<?php echo htmlspecialchars($image); ?>" 
-        class="interoy-detail-slide <?php echo $index === 0 ? 'active first-child' : ''; ?>" 
-        alt="Property Image <?php echo $index + 1; ?>"
-      />
-    <?php endforeach; ?>
-  </div>
-</section>
+  <section class="interoy-detail-hero">
+    <div class="interoy-detail-slider">
+      <?php foreach ($property['images-hero'] as $index => $image): ?>
+        <img
+          src="<?php echo htmlspecialchars($image); ?>"
+          class="interoy-detail-slide <?php echo $index === 0 ? 'active first-child' : ''; ?>"
+          alt="Property Image <?php echo $index + 1; ?>" />
+      <?php endforeach; ?>
+    </div>
+  </section>
 
 
   <!-- HERO OVERLAY BOX (between sections) -->
@@ -62,10 +61,10 @@ include 'include/header.php';
       <!-- <span class="interoy-detail-tag"></span> -->
       <h1 class="interoy-detail-title"><?php echo htmlspecialchars($property['title']); ?></h1>
       <p class="interoy-detail-address"><?php echo htmlspecialchars($property['address']); ?></p>
-         <p class="interoy-detail-area area-container">
-    Total Area: <?php echo htmlspecialchars($property['availableArea']); ?> <span class="sq-ft">Sq.Ft.</span>
-                </span>
-  </p>
+      <p class="interoy-detail-area area-container">
+        Total Area: <?php echo htmlspecialchars($property['availableArea']); ?> <span class="sq-ft">Sq.Ft.</span>
+        </span>
+      </p>
     </div>
     <div class="right-container">
       <div class="space-property">
@@ -115,20 +114,20 @@ include 'include/header.php';
           </thead>
           <tbody class="js-space-rows">
             <?php foreach ($property['space-rows'] as $space): ?>
-                <tr>
-                  <td><?php echo htmlspecialchars($space['area']); ?></td>
-                   <td class="link-cell">
-                    <a href="contact.php?floor=<?php echo urlencode($space['floor']); ?>">
-                      <?php echo htmlspecialchars($space['floor']); ?>
-                    </a>
-                  </td>
-                  <td><?php echo htmlspecialchars($space['availability']); ?></td>
-                  <td class="link-cell">
+              <tr>
+                <td><?php echo htmlspecialchars($space['area']); ?></td>
+                <td class="link-cell">
+                  <a href="contact.php?floor=<?php echo urlencode($space['floor']); ?>">
+                    <?php echo htmlspecialchars($space['floor']); ?>
+                  </a>
+                </td>
+                <td><?php echo htmlspecialchars($space['availability']); ?></td>
+                <td class="link-cell">
                   <a href="contact.php?rent=<?php echo urlencode($space['rent-sq-ft']); ?>">
                     <?php echo htmlspecialchars($space['rent-sq-ft']); ?>
                   </a>
                 </td>
-                </tr>
+              </tr>
             <?php endforeach; ?>
           </tbody>
         </table>
@@ -139,7 +138,7 @@ include 'include/header.php';
           <h2>Highlights</h2>
           <ul class="js-highlights">
             <?php foreach ($property['highlights'] as $highlight): ?>
-                <li><?php echo htmlspecialchars($highlight); ?></li>
+              <li><?php echo htmlspecialchars($highlight); ?></li>
             <?php endforeach; ?>
           </ul>
         </div>
@@ -148,30 +147,30 @@ include 'include/header.php';
           <h2>Amenities</h2>
           <ul class="js-amenities">
             <?php foreach ($property['amenities'] as $amenity): ?>
-                <li><?php echo htmlspecialchars($amenity); ?></li>
+              <li><?php echo htmlspecialchars($amenity); ?></li>
             <?php endforeach; ?>
           </ul>
         </div>
       </div>
       <br>
 
-        <!-- Location -->
-   
-    <div id="location">
-      <h2>Location</h2>
-      <div class="map-container">
-         <iframe 
-            src="<?php echo htmlspecialchars($property['location-URL'][0]); ?>&output=embed" 
-            loading="lazy">
-        </iframe>
-      </div>
-    </div>
-    <br>
-   
+      <!-- Location -->
 
-    <!-- Floor Plan -->
-   
-    <!-- <div id="floor-plan">
+      <div id="location">
+        <h2>Location</h2>
+        <div class="map-container">
+          <iframe
+            src="<?php echo htmlspecialchars($property['location-URL'][0]); ?>&output=embed"
+            loading="lazy">
+          </iframe>
+        </div>
+      </div>
+      <br>
+
+
+      <!-- Floor Plan -->
+
+      <!-- <div id="floor-plan">
         <h2>Floor Plan</h2>
         <div class="floor-image">
             <img 
@@ -180,7 +179,7 @@ include 'include/header.php';
             >
         </div>
     </div> -->
-   
+
 
     </div>
   </section>
@@ -193,12 +192,13 @@ include 'include/header.php';
       </button>
 
       <h2>Property Inquiry</h2>
-      <form>
-        <input type="text" placeholder="Name" required />
-         <input type="text" placeholder=" Company Name" required />
-        <input type="email" placeholder="Email" required />
-        <input type="tel" placeholder="Phone Number" />
-        <textarea placeholder="Message"></textarea>
+      <form  id="protery-detail-query" method="POST" >
+        <input type="text" name="name" placeholder="Name" required />
+        <input type="text" name="company name" placeholder=" Company Name" required />
+        <input type="email" name="email" placeholder="Email" required />
+        <input type="tel" maxlength="10" name="phone" placeholder="Phone Number" />
+        <textarea name="message" placeholder="Message"></textarea>
+        <input type="hidden" id="recaptcha_token" name="recaptcha_token" />
         <button type="submit">Submit Inquiry</button>
       </form>
     </div>
@@ -208,38 +208,38 @@ include 'include/header.php';
 
   <!-- footer -->
   <?php
-      include('include/footer.php');
-    ?>
+  include('include/footer.php');
+  ?>
   <!--footer End-->
 
- <a href="tel:+919773880555" class="floating-call-btn" aria-label="Call Us">
-    <i class="fi fi-sr-phone-call"></i>  
-  <span class="pulse"></span>
-</a>
+  <a href="tel:+919773880555" class="floating-call-btn" aria-label="Call Us">
+    <i class="fi fi-sr-phone-call"></i>
+    <span class="pulse"></span>
+  </a>
 
   <script>
     const interoyHeroSlider = {
-  slides: document.querySelectorAll(".interoy-detail-slide"),
-  index: 0,
+      slides: document.querySelectorAll(".interoy-detail-slide"),
+      index: 0,
 
-  init() {
-    if (this.slides.length === 0) return;
+      init() {
+        if (this.slides.length === 0) return;
 
-    setInterval(() => this.next(), 4000);
-  },
+        setInterval(() => this.next(), 4000);
+      },
 
-  next() {
-    this.slides[this.index].classList.remove("active");
-    this.index = (this.index + 1) % this.slides.length;
-    this.slides[this.index].classList.add("active");
-  }
-};
+      next() {
+        this.slides[this.index].classList.remove("active");
+        this.index = (this.index + 1) % this.slides.length;
+        this.slides[this.index].classList.add("active");
+      }
+    };
 
-interoyHeroSlider.init();
+    interoyHeroSlider.init();
 
 
-    (function () {
-      document.addEventListener('DOMContentLoaded', function () {
+    (function() {
+      document.addEventListener('DOMContentLoaded', function() {
         const openBtn = document.getElementById('openPropertyDetailPopup');
         const popupOverlay = document.getElementById('propertyPopupOverlay');
         const closeBtn = document.getElementById('closePropertyPopup');
@@ -247,7 +247,7 @@ interoyHeroSlider.init();
         if (!openBtn || !popupOverlay || !closeBtn) return;
 
 
-        openBtn.addEventListener('click', function (e) {
+        openBtn.addEventListener('click', function(e) {
           e.preventDefault();
           popupOverlay.style.display = 'flex';
 
@@ -255,14 +255,14 @@ interoyHeroSlider.init();
         });
 
 
-        closeBtn.addEventListener('click', function (e) {
+        closeBtn.addEventListener('click', function(e) {
           e.stopPropagation();
           popupOverlay.classList.remove('show');
           setTimeout(() => popupOverlay.style.display = 'none', 250);
         });
 
 
-        popupOverlay.addEventListener('click', function (e) {
+        popupOverlay.addEventListener('click', function(e) {
           if (e.target === popupOverlay) {
             popupOverlay.classList.remove('show');
             setTimeout(() => popupOverlay.style.display = 'none', 250);
@@ -271,7 +271,13 @@ interoyHeroSlider.init();
       });
     })();
 
-    
+     document.addEventListener("DOMContentLoaded", function () {
+      const form = document.querySelector(".home-form-container");
+      form.addEventListener("submit", function (e) {
+        e.preventDefault(); 
+        alert("Form submitted successfully!");
+      });
+    });
   </script>
 
   <script src="script.js"></script>

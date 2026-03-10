@@ -46,7 +46,7 @@
                       Home Page
                     =========================== */
 
-   //  HERO BACKGROUND SLIDER
+
 
           document.addEventListener('DOMContentLoaded', function () {
             const slides = document.querySelectorAll('.home-hero');
@@ -324,6 +324,26 @@ window.addEventListener("scroll", function () {
     header.classList.remove("scrolled");
   }
 });
+
+ document.addEventListener("DOMContentLoaded", function () {
+        const form = document.getElementById("homeForm");
+
+        if (!form) return;
+
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+          grecaptcha.ready(function () {
+            grecaptcha.execute('6LcpmoUsAAAAABJILMcnSdU-AZ6WitnWKSMmhUJT', { action: 'submit' }).then(function (token) {
+              document.getElementById("recaptcha_token").value = token;
+
+              console.log("reCAPTCHA token received:", token); 
+              console.log("Captcha is working, token generated!");
+
+              form.submit();
+            });
+          });
+        });
+    });
 
 
 /* ===========================

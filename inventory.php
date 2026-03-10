@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,24 +8,21 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="icon" type="image/png" sizes="16x16" href="public/faviconAE-img.jpg">
-  
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=location_on" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/css/intlTelInput.css" />
   <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css">
-
-
+  <script src="https://www.google.com/recaptcha/api.js?render=6LcpmoUsAAAAABJILMcnSdU-AZ6WitnWKSMmhUJT"></script>
 </head>
 
 <body>
 
-         <?php
-$mainHeaderPages = ['about.php', 'contact.php', 'inventory.php', 'privacy-policy.php', 'inventory-detail.php',];
-$currentPage = basename($_SERVER['PHP_SELF']);
-$headerClass = in_array($currentPage, $mainHeaderPages) ? 'main-header' : 'secondary-header';
-include 'include/header.php';
-?>
-             
+  <?php
+  $mainHeaderPages = ['about.php', 'contact.php', 'inventory.php', 'privacy-policy.php', 'inventory-detail.php',];
+  $currentPage = basename($_SERVER['PHP_SELF']);
+  $headerClass = in_array($currentPage, $mainHeaderPages) ? 'main-header' : 'secondary-header';
+  include 'include/header.php';
+  ?>
 
   <section class="breadcrumbs-section">
     <div class="breadcrumb">
@@ -40,16 +38,18 @@ include 'include/header.php';
     <aside class="properties-form">
       <h2 class="properties-form__title">Get in Touch</h2>
 
-      <form class="properties-form__box">
-        <input type="text" placeholder="Name" required />
-        <input type="email" placeholder="Email" required />
+      <form class="properties-form__box" method="POST" >
+        <input type="text" placeholder="Name" name="name" required />
+        <input type="email" placeholder="Email" name= "email"  required />
 
         <div class="input-group">
 
-          <input type="tel" id="phone" placeholder="Enter phone number" required>
+          <input type="tel" id="phone" maxlength="10" placeholder="Enter phone number" name="phone" required>
         </div>
 
-        <textarea placeholder="Message"></textarea>
+        <textarea placeholder="Message" name="message" required></textarea>
+        
+        <input type="hidden" id="recaptcha_token" name="recaptcha_token">
         <button type="submit">Submit</button>
       </form>
     </aside>
@@ -91,42 +91,42 @@ include 'include/header.php';
       <!-- PROPERTY LIST -->
       <div class="properties-cards grid-view" id="propertiesWrapper">
         <?php
-            $jsonData = file_get_contents('properties.json');
-            $properties = json_decode($jsonData, true); // decode as associative array
+        $jsonData = file_get_contents('properties.json');
+        $properties = json_decode($jsonData, true); // decode as associative array
 
-            // Loop through each property
-            foreach ($properties as $id => $prop) {
-          ?>
-        <a href="inventory-detail.php?property=<?php echo $prop['slug']; ?>" class="properties-card-link">
-          <div class="properties-card" data-id="<?php echo $id; ?>">
-           <img src="<?php echo htmlspecialchars($prop['image'][0]); ?>" 
-     alt="<?php echo htmlspecialchars($prop['title']); ?>" />
-            <div class="properties-card__info">
-              <h3>
-                <?php echo htmlspecialchars($prop['title']); ?>
-              </h3>
-              <p class="propertycard-location">
-                <span class="material-symbols-outlined">location_on</span>
-                Gurugram
-              </p>
-              <div class="area-container">
-                <h3>Total Area</h3>
-                <span>
-                  <?php echo htmlspecialchars($prop['availableArea']); ?> <span class="sq-ft">Sq.Ft.</span>
-                </span>
-              </div>
-              <div class="decription-list">
-                <p class="property-descrip">
-                  <?php echo substr($prop['description'], 0, 120) . '...'; ?>
+        // Loop through each property
+        foreach ($properties as $id => $prop) {
+        ?>
+          <a href="inventory-detail.php?property=<?php echo $prop['slug']; ?>" class="properties-card-link">
+            <div class="properties-card" data-id="<?php echo $id; ?>">
+              <img src="<?php echo htmlspecialchars($prop['image'][0]); ?>"
+                alt="<?php echo htmlspecialchars($prop['title']); ?>" />
+              <div class="properties-card__info">
+                <h3>
+                  <?php echo htmlspecialchars($prop['title']); ?>
+                </h3>
+                <p class="propertycard-location">
+                  <span class="material-symbols-outlined">location_on</span>
+                  Gurugram
                 </p>
-                <button class="detail-btn view-details">View more</button>
+                <div class="area-container">
+                  <h3>Total Area</h3>
+                  <span>
+                    <?php echo htmlspecialchars($prop['availableArea']); ?> <span class="sq-ft">Sq.Ft.</span>
+                  </span>
+                </div>
+                <div class="decription-list">
+                  <p class="property-descrip">
+                    <?php echo substr($prop['description'], 0, 120) . '...'; ?>
+                  </p>
+                  <button class="detail-btn view-details">View more</button>
+                </div>
               </div>
             </div>
-          </div>
-        </a>
+          </a>
         <?php
-}
-?>
+        }
+        ?>
 
 
         <!-- <a href="inventory-detail.html" class="properties-card-link">
@@ -155,22 +155,22 @@ include 'include/header.php';
           </div>
         </a>-->
 
-        
+
       </div>
   </section>
 
 
   <!-- footer -->
   <?php
-      include('include/footer.php');
-    ?>
+  include('include/footer.php');
+  ?>
 
   <!--footer End-->
 
- <a href="tel:+919773880555" class="floating-call-btn" aria-label="Call Us">
-    <i class="fi fi-sr-phone-call"></i>  
-  <span class="pulse"></span>
-</a>
+  <a href="tel:+919773880555" class="floating-call-btn" aria-label="Call Us">
+    <i class="fi fi-sr-phone-call"></i>
+    <span class="pulse"></span>
+  </a>
 
   <!-- ALL HTML ABOVE -->
 
@@ -210,27 +210,84 @@ include 'include/header.php';
     window.intlTelInput(phoneInput, {
       initialCountry: "in",
       separateDialCode: true,
-      utilsScript:
-        "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/utils.js"
+      utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/utils.js"
     });
 
-    window.addEventListener("scroll", function () {
-  const header = document.querySelector(".main-header");
+    window.addEventListener("scroll", function() {
+      const header = document.querySelector(".main-header");
 
-  if (window.scrollY > 50) {
-    header.classList.add("scrolled");
-  } else {
-    header.classList.remove("scrolled");
-  }
+      if (window.scrollY > 50) {
+        header.classList.add("scrolled");
+      } else {
+        header.classList.remove("scrolled");
+      }
+    });
+
+    document.addEventListener('DOMContentLoaded', function() {
+      const hamburger = document.getElementById("hamburger");
+      const menuOverlay = document.getElementById("menuOverlay");
+      const closeMenu = document.getElementById("closeMenu");
+      const menuLinks = document.querySelectorAll(".menu-overlay a");
+
+      function toggleMenu() {
+        hamburger.classList.toggle("active");
+        menuOverlay.classList.toggle("active");
+      }
+
+      hamburger.addEventListener("click", toggleMenu);
+      closeMenu.addEventListener("click", () => {
+        menuOverlay.classList.remove("active");
+      });
+
+      menuLinks.forEach(link => {
+        link.addEventListener("click", () => {
+          hamburger.classList.remove("active");
+          menuOverlay.classList.remove("active");
+        });
+      });
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+
+  const form = document.querySelector(".properties-form__box");
+
+  form.addEventListener("submit", function (e) {
+
+    e.preventDefault(); // stop form submitting
+
+    alert("Form submitted successfully!");
+
+  });
+
 });
 
- document.addEventListener('DOMContentLoaded', function () { 
+  document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("homeForm");
+
+    if (!form) return;
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      grecaptcha.ready(function () {
+        grecaptcha.execute('6LcpmoUsAAAAABJILMcnSdU-AZ6WitnWKSMmhUJT', { action: 'submit' }).then(function (token) {
+          document.getElementById("recaptcha_token").value = token;
+
+          console.log("reCAPTCHA token received:", token); 
+          console.log("Captcha is working, token generated!");
+
+          form.submit();
+        });
+      });
+    });
+  });
+
+   document.addEventListener('DOMContentLoaded', function () { 
           const hamburger = document.getElementById("hamburger");
           const menuOverlay = document.getElementById("menuOverlay");
           const closeMenu = document.getElementById("closeMenu");
           const menuLinks = document.querySelectorAll(".menu-overlay a");
 
-          function toggleMenu() {
+       function toggleMenu() {
           hamburger.classList.toggle("active");     
           menuOverlay.classList.toggle("active");   
           }
@@ -244,12 +301,11 @@ include 'include/header.php';
           link.addEventListener("click", () => {
           hamburger.classList.remove("active");   
           menuOverlay.classList.remove("active"); 
-          });
-          });
-          });
+        });
+      });
+     });
 
   </script>
-
 
   <script src="/script.js"></script>
 </body>

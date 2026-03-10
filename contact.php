@@ -10,16 +10,16 @@
   <link rel="icon" type="image/png" sizes="16x16" href="public/faviconAE-img.jpg">
   <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/css/intlTelInput.css" />
+  <script src="https://www.google.com/recaptcha/api.js?render=6LcpmoUsAAAAABJILMcnSdU-AZ6WitnWKSMmhUJT"></script>
 </head>
-
 <body>
 
-    <?php
-    $mainHeaderPages = ['about.php', 'contact.php', 'inventory.php', 'privacy-policy.php', 'inventory-detail.php',];
-    $currentPage = basename($_SERVER['PHP_SELF']);
-    $headerClass = in_array($currentPage, $mainHeaderPages) ? 'main-header' : 'secondary-header';
-    include 'include/header.php';
-    ?>
+  <?php
+  $mainHeaderPages = ['about.php', 'contact.php', 'inventory.php', 'privacy-policy.php', 'inventory-detail.php',];
+  $currentPage = basename($_SERVER['PHP_SELF']);
+  $headerClass = in_array($currentPage, $mainHeaderPages) ? 'main-header' : 'secondary-header';
+  include 'include/header.php';
+  ?>
 
   <section class="breadcrumbs-section">
     <div class="breadcrumb">
@@ -31,97 +31,98 @@
   </section>
 
   <section class="contact-section p-sec">
-    <div class="arrow-img-contactus"><img src="public/contact/arrow-img.png" alt="">
-    </div>
-    <!-- <div class="bg-image-right">
-          <img src="public/inventory/Deco-contact-2.png" alt="">
-        </div> -->
+      <div class="arrow-img-contactus"><img src="public/contact/arrow-img.png" alt="">
+      </div>
+      <!-- <div class="bg-image-right">
+            <img src="public/inventory/Deco-contact-2.png" alt="">
+          </div> -->
 
-    <div class="form-contactus-container">
-      <div class="contactus-container">
+      <div class="form-contactus-container">
+        <div class="contactus-container">
 
 
-        <!-- LEFT SIDE (FORM) -->
-        <div class="form-container">
-          <p class="form-subtitle">Contact Us</p>
-          <h2 class="form-title">Let’s Help You Lease the Right Property</h2>
-          <p class="desc">
-            Share your requirements with us and we’ll guide you through available properties, pricing, and next steps.
-          </p>
+          <!-- LEFT SIDE (FORM) -->
+          <div class="form-container">
+            <p class="form-subtitle">Contact Us</p>
+            <h2 class="form-title">Let’s Help You Lease the Right Property</h2>
+            <p class="desc">
+              Share your requirements with us and we’ll guide you through available properties, pricing, and next steps.
+            </p>
 
-          <form class="contact-form" id="contactForm">
-            <div class="row">
-              <div class="input-group">
-                <label>First Name</label>
-                <input type="text" name="firstName" id="firstName" required>
+            <form class="contact-form" id="contactForm" method="POSt"  >
+              <div class="row">
+                <div class="input-group">
+                  <label>First Name</label>
+                  <input type="text" name="firstName"  placeholder="First Name"  id="firstName" required>
+                </div>
+                <div class="input-group">
+                  <label>Last Name</label>
+                  <input type="text"  name="lastName"  placeholder=" Last Name"  id="lastName" required>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-group">
+                  <label>Email Address</label>
+                  <input type="email" name="email" placeholder="Email" id="email" required>
+                </div>
+                <div class="input-group">
+                  <label>Phone Number</label>
+                  <input type="tel" name="phone" maxlength="10" id="phone" required>
+                </div>
               </div>
               <div class="input-group">
-                <label>Last Name</label>
-                <input type="text" name="lastName" id="lastName" required>
+                <label>Message</label>
+                <textarea name="message" rows="5"  placeholder="Message" required></textarea>
               </div>
-            </div>
-            <div class="row">
-              <div class="input-group">
-                <label>Email Address</label>
-                <input type="email" name="email" id="email" required>
-              </div>
-              <div class="input-group">
-                <label>Phone Number</label>
-                <input type="tel" name="phone" id="phone" required>
-              </div>
-            </div>
-            <div class="input-group">
-              <label>Message</label>
-              <textarea name="message" rows="5" required></textarea>
-            </div>
-            <button type="submit" class="btn">Send Message</button>
-          </form>
-          <div id="formResponse"></div>
-        </div>
-
-        <!-- RIGHT SIDE (IMAGE + CONTACT INFO) -->
-        <div class="info-container">
-          <div class="image-box">
-            <img src="public/contact/contact-form-img.jpg" alt="Person using phone">
+              <input type="hidden" id="recaptcha_token" name="recaptcha_token" />
+              <button type="submit" class="btn">Send Message</button>
+            </form>
+            <div id="formResponse"></div>
           </div>
-          <div class="contact-card">
-            <div class="contact-item">
-              <div class="contact-icon"><i class="fa-regular fa-envelope" style=" color:#006599; font-size: 18px;"></i>
-              </div>
-              <div>
-                <h4>Email</h4>
-                <p>info@assetedge.in</p>
-              </div>
+
+          <!-- RIGHT SIDE (IMAGE + CONTACT INFO) -->
+          <div class="info-container">
+            <div class="image-box">
+              <img src="public/contact/contact-form-img.jpg" alt="Person using phone">
             </div>
-            <div class="contact-item">
-              <div class="contact-icon"> <i class=" fa-light fa-phone" style=" color:#006599; font-size:22px;"></i></div>
-              <div>
-                <h4>Phone</h4>
-                <p>+91-9773880555</p>
-              </div>  
+            <div class="contact-card">
+              <div class="contact-item">
+                <div class="contact-icon"><i class="fa-regular fa-envelope" style=" color:#006599; font-size: 18px;"></i>
+                </div>
+                <div>
+                  <h4>Email</h4>
+                  <p>info@assetedge.in</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon"> <i class=" fa-light fa-phone" style=" color:#006599; font-size:22px;"></i></div>
+                <div>
+                  <h4>Phone</h4>
+                  <p>+91-9773880555</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="contact-location">
-      <div id="location">
-        <h2>Location</h2>
-        <div class="map-container">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3506.500692723456!2d77.08127907549573!3d28.494579975740386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d193f4031351d%3A0x43b2320634a39e68!2sSauch%20Tower!5e0!3m2!1sen!2sin!4v1768827953843!5m2!1sen!2sin"
-            loading="lazy">
-          </iframe>
+      <div class="contact-location">
+        <div id="location">
+          <h2>Location</h2>
+          <div class="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3506.500692723456!2d77.08127907549573!3d28.494579975740386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d193f4031351d%3A0x43b2320634a39e68!2sSauch%20Tower!5e0!3m2!1sen!2sin!4v1768827953843!5m2!1sen!2sin"
+              loading="lazy">
+            </iframe>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
   <!-- footer -->
   <?php
-      include('include/footer.php');
-    ?>
+  include('include/footer.php');
+  ?>
 
   <!--footer End-->
 
@@ -134,7 +135,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
 
   <script>
-    $("#contactForm").on("submit", function (e) {
+    $("#contactForm").on("submit", function(e) {
       e.preventDefault();
       const form = $(this);
       const submitBtn = form.find("button[type='submit']");
@@ -145,13 +146,13 @@
         type: "POST",
         data: form.serialize(),
         dataType: "json",
-        success: function (response) {
+        success: function(response) {
           let alertClass = response.status ? "success" : "error";
-          let icon = response.status
-            ? '<i class="fi fi-sr-check"></i>'
-            : '<i class="fi fi-sr-cross"></i>';
-            $("#formResponse").html(
-              `<div class="form-alert ${alertClass}">
+          let icon = response.status ?
+            '<i class="fi fi-sr-check"></i>' :
+            '<i class="fi fi-sr-cross"></i>';
+          $("#formResponse").html(
+            `<div class="form-alert ${alertClass}">
                   ${icon}
                   <span>${response.message}</span>
               </div>`
@@ -164,7 +165,7 @@
           }, 5000);
           submitBtn.prop("disabled", false).html(originalText);
         },
-        error: function () {
+        error: function() {
           $("#formResponse").html(
             `<div class="form-alert error">
                 <i class="fi fi-sr-cross"></i>
@@ -178,6 +179,27 @@
         }
       });
     });
+      
+  document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("homeForm");
+
+    if (!form) return;
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      grecaptcha.ready(function () {
+        grecaptcha.execute('6LcpmoUsAAAAABJILMcnSdU-AZ6WitnWKSMmhUJT', { action: 'submit' }).then(function (token) {
+          document.getElementById("recaptcha_token").value = token;
+
+          console.log("reCAPTCHA token received:", token); 
+          console.log("Captcha is working, token generated!");
+
+          form.submit();
+        });
+      });
+    });
+  });
+
   </script>
 
   <script>
@@ -186,8 +208,7 @@
     window.intlTelInput(phoneInput, {
       initialCountry: "in",
       separateDialCode: true,
-      utilsScript:
-        "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/utils.js"
+      utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/utils.js"
     });
   </script>
 
